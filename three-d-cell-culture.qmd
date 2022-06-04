@@ -1,0 +1,307 @@
+# 3D Culture
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(gt)
+```
+
+## Handling Matrigel {#handling-matrigel}
+
+* Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while).  
+
+:::{.callout-tip}
+Before aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can possibly impede clear imaging. 
+:::
+
+* Store aliquots at $–80^\circ C$ 
+
+* Thaw on ice or in the refrigerator. For larger quantities, this make take overnight. 
+
+* Any tubes that Matrigel is going to be added to should be chilled on ice. 
+
+* Medium used to dilute Matrigel should also be chilled on ice. 
+
+
+## Spheroids
+
+### Forming Spheroids
+
+:::{.callout-note}
+Grow cells to $<80\%$ in a $T75$ (plenty for a 96 well plate)
+
+Warm trypsin, medium, PBS
+
+Add a glass bottom plate to plate warmer, set at $37^\circ C$.
+
+Thaw Matrigel on ice. You'll need at minimum $100\mu L$ per well. Since it is highly viscous, thaw much more than necessary - it can always be refrozen if [handled properly](#handling-matrigel)
+:::
+
+1. Aspirate medium
+2. Wash twice with $10mL$ PBS
+3. Add $1.5mL$ trypsin. Regularly check the flask and tap against the palm of your hand.
+4. Once $~80\%$ of the cells have dissociated, add $8.5mL$ medium
+5. Transfer to a 15mL centrifuge tube.
+6. Spin down at $300 \times g$ for $5\ minutes$
+7. Resuspend in $10mL$ PBS
+8. Spin down at $300 \times g$ for $5\ minutes$
+9. Resuspend in $10mL$ medium and [count cells]($count-cells)
+10. Prepare $12mL$ of cells diluted to the optimal cells/well concentration
+
+:::{.callout-note}
+If you are unsure of what concentration you should used, several concentrations should be prepared (250, 500, 1000, and 3000 cells/well is a good start)
+
+Generally 500 cells/well works well
+
+Each well should receive $100\mu L$ of volume
+:::
+
+11. Pour medium into a reagent reservoir. Use a multichannel pipette to dispense $100\mu L$ of volume to each well of a 96 well, round bottom, low-attachment plate (Cat. CLS7007-24EA)
+
+12. Spin plate at $300 \times g$ for $5\ minutes$
+13. Place plate in incubator
+
+:::{.callout-tip}
+If you're having difficulty getting good spheroid formation, you can try to layering $100\mu L$ $2\%$ Matrigel (for a final concentration of 1% Matrigel) medium on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use [proper Matrigel handling technique](#handling-matrigel) when mixing medium and Matrigel.
+:::
+
+### Embedding Spheroids
+
+:::{.callout-note}
+Thaw matrigel on ice.
+:::
+
+
+## Organoids
+
+Questions:
+
+- When should OCM have matrix and when should it not?
+
+- When making OCM with matrix, Should the OCM be very cool when made so that the matrix doesn’t immediately gel?
+
+- How is 2.5% BSA prepared? 
+- I assume 2.5% is weight/volume? g/mL? 
+- How much to make at a time?
+- Is it sterile filtered?
+
+- How is Collagenase in DMEM/F12 with ROCK inhibitor prepared? 
+- How much to make at a time? 
+- Stable for how long? 
+- Sterile filtered?
+
+- When determining if a 24-well plate or T25 flask is more appropriate for culturing, what does a ‘large amount’ of tissue look like?
+
+- How is tumor mass recorded? 
+- Does it need to be sterile? 
+- What vessel is it put in to measure mass?
+
+- How do you wash patient tissue with OCM? 
+- What detemines if the OCM used is with or without matrix? 
+- How small is a small piece that determines if we use 5mL or 1mL? 
+- Does using a smaller volume actually matter, or is it ok to use just a larger volume?
+
+- When determining if TrypLE Express digestion should be done, what determines if we skip it altogether or route the unfiltered chunks in the filter to the TrypLE digestion? 
+- Why choose one over the other? 
+- More theoretical question – will this result in a selection bias if we don’t do it? 
+- I assume these are combined with one another at some point? 
+-  Which point?
+
+- How much PBS to resuspend in?
+
+- Why no ROCKi in final suspension?
+
+- What happens if you overshoot the incubation time with TrypLE?
+
+- Why should new scientists use single wells of 24 well plates?
+
+- What does a ’24 well plate amount’ look like vs a ‘T25’ amount look like?
+
+
+
+- What is the purpose of incubating OCM w matrix for at least 10 min? To warm medium?
+
+- How much OCM w matrix for t25?
+
+- Is it necessary to do all the ‘5mL for smaller tissues’ in cases other than the last suspension?
+
+- I’m assuming the last OCM resuspension is OCM with matrix? Shouldn’t the last suspension volume depend (rather than just a flat 5mL?)
+
+- HCM protocol [here](https://bioscience.lonza.com/lonza_bs/CH/en/download/product/asset/36719) it can be stored at 4 deg in the dark for a month. Do we heed this?
+
+- How is primocin prepared? 
+- What is it diluted in? 
+- How much to make at once?
+- Aliquot size? (should be in protocol, just need to remember to add when I write it up) 
+- Sterile filtered?
+- ROCK inhibitor preparation? 
+- What is it diluted in? 
+- How much to make? 
+- Aliquot size? 
+- Sterile filtered?
+
+
+
+TODO:
+
+- Anti-adherence solution Cat. #
+- New figure for figure 1
+- Syringe/bottle filter cat. #
+- Include figure 2
+- If we can get away with it, less 'while this is happening' business. People will figure it out on their own.
+
+:::{.callout-note}
+Coat all surfaces that will come in contact with tissue in 2.5% sterile BSA (tips, tubes, reservoirs, etc.) to avoid loss of sample due to sticking. To coat:
+
+- Pipette tips: Pipette BSA up and down with the tip.
+
+- Tube: Add BSA to the tube, then invert or vortex to coat the entire inside of the tube
+
+- Reservoir: transfer some BSA to a reservoir, then use a multichannel pipette to coat the sides of the reservoir. 
+
+After each instance, return BSA to stock vessel. BSA can be reused indefinitely if kept sterile.
+:::
+
+:::{.callout-note}
+Be gentle with tissue to ensure cell clusters - rather than single cells - are recovered. 
+:::
+
+### Reagents
+
+#### Matrix
+
+Matrix can refer to either Corning Matrigel or Cultrex Basement Membrane Extract. What is used depends entirely on availability.
+
+#### Hepatocyte Culture Medium (HCM) {#hcm}
+
+```{r}
+tibble(Reagent = c("HCM Hepatocyte Culture Medium BulletKit"), 
+       Volume = c("500 mL"), 
+       `Cat. #` = c("CC-3198")) |> gt(rowname_col = "Reagent")
+```
+
+1. Combine all SingleQuot Supplements with the Hepatocyte Basal Medium. Rinse each SingleQuot with medium to extract all of the supplement.
+3. Shake to mix. Store at $4^\circ C$.
+
+#### Organoid Culture Medium (OCM) {#ocm}
+
+Make on an as-needed basis, within 24hrs of use. The protocol below is for a 10mL aliquot. Scale as needed.
+
+```{r}
+#| echo: false
+
+tibble(Reagent = c("HCM",
+                   "Charcoal Stripped FBS",
+                   "10mM Y-27632 (ROCK inhibitor/ROCKi)", 
+                   "100X Glutamax",
+                   "50mg/mL Primocin", 
+                   "Penicillin-Streptomycin 10,000 U/mL", 
+                   "Matrix"), 
+       Volume = c("10mL", 
+                  "500uL", 
+                  "10uL", 
+                  "100uL", 
+                  "20uL", 
+                  "100uL", 
+                  "400uL"), 
+       `[Final]` = c("",
+                     "5%",
+                     "10uM",
+                     "1X",
+                     "100ug/mL",
+                     "100U/mL",
+                     "4%"),
+       `Cat. #` = c("CC-3198", 
+                    "F6765-100ML", 
+                    "72304", 
+                    "35050061", 
+                    "NC9141851", 
+                    "15140122", 
+                    "354230/3533-010-02")) |> gt(rowname_col = "Reagent")
+```
+
+1. Thaw ROCKi and Primocin on ice
+2. Combine all reagents in an appropriatly sized vessel. 
+3. Sterile filter with either a handheld syringe and filter for volumes <span>$<50mL$</span> or a bottle filter for volumes <span>$>50mL$</span>
+
+#### OCM with Matrix {#ocm-w-matrix}
+
+Make on an as-needed basis, within 24hrs of use. The protocol below is for a 10mL aliquot. Scale as needed.
+
+```{r}
+#| echo: false
+tibble(Reagent = c("OCM", "Matrix"), 
+       Volume = c("10mL", "400uL"), 
+       `[Final]` = c("","4%"),
+       `Cat. #` = c("","354230/3533-010-02")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+1. Combine items in conical
+2. Vortex
+3. Incubate at $37^\circ C$ for at least $10\ minutes$.
+
+### Tissue Dissociation
+
+:::{.callout-note}
+Prepare OCM
+:::
+
+1. Record tumor mass
+2. Wash patient tissue pieces with $5mL$ [ocm](ocm)
+3. Transfer tissue pieces into a well of a 6 well plate
+4. Using sterile scissors and forceps, mince the tissue into a paste. Mincing should take several minutes.
+
+:::{.callout-tip}
+If you prefer, you can use sterile scalpels to mince the tissue
+:::
+
+5. Add $10mL$ of warm DMEM/F12 with collagenase and ROCKi to the paste
+
+:::{.callout-tip}
+If there is a small amount of tissue, use $5mL$ instead.
+:::
+
+6. Transfer the tissue suspension into a <span>$10mL$</span> conical tube
+7. Incubate at $37^\circ C$ in the cell culture incubator for around $1\ hour$, gently inverting every $15\ minutes$.
+
+:::{.callout-note}
+Incubation time varies depending on tissue stroma content, with higher stromal content taking a longer time. Continue digesting until cell clusters are on average less than ~100 cells. Monitor progress via microscope.
+:::
+
+8. Centrifuge for $5\ minutes$ at $400\times g$
+9. Aspirate supernatant.
+10. Re-suspend in PBS.
+11. Assess average cluster size under microscope. If the average cluster size is around 2-10 cells, skip 
+11. Centrifuge for $5\ minutes$ at $400\times g$
+12. Aspirate supernatant.
+13. Add $5mL$ of TrypLE Express + ROCKi
+14. Incubate at $RT$ for $3\ minutes$, gently inverting the tube.
+
+:::{.callout-warning}
+Don't overshoot incubation time.
+:::
+
+15. Stop trypsinization with $10mL$ Advanced DMEM/F12
+16. Assess the amount of tissue clusters <100 cells under microscope. Determine how many wells of a 24 well plate should be used, or if using a T25 is necessary.
+17. Centrifuge for $5\ minutes$ at $400\times g$. 
+- While spinning, add $1mL$ of anti-adherence solution to each well deemed necessary of the 24 well plate, or $3mL$ of anti-adherence solution to a T25 flask. Incubate at room temperature for $10\ minutes$ 
+- Additionally, make a sufficient volume of [OCM with matrix](ocm-w-matrix) to plate 1mL of cell suspension for each well, or 5mL for a T25 (determined previously).
+18. Pass suspension through a <span>$100\mu m$<\span> cell strainer. A fair amount of leftover tissue is expected
+
+:::{.callout-tip}
+If you have extra Advanced DMEM/F12, pour up to $5mL$ over the strainer to get more suspension through.
+:::
+
+19. Spin strained suspension for $5\ minutes$ at $400\times g$. During this time, aspirate anti-adherence solution and replace with an equal volume of HCM.
+20. Aspirate supernatant.
+21. Re-suspend in the previously determined volume of OCM with matrix.
+22. Aspirate HCM from receiving vessel
+23. Add cell suspension to receiving vessel
+24. Place in incubator.
+
+
+### Organoid Care
+
+Check organoids every day for morphologic changes, organoid formation, and adherence to the bottom of the plate. Change medium with fresh medium twice per week.

@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Book of Knowledge",
+    "section": "",
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This book is meant to serve as a community contributed, highly organized, central repository for protocols. Additionally, it attempts to shed light on the implicit knowledge of the lab."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "cell-culture.html",
+    "href": "cell-culture.html",
+    "title": "2  Cell Culture",
+    "section": "",
+    "text": "Unless otherwise stated, any time a liquid is transferred or a cap is coming off, the operation should be performed within the hood.\nAnything that goes in the hood (aside for cell culture flasks) should be sprayed down with ethanol beforehand.\nDuring any aspiration from a flask, it is often cleaner to tilt the flask rather than stick the aspirator in deeper.\nTo get a sterile 1.5mL microfuge tube, do not reach in to the container to get one. Instead, open the container, shake the desired number of microfuge tubes out onto the inside top of the lid, and dump those on the working surface.\nAfter every aspiration, clear the line by aspirating roughly \\(1mL\\) of 10% bleach\n\n\n\n\n\n\n\n  \n  \n    \n      \n      Medium Vol\n      Trypsin Vol\n    \n  \n  \n    T25\n5mL\n.5mL\n    T75\n10mL\n1.3mL\n    T175\n25mL\n3mL"
+  },
+  {
+    "objectID": "cell-culture.html#reagent-defition-glossary",
+    "href": "cell-culture.html#reagent-defition-glossary",
+    "title": "2  Cell Culture",
+    "section": "2.2 Reagent Definition Glossary",
+    "text": "2.2 Reagent Definition Glossary\nFBS: Fetal bovine serum\nPBS: Phosphate buffered saline\nMEM: Minimum Essential Medium\nNEAA: Non-essential amino acids\nMedium: Unless otherwise stated, refers to MEM with \\(10\\%\\) FBS and supplement\nSerum Free Medium: Medium without FBS, but with supplement\nBase Medium: Medium with no FBS or supplement\nSupplement: See formulation below. A mixture of reagents to promote cell growth (MEM vitamin solution, sodium pyruvate, and NEAA), prevent contamination (penicillin-streptomycin), and buffer (HEPES).\nTrypsin: Unless otherwise stated, refers to Trypsin-EDTA(\\(0.5\\%\\)) that has been diluted \\(1:10\\) in PBS (see the trypsin preparation section)\nEthanol: When used in the context of spraying/wiping something down with ethanol, this usually refers to \\(70\\%\\) ethanol-water mixture. When used in the context of an assay or protocol, it usually refers to pure, molecular grade ethanol (comes in smaller, dark-colored-glass bottles than the ethanol we use for cleaning)"
+  },
+  {
+    "objectID": "cell-culture.html#reagent-preparation",
+    "href": "cell-culture.html#reagent-preparation",
+    "title": "2  Cell Culture",
+    "section": "2.3 Reagent Preparation",
+    "text": "2.3 Reagent Preparation\n\n2.3.1 Supplement\n\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      Cat. #\n    \n  \n  \n    MEM Vitamin Solution (100x)\n5mL\n11120052\n    Sodium Pyruvate\n5mL\n11360070\n    Penicillin Streptomycin\n5mL\n15140122\n    MEM NEAA (100x)\n5mL\n11140050\n    HEPES (1M)\n5mL\n15630080\n  \n  \n  \n\n\n\n\nCombine ingredients in 50mL conical tubes\n\nGenerally, make \\(10-20\\) per batch\n\nLabel tube with ‘Supp’, your initials, and date made.\nStore at \\(-20^\\circ C\\).\n\n\n\n2.3.2 Fetal Bovine Serum (FBS)\n\nCreate \\(50mL\\) aliquots of FBS in as many 50mL conical tubes as possible.\n\nThe last bit (\\(<50mL\\)) of FBS should also be aliquoted, and labeled as “\\(<50mL\\)”.\n\nLabel tubes “FBS” along with your initials and the date.\nStore at \\(-20^\\circ C\\).\n\n\n\n2.3.3 Medium\n\nAdd \\(50mL\\) (1x aliquot) of FBS and \\(25mL\\) (1x aliquot) of supplement to a bottle of MEM.\nShake to mix.\nWrite initials and date on bottle.\nStore at \\(4^\\circ C\\).\n\n\n\n2.3.4 Trypsin\n\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      Cat. #\n    \n  \n  \n    PBS\n45mL\n114-056-101CS\n    Trypsin-EDTA(0.5%), no phenol red\n5mL\n15400054\n  \n  \n  \n\n\n\n\nCombine reagents in a \\(50mL\\) conical.\nVortex.\nAdd initials, date, and “Trypsin”.\nStore at \\(4^\\circ C\\).\n\n\n\n2.3.5 70% Ethanol\nCan be made outside of hood.\n\nPour roughly \\(350mL\\) of the large bottle ethanol into a spray bottle (using the markings on the side of the bottle is sufficient)\n\nThe smaller bottles of ethanol are molecular grade and not meant for cleaning purposes\n\nAdd \\(150mL\\) of water to the bottle\nShake bottle to mix"
+  },
+  {
+    "objectID": "cell-culture.html#thawing-cells",
+    "href": "cell-culture.html#thawing-cells",
+    "title": "2  Cell Culture",
+    "section": "2.4 Thawing Cells",
+    "text": "2.4 Thawing Cells\n\n\n\n\n\n\nNote\n\n\n\n\nWarm medium\nBring water bath to \\(37^\\circ C\\)\n\n\n\n\nTake cryovial of cells and swirl it in the waterbath until just a small portion of ice remains\n\n\n\n\n\n\n\nWarning\n\n\n\nEnsure the vial cap does not become wet - this can possibly contaminate the cells!\n\n\n\nWipe down the vial with ethanol, then open.\nGently pipette to mix, then transfer the contents of the cryovial to a \\(15mL\\) conical tube.\nVery slowly add \\(9mL\\) of medium\n\nThe first mL should take \\(~30\\ seconds\\)\nThe second mL should take \\(~10\\ seconds\\)\nThe next \\(8mL\\) should take \\(~30\\ seconds\\)\n\nCentrifuge at \\(300 \\times g\\) for \\(5\\ minutes\\)\nLook for a pellet and note its size\nAspirate the medium from the pellet and resuspend in medium\n\nIf the pellet was quite large, resuspend in 10mL medium and transfer to a T75.\nIf the pellet was smaller, resuspend in 5mL medium and transfer to a T25.\n\nLabel flask with cell line, passage, date, and initials"
+  },
+  {
+    "objectID": "cell-culture.html#regular-cell-care",
+    "href": "cell-culture.html#regular-cell-care",
+    "title": "2  Cell Culture",
+    "section": "2.5 Regular Cell Care",
+    "text": "2.5 Regular Cell Care\n\n\n\n\n\n   \n\nStart\n\n Start   \n\nAre cells >80% confluent?\n\n Are cells >80% confluent?   \n\nStart->Are cells >80% confluent?\n\n    \n\nCells are fine\n\n Cells are fine   \n\nSplit\n\n Split   \n\nChange medium\n\n Change medium   \n\nAre cells >80% confluent?->Split\n\n  Yes   \n\nIs medium yellow?\n\n Is medium yellow?   \n\nAre cells >80% confluent?->Is medium yellow?\n\n  No   \n\nIs medium yellow?->Change medium\n\n  Yes   \n\nAre there a lot of floating cells?\n\n Are there a lot of floating cells?   \n\nIs medium yellow?->Are there a lot of floating cells?\n\n  No   \n\nAre there a lot of floating cells?->Cells are fine\n\n  No   \n\nAre there a lot of floating cells?->Change medium\n\n  Yes  \n\n\n\n\n\nCheck cells every day. There should be few floating cells. If it is approaching \\(80\\%\\) confluent, they should be split. If the medium looks yellowish but the cells are not \\(80\\%\\) confluent, or if there are a lot of floating cells, they should be fed."
+  },
+  {
+    "objectID": "cell-culture.html#feed-cells",
+    "href": "cell-culture.html#feed-cells",
+    "title": "2  Cell Culture",
+    "section": "2.6 Feeding Cells",
+    "text": "2.6 Feeding Cells\n\n\n\n\n\n\nNote\n\n\n\nWarm medium\n\n\n\nRemove cells from incubator\nAspirate off all medium from cells\nReplace with the appropriate volume of fresh medium\nReplace cells in incubator"
+  },
+  {
+    "objectID": "cell-culture.html#split-cells",
+    "href": "cell-culture.html#split-cells",
+    "title": "2  Cell Culture",
+    "section": "2.7 Splitting (Subculturing) Cells",
+    "text": "2.7 Splitting (Subculturing) Cells\n\n\n\n\n\n\nNote\n\n\n\nWarm medium, PBS, and trypsin\n\n\n\nRemove cells from incubator\nAspirate off all medium from cells\nAdd the same volume of PBS as you would normally add medium.\nTilt the flask back and forth a few times to rinse the bottom of the flask.\nAspirate the PBS\nAdd an appropriate volume of trypsin\nPlace flask in incubator\nCheck each minute or so to see if the cells have come loose by gently tilting the flask back and forth. Additionally, check under the microscope to see how many cells are still attached.\n\n\n\n\n\n\n\nTip\n\n\n\n\nA gentle tap of the flask on the edge of the counter can help encourage weakly attached cells to become dislodged.\nEpithelial cell lines will tend to take longer (>5min) while mesenchymal cell lines can be done almost immediately (~1min).\n\n\n\n\nGently spray down the bottom of the flask with medium roughly twice the volume of trypsin. Pipette and spray down the flask bottom a few times to dislodge and collect the cells as well as break up cell clusters.\nTransfer the cells to a conical tube of appropriate size\nPrepare a new flask by writing the cell line, passage number, ratio of split (ie 1:10, see below) initials, and date\nAdd an appropriate volume of medium, minus the volume of cell suspension you plan to add.\nAdd how ever much cell suspension you want. This will depend on the growth rate of the cell line as well as when you want them ready. A good starting point is 1:10, or one tenth of the cell suspension.\nGently tilt the flask to ensure medium and cell suspension are mixed and cover the bottom of the flask entirely.\nPlace cells in incubator."
+  },
+  {
+    "objectID": "cell-culture.html#freezing-cells",
+    "href": "cell-culture.html#freezing-cells",
+    "title": "2  Cell Culture",
+    "section": "2.8 Freezing Cells",
+    "text": "2.8 Freezing Cells\n\n\n\n\n\n\nWarning\n\n\n\nFlasks should be healthy and \\(~80\\%\\) confluent for making packs.\n\n\n\nFollow the cell-splitting protocol up and through transfering the cell suspension into a conical tube.\nSpin cells down at \\(300 \\times g\\) for \\(5\\ minutes\\)\nAspirate off medium supernatant\nResuspend with \\(5mL\\) PBS\nSpin cells down at \\(300 \\times g\\) for \\(5\\ minutes\\)\nAspirate off PBS supernatant\nResuspend in cool (straight from fridge) cell freezing medium (such as CryoStor).\n\nIf the cells were from a \\(T75\\), \\(3mL\\) is appropriate. If \\(T175\\), \\(6mL\\) is appropriate.\n\nAliquot \\(1mL\\) of cell suspension into cryovials\nLabel cryovials with cell name, passage, date, and your initials\nStore vials in \\(-80^\\circ C\\). Transfer to liquid nitrogen when possible."
+  },
+  {
+    "objectID": "cell-culture.html#count-cells",
+    "href": "cell-culture.html#count-cells",
+    "title": "2  Cell Culture",
+    "section": "2.9 Counting Cells",
+    "text": "2.9 Counting Cells\nOccasionally you will need to determine the concentration of cells in a given suspension. This protocol assumes you have a suspension of cells already at hand.\n\nTake a 1.5mL microfuge tube and add \\(15\\mu L\\) of trypan blue to it\nMix the suspension of cells either by pipetting or vortexing, then add \\(15\\mu L\\) of cell suspension to the 1.5mL microfuge tube.\nBriefly vortex, then spin down microfuge tube\nOpen a Countess cell counting chamber slide\nGently mix cells with P10, then add \\(10\\mu L\\) of trypan blue suspension to each side of the slide.\nAdd slide to Countess II\nTake an image, then note viability % and cells/mL\n\nWe use the viable cell concentration (rather than the total cell concentration)"
+  },
+  {
+    "objectID": "intro.html#style-guide",
+    "href": "intro.html#style-guide",
+    "title": "1  Introduction",
+    "section": "1.2 Style Guide",
+    "text": "1.2 Style Guide\n\n1.2.1 Content Guide\n\nMore descriptive is better than less. As this book is meant to form a compendium of knowledge, it should provide exquisite detail to provide a naive individual to come in and perform protocols in the same way as possible.\n…but too many words can lead to skimming. Like everything, there is a balance. Abbreviate when reasonable. Break up walls of text with bullets or lists when appropriate. Leading to the next point…\nGood figures are worth their weight in gold. It is often infinitely better to spend a good portion of time on a figure that is easier to describe or direct the reader’s attention to (ie ‘See Figure’). In the long run, this reduces the burden on you (textual descriptions of visual things are tiring) and on the reader (textual descriptions of visual things are often ineffective)\nReagent locations. I’m on the fence about locations of reagents because these things can be volatile. I would much rather supply catalog numbers and allow people to look up what they should be looking for, since these tend to be static. This means less book updating.\nUse archived links when possible. Use the WaybackMachine to either retrieve or generate an archived static version of a webpage you are referring to.\nNo rituals, please. When performing experiments, we often have ritualistic tendencies that end up having no effect on the final product. It’s one thing to provide a quick tip that provides better results. It’s another to provide arcane additional steps for no reason. Challenge your own rituals before you commit them to a protocol. Challenge what you think may be a ritual when you perform protocols. Strive for parsimonious protocols.\nLet operators save their own time. Unless the waiting period is huge (hours), avoid instructing operators to do something ‘while xyz’ is happening. People tend to figure this out on their own, and its inclusion muddies the protocol.\nProtocols don’t need to be the way you do them, but they need to work if you did.\n\n\n\n1.2.2 For the editor\nPrefer:\n\n‘seconds, minutes, hours’ to ‘sec, min, hr’\n{gt} or {flextable} to {kable}\n|> to %>%\n\\(\\mu L\\) to \\(uL\\) or uL\n\\(10000 \\times g\\) to \\(10K\\times g\\) \\(10K\\ g\\) or \\(10000g\\)\n\nAlso:\n\nSteps should generally contain one action, unless breaking the actions apart may mislead the operator (ie, do abc, then, with the same tip, do xyz)"
+  },
+  {
+    "objectID": "intro.html#contributing",
+    "href": "intro.html#contributing",
+    "title": "1  Introduction",
+    "section": "1.3 Contributing",
+    "text": "1.3 Contributing\nCreating and maintaining a quality compendium is impossible without your help. Your contributions and suggestions to make this document fuller and clearer is highly encouraged.\nThis document is written in quarto, knit using knitr. You can find the source code of this book (where you can fork, edit, and submit pull requests for) here."
+  },
+  {
+    "objectID": "intro.html#todo",
+    "href": "intro.html#todo",
+    "title": "1  Introduction",
+    "section": "1.4 TODO",
+    "text": "1.4 TODO\nGeneral TODOs:\nMore images - this includes plate layouts, bench layouts, what things look like, how things should be held, screenshots, etc, etc, etc.\nProofreading for clarity. A lot of this was written pretty hastily (trying to get it finished before polishing)"
+  },
+  {
+    "objectID": "intro.html#cell-culture",
+    "href": "intro.html#cell-culture",
+    "title": "1  Introduction",
+    "section": "1.5 Cell culture",
+    "text": "1.5 Cell culture\n\nCounting cells could be more illustrious (namely step 1, 2)\nFinish Authentication\nFinish fingerprinting no myco\nFinish myco no fingerprinting"
+  },
+  {
+    "objectID": "intro.html#western-blots",
+    "href": "intro.html#western-blots",
+    "title": "1  Introduction",
+    "section": "1.6 Western blots",
+    "text": "1.6 Western blots\n\nMake plate layouts side by side (facet grid)\nGel characteristics and cat # tables\nAdd more inline cat numbers\nPictures to gel loading?\nPictures of transfer sandwich\nRubber scraper –> cell scraper, PN\nInclude LI-COR detection documentation"
+  },
+  {
+    "objectID": "intro.html#transwell-assay",
+    "href": "intro.html#transwell-assay",
+    "title": "1  Introduction",
+    "section": "1.7 Transwell assay",
+    "text": "1.7 Transwell assay\n\nTranswell cat no.\nDAPI cat no.\nDAPI aliquoting\nBit depth for img?\nInclude link to pipeline\nShow which parts you’ll need to modify - mainly so they don’t all get uploaded to my sharepoint folder."
+  },
+  {
+    "objectID": "intro.html#delta-deltaqrt-pcr",
+    "href": "intro.html#delta-deltaqrt-pcr",
+    "title": "1  Introduction",
+    "section": "1.8 \\(\\Delta \\Delta\\)qRT-PCR",
+    "text": "1.8 \\(\\Delta \\Delta\\)qRT-PCR\n\nflextable"
+  },
+  {
+    "objectID": "three-d-cell-culture.html",
+    "href": "three-d-cell-culture.html",
+    "title": "3  3D Culture",
+    "section": "",
+    "text": "Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while).\n\n\n\n\n\n\n\nTip\n\n\n\nBefore aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can possibly impede clear imaging.\n\n\n\nStore aliquots at \\(–80^\\circ C\\)\nThaw on ice or in the refrigerator. For larger quantities, this make take overnight.\nAny tubes that Matrigel is going to be added to should be chilled on ice.\nMedium used to dilute Matrigel should also be chilled on ice."
+  },
+  {
+    "objectID": "three-d-cell-culture.html#spheroids",
+    "href": "three-d-cell-culture.html#spheroids",
+    "title": "3  3D Culture",
+    "section": "3.2 Spheroids",
+    "text": "3.2 Spheroids\n\n3.2.1 Forming Spheroids\n\n\n\n\n\n\nNote\n\n\n\nGrow cells to \\(<80\\%\\) in a \\(T75\\) (plenty for a 96 well plate)\nWarm trypsin, medium, PBS\nAdd a glass bottom plate to plate warmer, set at \\(37^\\circ C\\).\nThaw Matrigel on ice. You’ll need at minimum \\(100\\mu L\\) per well. Since it is highly viscous, thaw much more than necessary - it can always be refrozen if handled properly\n\n\n\nAspirate medium\nWash twice with \\(10mL\\) PBS\nAdd \\(1.5mL\\) trypsin. Regularly check the flask and tap against the palm of your hand.\nOnce \\(~80\\%\\) of the cells have dissociated, add \\(8.5mL\\) medium\nTransfer to a 15mL centrifuge tube.\nSpin down at \\(300 \\times g\\) for \\(5\\ minutes\\)\nResuspend in \\(10mL\\) PBS\nSpin down at \\(300 \\times g\\) for \\(5\\ minutes\\)\nResuspend in \\(10mL\\) medium and count cells\nPrepare \\(12mL\\) of cells diluted to the optimal cells/well concentration\n\n\n\n\n\n\n\nNote\n\n\n\nIf you are unsure of what concentration you should used, several concentrations should be prepared (250, 500, 1000, and 3000 cells/well is a good start)\nGenerally 500 cells/well works well\nEach well should receive \\(100\\mu L\\) of volume\n\n\n\nPour medium into a reagent reservoir. Use a multichannel pipette to dispense \\(100\\mu L\\) of volume to each well of a 96 well, round bottom, low-attachment plate (Cat. CLS7007-24EA)\nSpin plate at \\(300 \\times g\\) for \\(5\\ minutes\\)\nPlace plate in incubator\n\n\n\n\n\n\n\nTip\n\n\n\nIf you’re having difficulty getting good spheroid formation, you can try to layering \\(100\\mu L\\) \\(2\\%\\) Matrigel (for a final concentration of 1% Matrigel) medium on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use proper Matrigel handling technique when mixing medium and Matrigel.\n\n\n\n\n3.2.2 Embedding Spheroids\n\n\n\n\n\n\nNote\n\n\n\nThaw matrigel on ice."
+  },
+  {
+    "objectID": "three-d-cell-culture.html#organoids",
+    "href": "three-d-cell-culture.html#organoids",
+    "title": "3  3D Culture",
+    "section": "3.3 Organoids",
+    "text": "3.3 Organoids\nQuestions:\n\nWhen should OCM have matrix and when should it not?\nWhen making OCM with matrix, Should the OCM be very cool when made so that the matrix doesn’t immediately gel?\nHow is 2.5% BSA prepared?\nI assume 2.5% is weight/volume? g/mL?\nHow much to make at a time?\nIs it sterile filtered?\nHow is Collagenase in DMEM/F12 with ROCK inhibitor prepared?\nHow much to make at a time?\nStable for how long?\nSterile filtered?\nWhen determining if a 24-well plate or T25 flask is more appropriate for culturing, what does a ‘large amount’ of tissue look like?\nHow is tumor mass recorded?\nDoes it need to be sterile?\nWhat vessel is it put in to measure mass?\nHow do you wash patient tissue with OCM?\nWhat detemines if the OCM used is with or without matrix?\nHow small is a small piece that determines if we use 5mL or 1mL?\nDoes using a smaller volume actually matter, or is it ok to use just a larger volume?\nWhen determining if TrypLE Express digestion should be done, what determines if we skip it altogether or route the unfiltered chunks in the filter to the TrypLE digestion?\nWhy choose one over the other?\nMore theoretical question – will this result in a selection bias if we don’t do it?\nI assume these are combined with one another at some point?\nWhich point?\nHow much PBS to resuspend in?\nWhy no ROCKi in final suspension?\nWhat happens if you overshoot the incubation time with TrypLE?\nWhy should new scientists use single wells of 24 well plates?\nWhat does a ’24 well plate amount’ look like vs a ‘T25’ amount look like?\nWhat is the purpose of incubating OCM w matrix for at least 10 min? To warm medium?\nHow much OCM w matrix for t25?\nIs it necessary to do all the ‘5mL for smaller tissues’ in cases other than the last suspension?\nI’m assuming the last OCM resuspension is OCM with matrix? Shouldn’t the last suspension volume depend (rather than just a flat 5mL?)\nHCM protocol here it can be stored at 4 deg in the dark for a month. Do we heed this?\nHow is primocin prepared?\nWhat is it diluted in?\nHow much to make at once?\nAliquot size? (should be in protocol, just need to remember to add when I write it up)\nSterile filtered?\nROCK inhibitor preparation?\nWhat is it diluted in?\nHow much to make?\nAliquot size?\nSterile filtered?\n\nTODO:\n\nAnti-adherence solution Cat. #\nNew figure for figure 1\nSyringe/bottle filter cat. #\nInclude figure 2\nIf we can get away with it, less ‘while this is happening’ business. People will figure it out on their own.\n\n\n\n\n\n\n\nNote\n\n\n\nCoat all surfaces that will come in contact with tissue in 2.5% sterile BSA (tips, tubes, reservoirs, etc.) to avoid loss of sample due to sticking. To coat:\n\nPipette tips: Pipette BSA up and down with the tip.\nTube: Add BSA to the tube, then invert or vortex to coat the entire inside of the tube\nReservoir: transfer some BSA to a reservoir, then use a multichannel pipette to coat the sides of the reservoir.\n\nAfter each instance, return BSA to stock vessel. BSA can be reused indefinitely if kept sterile.\n\n\n\n\n\n\n\n\nNote\n\n\n\nBe gentle with tissue to ensure cell clusters - rather than single cells - are recovered.\n\n\n\n3.3.1 Reagents\n\n3.3.1.1 Matrix\nMatrix can refer to either Corning Matrigel or Cultrex Basement Membrane Extract. What is used depends entirely on availability.\n\n\n3.3.1.2 Hepatocyte Culture Medium (HCM)\n\ntibble(Reagent = c(\"HCM Hepatocyte Culture Medium BulletKit\"), \n       Volume = c(\"500 mL\"), \n       `Cat. #` = c(\"CC-3198\")) |> gt(rowname_col = \"Reagent\")\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      Cat. #\n    \n  \n  \n    HCM Hepatocyte Culture Medium BulletKit\n500 mL\nCC-3198\n  \n  \n  \n\n\n\n\n\nCombine all SingleQuot Supplements with the Hepatocyte Basal Medium. Rinse each SingleQuot with medium to extract all of the supplement.\nShake to mix. Store at \\(4^\\circ C\\).\n\n\n\n3.3.1.3 Organoid Culture Medium (OCM)\nMake on an as-needed basis, within 24hrs of use. The protocol below is for a 10mL aliquot. Scale as needed.\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      [Final]\n      Cat. #\n    \n  \n  \n    HCM\n10mL\n\nCC-3198\n    Charcoal Stripped FBS\n500uL\n5%\nF6765-100ML\n    10mM Y-27632 (ROCK inhibitor/ROCKi)\n10uL\n10uM\n72304\n    100X Glutamax\n100uL\n1X\n35050061\n    50mg/mL Primocin\n20uL\n100ug/mL\nNC9141851\n    Penicillin-Streptomycin 10,000 U/mL\n100uL\n100U/mL\n15140122\n    Matrix\n400uL\n4%\n354230/3533-010-02\n  \n  \n  \n\n\n\n\n\nThaw ROCKi and Primocin on ice\nCombine all reagents in an appropriatly sized vessel.\nSterile filter with either a handheld syringe and filter for volumes \\(<50mL\\) or a bottle filter for volumes \\(>50mL\\)\n\n\n\n3.3.1.4 OCM with Matrix\nMake on an as-needed basis, within 24hrs of use. The protocol below is for a 10mL aliquot. Scale as needed.\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      [Final]\n      Cat. #\n    \n  \n  \n    OCM\n10mL\n\n\n    Matrix\n400uL\n4%\n354230/3533-010-02\n  \n  \n  \n\n\n\n\n\nCombine items in conical\nVortex\nIncubate at \\(37^\\circ C\\) for at least \\(10\\ minutes\\).\n\n\n\n\n3.3.2 Tissue Dissociation\n\n\n\n\n\n\nNote\n\n\n\nPrepare OCM\n\n\n\nRecord tumor mass\nWash patient tissue pieces with \\(5mL\\) ocm\nTransfer tissue pieces into a well of a 6 well plate\nUsing sterile scissors and forceps, mince the tissue into a paste. Mincing should take several minutes.\n\n\n\n\n\n\n\nTip\n\n\n\nIf you prefer, you can use sterile scalpels to mince the tissue\n\n\n\nAdd \\(10mL\\) of warm DMEM/F12 with collagenase and ROCKi to the paste\n\n\n\n\n\n\n\nTip\n\n\n\nIf there is a small amount of tissue, use \\(5mL\\) instead.\n\n\n\nTransfer the tissue suspension into a \\(10mL\\) conical tube\nIncubate at \\(37^\\circ C\\) in the cell culture incubator for around \\(1\\ hour\\), gently inverting every \\(15\\ minutes\\).\n\n\n\n\n\n\n\nNote\n\n\n\nIncubation time varies depending on tissue stroma content, with higher stromal content taking a longer time. Continue digesting until cell clusters are on average less than ~100 cells. Monitor progress via microscope.\n\n\n\nCentrifuge for \\(5\\ minutes\\) at \\(400\\times g\\)\nAspirate supernatant.\nRe-suspend in PBS.\nAssess average cluster size under microscope. If the average cluster size is around 2-10 cells, skip\nCentrifuge for \\(5\\ minutes\\) at \\(400\\times g\\)\nAspirate supernatant.\nAdd \\(5mL\\) of TrypLE Express + ROCKi\nIncubate at \\(RT\\) for \\(3\\ minutes\\), gently inverting the tube.\n\n\n\n\n\n\n\nWarning\n\n\n\nDon’t overshoot incubation time.\n\n\n\nStop trypsinization with \\(10mL\\) Advanced DMEM/F12\nAssess the amount of tissue clusters <100 cells under microscope. Determine how many wells of a 24 well plate should be used, or if using a T25 is necessary.\nCentrifuge for \\(5\\ minutes\\) at \\(400\\times g\\).\n\n\nWhile spinning, add \\(1mL\\) of anti-adherence solution to each well deemed necessary of the 24 well plate, or \\(3mL\\) of anti-adherence solution to a T25 flask. Incubate at room temperature for \\(10\\ minutes\\)\nAdditionally, make a sufficient volume of OCM with matrix to plate 1mL of cell suspension for each well, or 5mL for a T25 (determined previously).\n\n\nPass suspension through a \\(100\\mu m\\)<> cell strainer. A fair amount of leftover tissue is expected\n\n\n\n\n\n\n\nTip\n\n\n\nIf you have extra Advanced DMEM/F12, pour up to \\(5mL\\) over the strainer to get more suspension through.\n\n\n\nSpin strained suspension for \\(5\\ minutes\\) at \\(400\\times g\\). During this time, aspirate anti-adherence solution and replace with an equal volume of HCM.\nAspirate supernatant.\nRe-suspend in the previously determined volume of OCM with matrix.\nAspirate HCM from receiving vessel\nAdd cell suspension to receiving vessel\nPlace in incubator.\n\n\n\n3.3.3 Organoid Care\nCheck organoids every day for morphologic changes, organoid formation, and adherence to the bottom of the plate. Change medium with fresh medium twice per week."
+  },
+  {
+    "objectID": "cell-modification.html",
+    "href": "cell-modification.html",
+    "title": "4  Cell Modification",
+    "section": "",
+    "text": "This protocol is adapted from the ambion Ambion Life Technologies protocol (Protocol Pub. No. MAN0007836 Rev. 1.0)\n\n\n\n\n\n\nNote\n\n\n\nThis protocol is for 6 well plates. For reagent volumes for smaller well form factors, see here\n\n\n\n\n\nBriefly centrifuge the tube to ensure dried siRNA is at the bottom of the tube\nDilute siRNA down to \\(100 \\mu M\\) \\((100 \\frac{pmoles}{\\mu L})\\) using nuclease-free water\nAliquot out some of the siRNA\n\n\n\n\n\n\n\nTip\n\n\n\nEach well of a 6-well plate takes \\(3 \\mu L\\) of siRNA. Therefore, aliquoting \\(12 \\mu L\\) per tube is good enough for triplicates, plus a little extra for the ‘angel’s share’\n\n\n\nStore at \\(\\le 20 ^\\circ C\\)\n\n\n\n\n\nSplit your cells and dilute them with medium to \\(200,000\\ cells/mL\\). You will need \\(2mL/well\\).\nIn 1.5mL eppendorf, prepare the following per well:\n\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      Ref #\n    \n  \n  \n    Opti-MEM Medium\n150uL\n31985062\n    Lipofectamine RNAiMAX Reagent\n9uL\n13778150\n  \n  \n  \n\n\n\n\n\nIn another 1.5mL eppendorf, prepare the following per well:\n\n\n\n\n\n\n\n  \n  \n    \n      \n      Volume\n      Ref #\n    \n  \n  \n    Opti-MEM Medium\n150uL\n31985062\n    siRNA (10 uM)\n3uL (30pmol)\nvaries\n  \n  \n  \n\n\n\n\n\nPipette to mix each tube\nMix siRNA and lipofectamine together in a 1:1 ratio (for a single well, this would be \\(150 \\mu L\\) of each together. You can simply add the siRNA solution to your lipofectamine tube)\nWait \\(5\\ minutes\\). During this time, dispense \\(2mL\\) of your cell suspension in each well of a 6 well plate.\nAdd \\(250 \\mu L\\) of mixture to each well.\nGently swirl and rock the plate to ensure even mixing of cells and siRNA particles\nIncubate for \\(3\\ days\\). There is no need to change medium."
+  },
+  {
+    "objectID": "cell-modification.html#inducible-shrna",
+    "href": "cell-modification.html#inducible-shrna",
+    "title": "4  Cell Modification",
+    "section": "4.2 Inducible shRNA",
+    "text": "4.2 Inducible shRNA\nThis protocol is based of the Horizon Dharmacon SMARTvector Inducible Lentiviral shRNA technical manual\nBefore you begin, ensure that your cell line has not already been optimized.\n\n4.2.1 Optimized cell line data\n\n\n\n\n\n\n  \n  \n    \n      Cell Line\n      Seeding density (cells/100uL)\n      Need serum?\n      Max polybrene (ug/mL)\n      Relative transduction efficiency\n      Optimal puromycin (ug/mL)\n      Date\n      Operator\n    \n  \n  \n    5637\n7500\nNA\nNA\nNA\nNA\n2021-03-17\nKai Aragaki\n    UC9\n5000\nNA\nNA\nNA\nNA\n2021-03-17\nKai Aragaki\n    UC6\n1000\nFALSE\n>14\n0.43\n2.5\n2021-04-28\nKai Aragaki\n    RT112\n3000\nFALSE\n>14\nNA\n2.5\n2021-04-28\nKai Aragaki\n    UC14\nNA\nNA\nNA\nNA\n10.0\n2022-05-19\nKai Aragaki\n  \n  \n  \n\n\n\n\n\n\n4.2.2 Optimizing promoter\nGenerally, we presume the optimal promoter to be PGK\n\n\n4.2.3 Optimizing transfection conditions\n\n\n4.2.4 Determining transduction efficiency"
+  },
+  {
+    "objectID": "cell-modification.html#crispr",
+    "href": "cell-modification.html#crispr",
+    "title": "4  Cell Modification",
+    "section": "4.3 CRISPR",
+    "text": "4.3 CRISPR"
+  },
+  {
+    "objectID": "cell-line-extraction-methods.html",
+    "href": "cell-line-extraction-methods.html",
+    "title": "5  Cell Line Extraction Methods",
+    "section": "",
+    "text": "The following method is adapted from the mirVana miRNA Isolation Kit protocol\n\n\n\n\n\n\nNote\n\n\n\nThe night before, plate cells in a 6 well plate. 200K cells/well is a good number.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nGet a bucket of ice\nSet the heatblock to \\(95^\\circ C\\) and add a microfuge tube with nuclease free H2O. You will need at least 50uL per sample - be generous with this!\nFor each sample, label 4 tubes - two standard 1.5mL microfuge tubes, two collection tubes\n\n\n\n\n\n\nTake 6 well plate from incubator.\nAspirate off medium, then gently add \\(2mL\\) PBS/well.\nAspirate off PBS, then add \\(300\\mu L\\) lysis buffer/well\nIncubate at RT for \\(3\\ minutes\\)\nUse a cell scraper1 to scrape cells from the bottom of the well\n\n1 Cat# 83.3950\nDon’t forget to get all the edges\nTry not to let the scraper skip\nAfter scraping the bottom of the well, tilt the plate and sweep the lysate to the bottom to allow for easy transfer.\nUse a new scraper for each well\n\n\nTransfer lysate to regular 1.5mL microfuge tube\nPut on ice\n\n\n\n\n\nAdd \\(\\frac{1}{10}vol\\)2 miRNA Homogenate Additive\nVortex \\(15\\ seconds\\)\nPut on ice for \\(10\\ minutes\\)\nAdd \\(1\\ vol\\) phenol\nVortex for \\(45\\ seconds\\)\nCentrifuge at \\(max\\ speed\\) for \\(5\\ minutes\\)\nPut phenol away\nRemove upper phase, transfer to fresh 1.5mL microfuge tube\n\n2 A ‘volume’ refers to the pre-miRNA-Homogenate-Additive volume. If you follow this protocol, \\(\\frac{1}{10}vol\\) is \\(30 \\mu L\\)\n\n\n\n\n\nWarning\n\n\n\nErr on the side of caution to avoid disturbing lower phase. As a rule of thumb, if you add 300uL lysis buffer, remove ~200uL. Your mileage may vary.\nMake sure to note the volume of upper phase removed.\n\n\n\n\n\n\nAdd \\(1.25\\ vol\\) 100% EtOH\nVortex \\(15\\ seconds\\)\nSpin3 up to \\(600\\mu L\\) sample through filter cartridge into collection tube\nAspirate flow through\nAdd \\(600 \\mu L\\) Wash Solution 1, spin, and aspirate\nAdd \\(500 \\mu L\\) Wash Solution 2/3, spin, and aspirate\nAdd \\(500 \\mu L\\) Wash Solution 2/3, spin, aspirate, and spin for \\(1\\ minute\\)\nTransfer filter to fresh collection tube\nAdd \\(50 \\mu L\\) \\(95^\\circ C\\) H2O, spin\nMeasure concentration, 260/280, and 260/230 via NanoDrop\n\n3 Henceforth for this protocol, ‘spin’ = \\(30\\ seconds\\) at \\(10000 \\times g\\)\n\n\nAdapted from Cat# AM1907 publication 1907M, revision H\n\n\n\n\n\n\nNote\n\n\n\n\nRemove reagents from refrigerator, leave on ice.\nTurn heat block to \\(37^\\circ C\\)\nLabel one set of 1.5mL microfuge tubes, another set of 0.5mL microfuge tubes.\nIf you have many samples, a 96 well plate (with V bottoms) may be a better idea.\nYou should still prepare a set of labelled tubes for storage\nIf RNA concentration \\(>200ng/\\mu L\\), dilute to \\(200ng/\\mu L\\)\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nAnywhere between \\(10-100\\mu L\\) sample is typical, with \\(50\\mu L\\) being typical\n\n\n\nAdd \\(0.1\\ volume\\) of 10X TURBO DNase Buffer to RNA\nAdd \\(1\\mu L\\) TURBO DNase to RNA\nMix gently\nIncubate at \\(37^\\circ C\\) for \\(30\\ minutes\\)\nVortex DNase Inactivation Reagent to resuspend, then add \\(0.1\\ volume\\) (minimum \\(2\\mu L\\))\n\n\n\n\n\n\n\nTip\n\n\n\nIf the reagent is dried up and can’t be pipetted, determine how much volume of reagent there is, then add 25% of that volume of nuclease-free water.\n\n\n\nIncubate at \\(RT\\) for \\(5\\ minutes\\), flicking every \\(1.5\\ minutes\\)\nCentrifuge at \\(10,000 \\times g\\) for \\(1.5\\ minutes\\) for 1.5mL tubes, or \\(2000 \\times g\\) for \\(5\\ minutes\\) for 96-well plates.\nTransfer supernatant to labelled tube for storage. Store at \\(\\le -20^\\circ C\\)\n\n\n\n\n\n\n\nWarning\n\n\n\nEnsure you do not get any of the pellet."
+  },
+  {
+    "objectID": "cell-line-extraction-methods.html#dna",
+    "href": "cell-line-extraction-methods.html#dna",
+    "title": "5  Cell Line Extraction Methods",
+    "section": "5.2 DNA",
+    "text": "5.2 DNA\nThe following method is adapted from a modified version of the DNeasy Blood & Tissue Kit (April 2016) protocol, and assumes you are using cell lines.\n\nCentrifuge \\(\\le 5\\times10^6\\) cells for \\(5\\ minutes\\) at \\(300 \\times g\\)\nRemove supernatant\nAdd \\(200\\mu L\\) PBS\nAdd \\(20\\mu L\\) proteinase K\nAdd \\(20\\mu L\\) 5mg/mL RNAse A. Incubate for \\(5\\ minutes\\) at RT.\nAdd \\(200\\mu L\\) Buffer AL\nAdd \\(200\\mu L\\) 100% ethanol. Vortex thoroughly.\nTransfer solution to DNeasy Mini spin column place in a 2mL collection tube.\nSpin for \\(1\\ minute\\) at \\(\\ge 6000 \\times g\\)\nDiscard collection tube and replace with a fresh one.\nAdd \\(500\\mu L\\) Buffer AW1\nSpin for \\(1\\ minute\\) at \\(\\ge 6000 \\times g\\)\nDiscard collection tube and replace with a fresh one.\nAdd \\(500\\mu L\\) Buffer AW2\nSpin for \\(3\\ minutes\\) at \\(20000 \\times g\\)\nDiscard collection tube and replace with a permanent collection tube.\nAdd \\(40\\mu L\\) nuclease-free H2O\nIncubate for \\(1\\ minute\\)\nSpin for \\(1\\ minute\\) at \\(\\ge6000 \\times g\\)"
+  },
+  {
+    "objectID": "cell-line-extraction-methods.html#protein",
+    "href": "cell-line-extraction-methods.html#protein",
+    "title": "5  Cell Line Extraction Methods",
+    "section": "5.3 Protein",
+    "text": "5.3 Protein\nSee [Obtaining Protein Lysates]"
+  }
+]

@@ -1,0 +1,132 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
+
+
+# Cell Line Extraction Methods
+
+## RNA
+[The following method is adapted from the mirVana miRNA Isolation Kit protocol]{.aside}
+
+:::{.callout-note}
+The night before, plate cells in a 6 well plate. 200K cells/well is a good number.
+:::
+
+:::{.callout-note}
+* Get a bucket of ice
+* Set the heatblock to $95^\circ C$ and add a microfuge tube with nuclease free H2O. You will need at least 50uL per sample - be generous with this!
+* For each sample, label 4 tubes - two standard 1.5mL microfuge tubes, two collection tubes
+:::
+
+
+### Lysing Cells
+
+1. Take 6 well plate from incubator. 
+2. Aspirate off medium, then gently add $2mL$ PBS/well.
+3. Aspirate off PBS, then add $300\mu L$ lysis buffer/well
+4. Incubate at RT for $3\ minutes$
+5. Use a cell scraper^[Cat# 83.3950] to scrape cells from the bottom of the well
+* Don't forget to get all the edges
+* Try not to let the scraper skip
+* After scraping the bottom of the well, tilt the plate and sweep the lysate to the bottom to allow for easy transfer.
+* Use a new scraper for each well
+6. Transfer lysate to regular 1.5mL microfuge tube
+7. Put on ice
+
+
+### Organic Extraction
+
+1. Add $\frac{1}{10}vol$^[A 'volume' refers to the pre-miRNA-Homogenate-Additive volume. If you follow this protocol, $\frac{1}{10}vol$ is $30 \mu L$] miRNA Homogenate Additive
+2. Vortex $15\ seconds$
+3. Put on ice for $10\ minutes$
+4. Add $1\ vol$ phenol
+
+5. Vortex for $45\ seconds$
+6. Centrifuge at $max\ speed$ for $5\ minutes$
+7. Put phenol away
+8. Remove upper phase, transfer to fresh 1.5mL microfuge tube
+
+:::{.callout-warning}
+Err on the side of caution to avoid disturbing lower phase. As a rule of thumb, if you add 300uL lysis buffer, remove ~200uL. Your mileage may vary.
+
+Make sure to note the volume of upper phase removed.
+:::
+
+
+### Total RNA Isolation
+
+1. Add $1.25\ vol$ 100% EtOH
+2. Vortex $15\ seconds$
+3. Spin^[Henceforth for this protocol, 'spin' = $30\ seconds$ at $10000 \times g$] up to $600\mu L$ sample through filter cartridge into collection tube
+4. Aspirate flow through
+5. Add $600 \mu L$ Wash Solution 1, spin, and aspirate
+6. Add $500 \mu L$ Wash Solution 2/3, spin, and aspirate
+7. Add $500 \mu L$ Wash Solution 2/3, spin, aspirate, and spin for $1\ minute$
+8. Transfer filter to fresh collection tube
+9. Add $50 \mu L$ $95^\circ C$ H2O, spin
+10. Measure concentration, 260/280, and 260/230 via NanoDrop
+
+### TURBO DNA-free Treatment
+
+[Adapted from Cat# AM1907 publication 1907M, revision H]{.aside}
+
+:::{.callout-note}
+- Remove reagents from refrigerator, leave on ice. 
+- Turn heat block to $37^\circ C$ 
+- Label one set of 1.5mL microfuge tubes, another set of 0.5mL microfuge tubes. 
+- If you have many samples, a 96 well plate (with V bottoms) may be a better idea. 
+- You should still prepare a set of labelled tubes for storage 
+- If RNA concentration $>200ng/\mu L$, dilute to $200ng/\mu L$
+:::
+
+:::{.callout-tip}
+Anywhere between $10-100\mu L$ sample is typical, with $50\mu L$ being typical
+:::
+
+1. Add $0.1\ volume$ of 10X TURBO DNase Buffer to RNA
+2. Add $1\mu L$ TURBO DNase to RNA
+3. Mix gently
+4. Incubate at $37^\circ C$ for $30\ minutes$
+5. Vortex DNase Inactivation Reagent to resuspend, then add $0.1\ volume$ (minimum $2\mu L$)
+
+:::{.callout-tip}
+If the reagent is dried up and can't be pipetted, determine how much volume of reagent there is, then add 25% of that volume of nuclease-free water.
+:::
+
+6. Incubate at $RT$ for $5\ minutes$, flicking every $1.5\ minutes$
+7. Centrifuge at $10,000 \times g$ for $1.5\ minutes$ for 1.5mL tubes, or $2000 \times g$ for $5\ minutes$ for 96-well plates. 
+8. Transfer supernatant to labelled tube for storage. Store at $\le -20^\circ C$
+
+:::{.callout-warning}
+Ensure you do not get any of the pellet.
+:::
+
+## DNA
+
+[The following method is adapted from a modified version of the DNeasy Blood & Tissue Kit (April 2016) protocol, and assumes you are using cell lines.]{.aside}
+
+1. Centrifuge $\le 5\times10^6$ cells for $5\ minutes$ at $300 \times g$
+2. Remove supernatant
+3. Add $200\mu L$ PBS
+4. Add $20\mu L$ proteinase K
+5. Add $20\mu L$ 5mg/mL RNAse A. Incubate for $5\ minutes$ at RT.
+6. Add $200\mu L$ Buffer AL
+7. Add $200\mu L$ 100% ethanol. Vortex thoroughly.
+8. Transfer solution to DNeasy Mini spin column place in a 2mL collection tube.
+9. Spin for $1\ minute$ at $\ge 6000 \times g$
+10. Discard collection tube and replace with a fresh one.
+11. Add $500\mu L$ Buffer AW1
+12. Spin for $1\ minute$ at $\ge 6000 \times g$
+13. Discard collection tube and replace with a fresh one.
+14. Add $500\mu L$ Buffer AW2
+15. Spin for $3\ minutes$ at $20000 \times g$
+16. Discard collection tube and replace with a permanent collection tube.
+17. Add $40\mu L$ nuclease-free H2O
+18. Incubate for $1\ minute$
+19. Spin for $1\ minute$ at $\ge6000 \times g$
+
+
+## Protein
+
+See [Obtaining Protein Lysates]

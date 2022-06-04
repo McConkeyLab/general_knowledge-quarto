@@ -1,0 +1,250 @@
+# Cell Culture
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(gt)
+```
+
+## General Notes {#gen-notes}
+
+-   Unless otherwise stated, any time a liquid is transferred or a cap is coming off, the operation should be performed within the hood.
+
+-   Anything that goes in the hood (aside for cell culture flasks) should be sprayed down with ethanol beforehand.
+
+-   During any aspiration from a flask, it is often cleaner to tilt the flask rather than stick the aspirator in deeper.
+
+-   To get a sterile 1.5mL microfuge tube, do not reach in to the container to get one. Instead, open the container, shake the desired number of microfuge tubes out onto the inside top of the lid, and dump those on the working surface.
+
+-   After every aspiration, clear the line by aspirating roughly $1mL$ of 10% bleach
+
+```{r}
+#| echo: false
+tibble(`Flask Size` = c("T25", "T75", "T175"), `Medium Vol` = c("5mL", "10mL", "25mL"), `Trypsin Vol` = c(".5mL", "1.3mL", "3mL")) |> 
+  gt(rowname_col = "Flask Size")
+```
+
+## Reagent Definition Glossary {#reagent-defition-glossary}
+
+**FBS:** Fetal bovine serum
+
+**PBS:** Phosphate buffered saline
+
+**MEM:** Minimum Essential Medium
+
+**NEAA:** Non-essential amino acids
+
+**Medium:** Unless otherwise stated, refers to MEM with $10\%$ FBS and supplement
+
+**Serum Free Medium:** Medium without FBS, but with supplement
+
+**Base Medium:** Medium with no FBS or supplement
+
+**Supplement:** See formulation below. A mixture of reagents to promote cell growth (MEM vitamin solution, sodium pyruvate, and NEAA), prevent contamination (penicillin-streptomycin), and buffer (HEPES).
+
+**Trypsin:** Unless otherwise stated, refers to Trypsin-EDTA($0.5\%$) that has been diluted $1:10$ in PBS (see the [trypsin preparation section](#trypsin-prep))
+
+**Ethanol:** When used in the context of spraying/wiping something down with ethanol, this usually refers to $70\%$ ethanol-water mixture. When used in the context of an assay or protocol, it usually refers to pure, molecular grade ethanol (comes in smaller, dark-colored-glass bottles than the ethanol we use for cleaning)
+
+## Reagent Preparation
+
+### Supplement
+
+```{r}
+#| echo: false
+#| column: margin
+tibble(reagent = c("MEM Vitamin Solution (100x)", "Sodium Pyruvate", "Penicillin Streptomycin", "MEM NEAA (100x)", "HEPES (1M)"), 
+       Volume = c("5mL", "5mL", "5mL", "5mL", "5mL"), 
+       `Cat. #` = c("11120052", "11360070", "15140122", "11140050", "15630080")) |> 
+  gt(rowname_col = "reagent") |> 
+  tab_options(table.font.size = 10)
+```
+
+1.  Combine ingredients in 50mL conical tubes
+    -   Generally, make $10-20$ per batch
+2.  Label tube with 'Supp', your initials, and date made.
+3.  Store at $-20^\circ C$.
+
+
+### Fetal Bovine Serum (FBS)
+
+1.  Create $50mL$ aliquots of FBS in as many 50mL conical tubes as possible.
+    -   The last bit ($<50mL$) of FBS should also be aliquoted, and labeled as "$<50mL$".
+2.  Label tubes "FBS" along with your initials and the date.
+3.  Store at $-20^\circ C$.
+
+### Medium
+
+1.  Add $50mL$ (1x aliquot) of FBS and $25mL$ (1x aliquot) of supplement to a bottle of MEM.
+2.  Shake to mix.
+3.  Write initials and date on bottle.
+4.  Store at $4^\circ C$.
+
+### Trypsin {#trypsin-prep}
+
+```{r}
+#| echo: false
+#| column: margin
+tibble(reagent = c("PBS", "Trypsin-EDTA(0.5%), no phenol red"), 
+       Volume = c("45mL", "5mL"), 
+       `Cat. #` = c("114-056-101CS", "15400054")) |> 
+  gt(rowname_col = "reagent") |> 
+  tab_options(table.font.size = 10)
+```
+
+1.  Combine reagents in a $50mL$ conical.
+2.  Vortex.
+3.  Add initials, date, and "Trypsin".
+4.  Store at $4^\circ C$.
+
+
+
+### 70% Ethanol
+
+Can be made outside of hood.
+
+1.  Pour roughly $350mL$ of the large bottle ethanol into a spray bottle (using the markings on the side of the bottle is sufficient)
+    -   The smaller bottles of ethanol are molecular grade and not meant for cleaning purposes
+2.  Add $150mL$ of water to the bottle
+3.  Shake bottle to mix
+
+## Thawing Cells
+
+::: callout-note
+-   Warm medium
+-   Bring water bath to $37^\circ C$
+:::
+
+1.  Take cryovial of cells and swirl it in the waterbath until just a small portion of ice remains
+
+::: callout-warning
+Ensure the vial cap does not become wet - this can possibly contaminate the cells!
+:::
+
+2.  Wipe down the vial with ethanol, then open.
+3.  Gently pipette to mix, then transfer the contents of the cryovial to a $15mL$ conical tube.
+4.  Very slowly add $9mL$ of medium
+    -   The first mL should take $~30\ seconds$
+    -   The second mL should take $~10\ seconds$
+    -   The next $8mL$ should take $~30\ seconds$
+5.  Centrifuge at $300 \times g$ for $5\ minutes$
+6.  Look for a pellet and note its size
+7.  Aspirate the medium from the pellet and resuspend in medium
+    -   If the pellet was quite large, resuspend in 10mL medium and transfer to a T75.
+    -   If the pellet was smaller, resuspend in 5mL medium and transfer to a T25.
+8.  Label flask with cell line, passage, date, and initials
+
+## Regular Cell Care
+
+```{dot}
+digraph {
+
+graph [truecolor=true bgcolor="#ffffff22"]
+node [style=filled fillcolor="#ffffffff" color ="#00000000" fontname = "Arial"]
+edge [fontname = "Arial"]
+
+node [shape = oval]
+"Start"
+"Cells are fine"
+
+node [shape = diamond]
+Split
+"Change medium"
+
+node [shape = box, margin = .1]
+
+
+subgraph {
+  rank = same;
+  "Are cells >80% confluent?"; "Split"
+}
+
+subgraph {
+  rank = same;
+  "Is medium yellow?"; "Change medium"
+}
+
+"Start" -> "Are cells >80% confluent?"
+"Are cells >80% confluent?" -> "Is medium yellow?" [label= "No", color = "red4"]
+"Are cells >80% confluent?" -> "Split" [label= "Yes", color = "green4"]
+"Is medium yellow?" -> "Are there a lot of floating cells?" [label = "No", color = "red4"]
+"Is medium yellow?" -> "Change medium" [label = "Yes", color = "green4"]
+"Are there a lot of floating cells?" -> "Cells are fine" [label = "No", color = "red4"]
+"Are there a lot of floating cells?" -> "Change medium" [label = "Yes", color = "green4"]
+
+}
+```
+
+Check cells every day. There should be few floating cells. If it is approaching $80\%$ confluent, they should be [split](#split-cells). If the medium looks yellowish but the cells are not $80\%$ confluent, or if there are a lot of floating cells, they should be [fed](#feed-cells).
+
+## Feeding Cells {#feed-cells}
+
+::: callout-note
+Warm medium
+:::
+
+1.  Remove cells from incubator
+2.  Aspirate off all medium from cells
+3.  Replace with the [appropriate volume](#gen-notes) of fresh medium
+4.  Replace cells in incubator
+
+## Splitting (Subculturing) Cells {#split-cells}
+
+::: callout-note
+Warm medium, PBS, and trypsin
+:::
+
+1.  Remove cells from incubator
+2.  Aspirate off all medium from cells
+3.  Add the same volume of PBS as you would normally add medium.
+4.  Tilt the flask back and forth a few times to rinse the bottom of the flask.
+5.  Aspirate the PBS
+6.  Add an [appropriate volume](#gen-notes) of trypsin
+7.  Place flask in incubator
+8.  Check each minute or so to see if the cells have come loose by gently tilting the flask back and forth. Additionally, check under the microscope to see how many cells are still attached.
+
+::: callout-tip
+-   A gentle tap of the flask on the edge of the counter can help encourage weakly attached cells to become dislodged.
+
+-   Epithelial cell lines will tend to take longer (\>5min) while mesenchymal cell lines can be done almost immediately (\~1min).
+:::
+
+9.  Gently spray down the bottom of the flask with medium roughly twice the volume of trypsin. Pipette and spray down the flask bottom a few times to dislodge and collect the cells as well as break up cell clusters.
+10. Transfer the cells to a conical tube of appropriate size
+11. Prepare a new flask by writing the cell line, passage number, ratio of split (ie 1:10, see below) initials, and date
+12. Add an appropriate volume of medium, minus the volume of cell suspension you plan to add.
+13. Add how ever much cell suspension you want. This will depend on the growth rate of the cell line as well as when you want them ready. A good starting point is 1:10, or one tenth of the cell suspension.
+14. Gently tilt the flask to ensure medium and cell suspension are mixed and cover the bottom of the flask entirely.
+15. Place cells in incubator.
+
+## Freezing Cells
+
+::: callout-warning
+Flasks should be healthy and $~80\%$ confluent for making packs.
+:::
+
+1.  Follow the [cell-splitting protocol](#split-cells) up and through transfering the cell suspension into a conical tube.
+2.  Spin cells down at $300 \times g$ for $5\ minutes$
+3.  Aspirate off medium supernatant
+4.  Resuspend with $5mL$ PBS
+5.  Spin cells down at $300 \times g$ for $5\ minutes$
+6.  Aspirate off PBS supernatant
+7.  Resuspend in cool (straight from fridge) cell freezing medium (such as CryoStor).
+    -   If the cells were from a $T75$, $3mL$ is appropriate. If $T175$, $6mL$ is appropriate.
+8.  Aliquot $1mL$ of cell suspension into cryovials
+9.  Label cryovials with cell name, passage, date, and your initials
+10. Store vials in $-80^\circ C$. Transfer to liquid nitrogen when possible.
+
+## Counting Cells {#count-cells}
+
+Occasionally you will need to determine the concentration of cells in a given suspension. This protocol assumes you have a suspension of cells already at hand.
+
+1.  Take a 1.5mL microfuge tube and add $15\mu L$ of trypan blue to it
+2.  Mix the suspension of cells either by pipetting or vortexing, then add $15\mu L$ of cell suspension to the 1.5mL microfuge tube.
+3.  Briefly vortex, then spin down microfuge tube
+4.  Open a Countess cell counting chamber slide
+5.  Gently mix cells with P10, then add $10\mu L$ of trypan blue suspension to each side of the slide.
+6.  Add slide to Countess II
+7.  Take an image, then note viability % and cells/mL
+    -   We use the viable cell concentration (rather than the total cell concentration)

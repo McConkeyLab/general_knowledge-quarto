@@ -1,0 +1,105 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
+
+# Cell Modification
+
+```{r}
+#| include: false
+
+library(gt)
+library(tibble)
+```
+
+
+## siRNA Transfection
+
+[This protocol is adapted from the ambion Ambion Life Technologies protocol (Protocol Pub. No. MAN0007836 Rev. 1.0)]{.aside}
+
+:::{.callout-note}
+This protocol is for 6 well plates. For reagent volumes for smaller well form factors, see [here](https://web.archive.org/web/20210709195152/http://tools.thermofisher.com/content/sfs/manuals/Silencer_Select_PreDsignd_Vdtd_CustomDesign_siRNA_man.pdf)
+:::
+
+### siRNA Resuspension
+
+1. Briefly centrifuge the tube to ensure dried siRNA is at the bottom of the tube
+2. Dilute siRNA down to $100 \mu M$ $(100 \frac{pmoles}{\mu L})$ using nuclease-free water
+3. Aliquot out some of the siRNA
+
+:::{.callout-tip}
+Each well of a 6-well plate takes $3 \mu L$ of siRNA. Therefore, aliquoting $12 \mu L$ per tube is good enough for triplicates, plus a little extra for the 'angel's share'
+:::
+
+4. Store at $\le 20 ^\circ C$
+
+
+### Performing Transfection
+
+1. Split your cells and dilute them with medium to $200,000\ cells/mL$. You will need $2mL/well$.
+2. In 1.5mL eppendorf, prepare the following **per well**:
+
+```{r}
+#| echo: false
+tibble(reagent = c("Opti-MEM Medium", "Lipofectamine RNAiMAX Reagent"), Volume = c("150uL", "9uL"), `Ref #` = c("31985062", "13778150")) |> 
+  gt(rowname_col = "reagent")
+```
+
+3. In another 1.5mL eppendorf, prepare the following **per well**:
+
+```{r}
+#| echo: false
+tibble(reagent = c("Opti-MEM Medium", "siRNA (10 uM)"), Volume = c("150uL", "3uL (30pmol)"), `Ref #` = c("31985062", "varies")) |> 
+  gt(rowname_col = "reagent")
+```
+
+4. Pipette to mix each tube
+
+5. Mix siRNA and lipofectamine together in a 1:1 ratio (for a single well, this would be $150 \mu L$ of each together. You can simply add the siRNA solution to your lipofectamine tube)
+
+6. Wait $5\ minutes$. During this time, dispense $2mL$ of your cell suspension in each well of a 6 well plate.
+
+7. Add $250 \mu L$ of mixture to each well.
+
+8. Gently swirl and rock the plate to ensure even mixing of cells and siRNA particles
+
+9. Incubate for $3\ days$. There is no need to change medium.
+
+## Inducible shRNA
+
+[This protocol is based of the Horizon Dharmacon SMARTvector Inducible Lentiviral shRNA technical manual]{.aside}
+
+Before you begin, ensure that your cell line has not already been optimized.
+
+### Optimized cell line data
+
+```{r}
+#| echo: false
+tibble(`Cell Line` = c("5637", "UC9", "UC6", "RT112", "UC14"),
+       `Seeding density (cells/100uL)` = c(7500, 5000, 1000, 3000, NA),
+       `Need serum?` = c(NA, NA, F, F, NA),
+       `Max polybrene (ug/mL)` = c(NA, NA, ">14", ">14", NA), 
+       `Relative transduction efficiency` = c(NA, NA, 0.43, NA, NA),
+       `Optimal puromycin (ug/mL)` = c(NA, NA, 2.5, 2.5, 10),
+       `Date` = c("2021-03-17", "2021-03-17", "2021-04-28", "2021-04-28", "2022-05-19"),
+       `Operator` = "Kai Aragaki") |> 
+  gt()
+
+```
+
+
+### Optimizing promoter
+
+Generally, we presume the optimal promoter to be PGK
+
+
+### Optimizing transfection conditions
+
+
+
+### Determining transduction efficiency
+
+
+
+
+## CRISPR

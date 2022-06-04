@@ -1,0 +1,107 @@
+# Introduction
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE
+)
+```
+
+## Overview
+This book is meant to serve as a community contributed, highly organized, central repository for protocols. Additionally, it attempts to shed light on the implicit knowledge of the lab.
+
+## Style Guide 
+
+### Content Guide
+
+* **More descriptive is better than less.** As this book is meant to form a compendium of knowledge, it should provide exquisite detail to provide a naive individual to come in and perform protocols in the same way as possible.
+
+* **...but too many words can lead to skimming.** Like everything, there is a balance. Abbreviate when reasonable. Break up walls of text with bullets or lists when appropriate. Leading to the next point...
+
+* **Good figures are worth their weight in gold.** It is often infinitely better to spend a good portion of time on a figure that is easier to describe or direct the reader's attention to (ie 'See Figure'). In the long run, this reduces the burden on you (textual descriptions of visual things are tiring) and on the reader (textual descriptions of visual things are often ineffective)
+
+* **Reagent locations.** I'm on the fence about locations of reagents because these things can be volatile. I would much rather supply catalog numbers and allow people to look up what they should be looking for, since these tend to be static. This means less book updating.
+
+* **Use archived links when possible.** Use the WaybackMachine to either retrieve or generate an archived static version of a webpage you are referring to.
+
+* **No rituals, please.** When performing experiments, we often have ritualistic tendencies that end up having no effect on the final product. It's one thing to provide a quick tip that provides better results. It's another to provide arcane additional steps for no reason. Challenge your own rituals before you commit them to a protocol. Challenge what you think may be a ritual when you perform protocols. Strive for parsimonious protocols.
+
+* **Let operators save their own time.** Unless the waiting period is huge (hours), avoid instructing operators to do something 'while xyz' is happening. People tend to figure this out on their own, and its inclusion muddies the protocol.
+
+* **Protocols don't need to be the way you do them, but they need to work if you did.**
+
+
+
+### For the editor
+
+Prefer:
+
+* 'seconds, minutes, hours' to 'sec, min, hr'
+
+* `{gt}` or `{flextable}` to `{kable}`
+
+* `|>` to `%>%`
+
+* <span>$\mu L$ to $uL$</span> or uL
+
+* <span>$10000 \times g$ to $10K\times g$ $10K\ g$ or $10000g$</span>
+
+Also:
+
+* Steps should generally contain one action, unless breaking the actions apart may mislead the operator (ie, do abc, then, __with the same tip__, do xyz)
+
+# Acknowledgements {-}
+
+This book is a collation of protocols created and tweaked by a collection of talented individuals. Among those include Megan Fong, Bridget McGuire, Jack Mountain, and Dr. Bryan Wehrenberg. 
+
+This work was performed in the lab of Dr. David McConkey, who we thank for his support both financially, intellectually, and emotionally. Thank you for supporting us in working on secondary projects like these.
+
+Much of the cell culture text is an adaption of Bridget McGuire's excellent ["Cell Culture Basics"](https://livejohnshopkins.sharepoint.com/:w:/r/sites/GBCIStorage/_layouts/15/Doc.aspx?sourcedoc=%7BBDBC26D3-D884-4286-BC85-BE2D971B58D6%7D&file=Cell%20Culture%20Basics.docx&action=default&mobileredirect=true) document or the [Gibco cell culture handbook](https://assets.thermofisher.com/TFS-Assets/BID/Handbooks/gibco-cell-culture-basics-handbook.pdf).
+
+Cell thawing protocol adapted from [Dr. Dorothy Bennett's answer on ResearchGate](https://web.archive.org/web/20210403162756/https://www.researchgate.net/post/Whats-the-best-protocol-for-thawing-the-frozen-cells)
+
+Cell line authentication protocol adapted from Jack Mountain's excellent [cell-line authentication](https://livejohnshopkins.sharepoint.com/:w:/r/sites/GBCIStorage/_layouts/15/Doc.aspx?sourcedoc=%7BED21F9B8-94D4-496C-95C8-D8B9E5204C90%7D&file=2020-07-19_cell-line-authentication_DRAFT.docx&action=default&mobileredirect=true) document.
+
+MTT protocol adapted from Jack Mountain's MTT protocol.
+
+The FFPE extraction methods, library preparation, and library quantification methods sections were written by Bridget.
+
+## Contributing
+
+Creating and maintaining a quality compendium is impossible without your help. Your contributions and suggestions to make this document fuller and clearer is highly encouraged. 
+
+This document is written in `quarto`, knit using `knitr`. You can find the source code of this book (where you can fork, edit, and submit pull requests for) [here](https://github.com/McConkeyLab/general_knowledge-quarto).
+
+## TODO
+
+General TODOs:
+
+More images - this includes plate layouts, bench layouts, what things look like, how things should be held, screenshots, etc, etc, etc. 
+
+Proofreading for clarity. A lot of this was written pretty hastily (trying to get it finished before polishing)
+
+## Cell culture
+1. Counting cells could be more illustrious (namely step 1, 2)
+2. Finish Authentication
+3. Finish fingerprinting no myco
+4. Finish myco no fingerprinting
+
+## Western blots
+1. Make plate layouts side by side (facet grid)
+2. Gel characteristics and cat # tables
+3. Add more inline cat numbers
+4. Pictures to gel loading?
+5. Pictures of transfer sandwich
+6. Rubber scraper --> cell scraper, PN
+7. Include LI-COR detection documentation
+
+## Transwell assay
+1. Transwell cat no.
+2. DAPI cat no.
+3. DAPI aliquoting
+4. Bit depth for img?
+5. Include link to pipeline
+6. Show which parts you'll need to modify - mainly so they don't all get uploaded to my sharepoint folder.
+
+## $\Delta \Delta$qRT-PCR
+1. `flextable`
