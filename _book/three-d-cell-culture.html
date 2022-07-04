@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.494">
+<meta name="generator" content="quarto-0.9.492">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -80,25 +80,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./cell-modification.html" rel="next">
-<link href="./cell-culture.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -121,9 +102,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./cell-modification.html" rel="next">
+<link href="./cell-culture.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -185,6 +184,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./cell-modification.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cell Modification</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cell-line-extraction-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cell Line Extraction Methods</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./western-blot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Western Blots</span></a>
+  </div>
+</li>
     </ul>
   </li>
     </ul>
@@ -200,7 +209,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#spheroids" id="toc-spheroids" class="nav-link" data-scroll-target="#spheroids"> <span class="header-section-number">3.2</span> Spheroids</a>
   <ul class="collapse">
   <li><a href="#forming-spheroids" id="toc-forming-spheroids" class="nav-link" data-scroll-target="#forming-spheroids"> <span class="header-section-number">3.2.1</span> Forming Spheroids</a></li>
-  <li><a href="#embedding-spheroids" id="toc-embedding-spheroids" class="nav-link" data-scroll-target="#embedding-spheroids"> <span class="header-section-number">3.2.2</span> Embedding Spheroids</a></li>
+  <li><a href="#feeding-spheroids" id="toc-feeding-spheroids" class="nav-link" data-scroll-target="#feeding-spheroids"> <span class="header-section-number">3.2.2</span> Feeding Spheroids</a></li>
+  <li><a href="#harvesting-spheroids" id="toc-harvesting-spheroids" class="nav-link" data-scroll-target="#harvesting-spheroids"> <span class="header-section-number">3.2.3</span> Harvesting Spheroids</a></li>
+  <li><a href="#embedding-spheroids" id="toc-embedding-spheroids" class="nav-link" data-scroll-target="#embedding-spheroids"> <span class="header-section-number">3.2.4</span> Embedding Spheroids</a></li>
   </ul></li>
   <li><a href="#organoids" id="toc-organoids" class="nav-link" data-scroll-target="#organoids"> <span class="header-section-number">3.3</span> Organoids</a>
   <ul class="collapse">
@@ -212,7 +223,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -230,35 +241,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="handling-matrigel" class="level2" data-number="3.1">
+<p>Many protocols here are adapted from <a href="https://doi.org/10.1038/s41596-020-0335-3">Padmanaban et al.&nbsp;2020</a>, and that can also serve as a reference for additional protocols not (yet) listed here.</p>
+<section id="handling-matrigel" class="level2 page-columns page-full" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="handling-matrigel"><span class="header-section-number">3.1</span> Handling Matrigel</h2>
 <ul>
-<li>Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while).</li>
-</ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Before aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can possibly impede clear imaging.</p>
-</div>
-</div>
-<ul>
+<li><p>Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p></li>
 <li><p>Store aliquots at <span class="math inline">\(–80^\circ C\)</span></p></li>
 <li><p>Thaw on ice or in the refrigerator. For larger quantities, this make take overnight.</p></li>
 <li><p>Any tubes that Matrigel is going to be added to should be chilled on ice.</p></li>
 <li><p>Medium used to dilute Matrigel should also be chilled on ice.</p></li>
 </ul>
-</section>
-<section id="spheroids" class="level2" data-number="3.2">
+<div class="no-row-height column-margin column-container"><li id="fn1" role="doc-endnote"><p><sup>1</sup>&nbsp;Before aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can impede imaging.</p></li></div></section>
+<section id="spheroids" class="level2 page-columns page-full" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="spheroids"><span class="header-section-number">3.2</span> Spheroids</h2>
-<section id="forming-spheroids" class="level3" data-number="3.2.1">
+<section id="forming-spheroids" class="level3 page-columns page-full" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="forming-spheroids"><span class="header-section-number">3.2.1</span> Forming Spheroids</h3>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">This protocol was adapted from the AggreWell 400 (Stemcell, Cat# 34415) product guide (Stemcell, Document 10000001001 Ver. 3)</span></div></div>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -269,14 +267,46 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Grow cells to <span class="math inline">\(&lt;80\%\)</span> in a <span class="math inline">\(T75\)</span> (plenty for a 96 well plate)</p>
-<p>Warm trypsin, medium, PBS</p>
-<p>Add a glass bottom plate to plate warmer, set at <span class="math inline">\(37^\circ C\)</span>.</p>
-<p>Thaw Matrigel on ice. You’ll need at minimum <span class="math inline">\(100\mu L\)</span> per well. Since it is highly viscous, thaw much more than necessary - it can always be refrozen if <a href="#handling-matrigel">handled properly</a></p>
+<p>Grow cells to <span class="math inline">\(~80\%\)</span> in a <span class="math inline">\(T75\)</span> or <span class="math inline">\(T175\)</span></p>
+<p>Warm trypsin, medium (complete), <a href="cell-culture.html#reagent-defition-glossary">base medium</a>, and PBS</p>
 </div>
 </div>
+<section id="preparing-the-plate" class="level4 page-columns page-full" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="preparing-the-plate"><span class="header-section-number">3.2.1.1</span> Preparing the Plate</h4>
 <ol type="1">
-<li>Aspirate medium</li>
+<li>Add Anti-Adherence Rinsing Solution<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to each well of an AggreWell plate (<span class="math inline">\(.5mL\)</span> for 24 well, <span class="math inline">\(2mL\)</span> for 6 well)</li>
+</ol>
+<div class="no-row-height column-margin column-container"><li id="fn2" role="doc-endnote"><p><sup>2</sup>&nbsp;Stemcell, Cat# 07010</p></li></div><div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are four kinds of AggreWell plates - two well numbers (6 well and 24 well) each with two different microwell sizes within those wells (little divots that the cells form small clusters in) (<span class="math inline">\(400\mu m\)</span> and <span class="math inline">\(800\mu m\)</span> width). At the time of writing, it’s not clear which is best for our purposes.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Centrifuge for <span class="math inline">\(5\ minutes\)</span> at <span class="math inline">\(1300 \times g\)</span></li>
+</ol>
+<ul>
+<li>Balance using a normal plate with water</li>
+<li>If there are bubbles in the microwells after spinning, spin again.</li>
+</ul>
+<ol start="3" type="1">
+<li>Aspirate the anti-adherence rinsing solution</li>
+<li>Add <span class="math inline">\(2mL\)</span> (24 well) or <span class="math inline">\(5mL\)</span> (6 well) basal medium to each well</li>
+<li>Aspirate basal medium from each well</li>
+<li>Add <span class="math inline">\(1mL\)</span> (24 well) or <span class="math inline">\(2.5mL\)</span> (6 well) complete medium to each well</li>
+</ol>
+</section>
+<section id="preparing-the-cells" class="level4 page-columns page-full" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="preparing-the-cells"><span class="header-section-number">3.2.1.2</span> Preparing the Cells</h4>
+<ol type="1">
+<li>Aspirate medium from flask</li>
 <li>Wash twice with <span class="math inline">\(10mL\)</span> PBS</li>
 <li>Add <span class="math inline">\(1.5mL\)</span> trypsin. Regularly check the flask and tap against the palm of your hand.</li>
 <li>Once <span class="math inline">\(~80\%\)</span> of the cells have dissociated, add <span class="math inline">\(8.5mL\)</span> medium</li>
@@ -285,8 +315,463 @@ Note
 <li>Resuspend in <span class="math inline">\(10mL\)</span> PBS</li>
 <li>Spin down at <span class="math inline">\(300 \times g\)</span> for <span class="math inline">\(5\ minutes\)</span></li>
 <li>Resuspend in <span class="math inline">\(10mL\)</span> medium and <a href="$count-cells">count cells</a></li>
-<li>Prepare <span class="math inline">\(12mL\)</span> of cells diluted to the optimal cells/well concentration</li>
+<li>Prepare <span class="math inline">\(10mL\)</span> of cells diluted to the optimal cells/well concentration.</li>
 </ol>
+<ul>
+<li>Calculate using the following formula, keeping in mind the end volume is <span class="math inline">\(2\frac{mL}{well}\)</span> for 24 well plates and <span class="math inline">\(5\frac{mL}{well}\)</span> for 6 well plates:</li>
+</ul>
+<p><span class="math display">\[target\frac{cells}{sphere} \times S\frac{sphere}{well} = required\frac{cells}{well}\]</span></p>
+<ul>
+<li><span class="math inline">\(S\)</span> stands for the expected number of spheroids per well (see margin table)</li>
+</ul>
+<div class="cell page-columns page-full">
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+
+<div id="kuohbftbgh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#kuohbftbgh .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kuohbftbgh .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kuohbftbgh .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kuohbftbgh .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kuohbftbgh .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kuohbftbgh .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kuohbftbgh .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kuohbftbgh .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kuohbftbgh .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kuohbftbgh .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kuohbftbgh .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kuohbftbgh .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kuohbftbgh .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kuohbftbgh .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kuohbftbgh .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#kuohbftbgh .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kuohbftbgh .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kuohbftbgh .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kuohbftbgh .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kuohbftbgh .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kuohbftbgh .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kuohbftbgh .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kuohbftbgh .gt_left {
+  text-align: left;
+}
+
+#kuohbftbgh .gt_center {
+  text-align: center;
+}
+
+#kuohbftbgh .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kuohbftbgh .gt_font_normal {
+  font-weight: normal;
+}
+
+#kuohbftbgh .gt_font_bold {
+  font-weight: bold;
+}
+
+#kuohbftbgh .gt_font_italic {
+  font-style: italic;
+}
+
+#kuohbftbgh .gt_super {
+  font-size: 65%;
+}
+
+#kuohbftbgh .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#kuohbftbgh .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#kuohbftbgh .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kuohbftbgh .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#kuohbftbgh .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#kuohbftbgh .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1"># of Wells</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Size of Microwells</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Expected Number of Spheroids</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right">6</td>
+<td class="gt_row gt_left">400um</td>
+<td class="gt_row gt_right">5900</td></tr>
+    <tr><td class="gt_row gt_right">6</td>
+<td class="gt_row gt_left">800um</td>
+<td class="gt_row gt_right">1500</td></tr>
+    <tr><td class="gt_row gt_right">24</td>
+<td class="gt_row gt_left">400um</td>
+<td class="gt_row gt_right">1200</td></tr>
+    <tr><td class="gt_row gt_right">24</td>
+<td class="gt_row gt_left">800um</td>
+<td class="gt_row gt_right">300</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div></div></div>
+<ul>
+<li>If I wanted <span class="math inline">\(500\frac{cells}{sphere}\)</span> and I had 24 well AggreWell 400 plates, I would need:</li>
+</ul>
+<p><span class="math display">\[500\frac{cells}{sphere} \times 1200\frac{sphere}{well} = 600,000\frac{cells}{well}\]</span></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -297,15 +782,30 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are unsure of what concentration you should used, several concentrations should be prepared (250, 500, 1000, and 3000 cells/well is a good start)</p>
-<p>Generally 500 cells/well works well</p>
-<p>Each well should receive <span class="math inline">\(100\mu L\)</span> of volume</p>
+<p>The optimal number of cells per sphere depends somewhat on cell line and downstream application. 500 cells per sphere is a good place to start.</p>
 </div>
 </div>
-<ol start="11" type="1">
-<li><p>Pour medium into a reagent reservoir. Use a multichannel pipette to dispense <span class="math inline">\(100\mu L\)</span> of volume to each well of a 96 well, round bottom, low-attachment plate (Cat. CLS7007-24EA)</p></li>
-<li><p>Spin plate at <span class="math inline">\(300 \times g\)</span> for <span class="math inline">\(5\ minutes\)</span></p></li>
-<li><p>Place plate in incubator</p></li>
+<ol start="10" type="1">
+<li>Prepare a balance plate for centrifugation</li>
+<li>Add the proper volume of cell suspension per well</li>
+<li>Pipette to mix the wells, avoiding introducing bubbles</li>
+<li>Spin down immediately, for <span class="math inline">\(3\ minutes\)</span> at <span class="math inline">\(100 \times g\)</span></li>
+</ol>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Danger
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Set the centrifuge brake to ‘off’ to prevent splashing of sample out of plate</p>
+</div>
+</div>
+<ol start="14" type="1">
+<li>Place plate in incubator <span class="math inline">\(1-2\ days\)</span></li>
 </ol>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -317,12 +817,20 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you’re having difficulty getting good spheroid formation, you can try to layering <span class="math inline">\(100\mu L\)</span> <span class="math inline">\(2\%\)</span> Matrigel (for a final concentration of 1% Matrigel) medium on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use <a href="#handling-matrigel">proper Matrigel handling technique</a> when mixing medium and Matrigel.</p>
+<p>If you’re having difficulty getting good spheroid formation, you can try to layering medium with Matrigel (for a final concentration of 1% Matrigel after added to the well) on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use <a href="#handling-matrigel">proper Matrigel handling technique</a> when mixing medium and Matrigel.</p>
 </div>
 </div>
 </section>
-<section id="embedding-spheroids" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="embedding-spheroids"><span class="header-section-number">3.2.2</span> Embedding Spheroids</h3>
+</section>
+<section id="feeding-spheroids" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="feeding-spheroids"><span class="header-section-number">3.2.2</span> Feeding Spheroids</h3>
+<ol type="1">
+<li>Slowly remove ~50% volume from the well and discard</li>
+<li>Slowly add the same volume of medium, dispensing down the side of the well</li>
+</ol>
+</section>
+<section id="harvesting-spheroids" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="harvesting-spheroids"><span class="header-section-number">3.2.3</span> Harvesting Spheroids</h3>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -333,9 +841,72 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Thaw matrigel on ice.</p>
+<p>If you plan to embed your spheroids, you should make sure you are prepared to do so soon after (eg thawing Matrigel)</p>
 </div>
 </div>
+<ol type="1">
+<li>Pipette up and down once to suspend the spheres, then pull the suspension up and transfer to a 15 mL conical.</li>
+<li>Spin down spheroids (<span class="math inline">\(400 \times g\)</span> for <span class="math inline">\(5\ minutes\)</span>), or simply wait until a sufficient number of spheres have settled to the bottom of the tube.</li>
+<li>Aspirate supernatant</li>
+</ol>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Danger
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not repeatedly pipette up and down - you may break the spheres!</p>
+</div>
+</div>
+</section>
+<section id="embedding-spheroids" class="level3 page-columns page-full" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="embedding-spheroids"><span class="header-section-number">3.2.4</span> Embedding Spheroids</h3>
+<section id="matrigel-embedding" class="level4 page-columns page-full" data-number="3.2.4.1">
+<h4 data-number="3.2.4.1" class="anchored" data-anchor-id="matrigel-embedding"><span class="header-section-number">3.2.4.1</span> Matrigel Embedding</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Thaw Matrigel on ice. This may take several hours. You will need <span class="math inline">\(100\mu L\)</span> of Matrigel per well, plus around 10% extra for inevitable loss.</p>
+<p>Warm a glass-bottom plate on the heatblock in the tissue-culture room to <span class="math inline">\(37^\circ C\)</span></p>
+</div>
+</div>
+<ol type="1">
+<li><p>Add <span class="math inline">\(110\mu L\)</span> of Matrigel per well to your spheroid pellet and resuspend<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p></li>
+<li><p>Bring the heatblock with the glass-bottom plate into the hood and plug it in</p></li>
+<li><p>Slowly pipette <span class="math inline">\(100\mu L\)</span> of spheroid suspension into each well, trying to aim for the center of the well and not have the liquid come in contact with the edges.</p></li>
+</ol>
+<div class="no-row-height column-margin column-container"><li id="fn3" role="doc-endnote"><p><sup>3</sup>&nbsp;Note that too many spheroids per well can make imaging difficult, and can affect paracrine signalling. Aim for ~125 spheroids per well in 24 well plates.</p></li></div><div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hold the pipette tip slightly above the bottom of the well. The goal is to form a ‘bulge’ or ‘dome’ of Matrigel, not a layer.</p>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>Place in incubator for <span class="math inline">\(30\ minutes\)</span>.</p></li>
+<li><p>Gently add <span class="math inline">\(2mL\)</span> medium to each well, ejecting slowly against the well wall.</p></li>
+</ol>
+</section>
+<section id="collagen-embedding" class="level4" data-number="3.2.4.2">
+<h4 data-number="3.2.4.2" class="anchored" data-anchor-id="collagen-embedding"><span class="header-section-number">3.2.4.2</span> Collagen Embedding</h4>
+</section>
 </section>
 </section>
 <section id="organoids" class="level2" data-number="3.3">
@@ -440,12 +1011,12 @@ Note
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">`</span><span class="at">Cat. #</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"CC-3198"</span>)) <span class="sc">|&gt;</span> <span class="fu">gt</span>(<span class="at">rowname_col =</span> <span class="st">"Reagent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="mnqwlbrmgj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hylilfqsov" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#mnqwlbrmgj .gt_table {
+#hylilfqsov .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -470,7 +1041,7 @@ Note
   border-left-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_heading {
+#hylilfqsov .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -482,7 +1053,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_title {
+#hylilfqsov .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -494,7 +1065,7 @@ Note
   border-bottom-width: 0;
 }
 
-#mnqwlbrmgj .gt_subtitle {
+#hylilfqsov .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -506,13 +1077,13 @@ Note
   border-top-width: 0;
 }
 
-#mnqwlbrmgj .gt_bottom_border {
+#hylilfqsov .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_col_headings {
+#hylilfqsov .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -527,7 +1098,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_col_heading {
+#hylilfqsov .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -547,7 +1118,7 @@ Note
   overflow-x: hidden;
 }
 
-#mnqwlbrmgj .gt_column_spanner_outer {
+#hylilfqsov .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -559,15 +1130,15 @@ Note
   padding-right: 4px;
 }
 
-#mnqwlbrmgj .gt_column_spanner_outer:first-child {
+#hylilfqsov .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mnqwlbrmgj .gt_column_spanner_outer:last-child {
+#hylilfqsov .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mnqwlbrmgj .gt_column_spanner {
+#hylilfqsov .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -579,7 +1150,7 @@ Note
   width: 100%;
 }
 
-#mnqwlbrmgj .gt_group_heading {
+#hylilfqsov .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -604,7 +1175,7 @@ Note
   vertical-align: middle;
 }
 
-#mnqwlbrmgj .gt_empty_group_heading {
+#hylilfqsov .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -619,15 +1190,15 @@ Note
   vertical-align: middle;
 }
 
-#mnqwlbrmgj .gt_from_md > :first-child {
+#hylilfqsov .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mnqwlbrmgj .gt_from_md > :last-child {
+#hylilfqsov .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mnqwlbrmgj .gt_row {
+#hylilfqsov .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -646,7 +1217,7 @@ Note
   overflow-x: hidden;
 }
 
-#mnqwlbrmgj .gt_stub {
+#hylilfqsov .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -659,7 +1230,7 @@ Note
   padding-right: 5px;
 }
 
-#mnqwlbrmgj .gt_stub_row_group {
+#hylilfqsov .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -673,11 +1244,11 @@ Note
   vertical-align: top;
 }
 
-#mnqwlbrmgj .gt_row_group_first td {
+#hylilfqsov .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mnqwlbrmgj .gt_summary_row {
+#hylilfqsov .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -687,16 +1258,16 @@ Note
   padding-right: 5px;
 }
 
-#mnqwlbrmgj .gt_first_summary_row {
+#hylilfqsov .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_first_summary_row.thick {
+#hylilfqsov .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mnqwlbrmgj .gt_last_summary_row {
+#hylilfqsov .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -706,7 +1277,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_grand_summary_row {
+#hylilfqsov .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -716,7 +1287,7 @@ Note
   padding-right: 5px;
 }
 
-#mnqwlbrmgj .gt_first_grand_summary_row {
+#hylilfqsov .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -726,11 +1297,11 @@ Note
   border-top-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_striped {
+#hylilfqsov .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mnqwlbrmgj .gt_table_body {
+#hylilfqsov .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -739,7 +1310,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_footnotes {
+#hylilfqsov .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -753,7 +1324,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_footnote {
+#hylilfqsov .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -762,7 +1333,7 @@ Note
   padding-right: 5px;
 }
 
-#mnqwlbrmgj .gt_sourcenotes {
+#hylilfqsov .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -776,7 +1347,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#mnqwlbrmgj .gt_sourcenote {
+#hylilfqsov .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -784,36 +1355,36 @@ Note
   padding-right: 5px;
 }
 
-#mnqwlbrmgj .gt_left {
+#hylilfqsov .gt_left {
   text-align: left;
 }
 
-#mnqwlbrmgj .gt_center {
+#hylilfqsov .gt_center {
   text-align: center;
 }
 
-#mnqwlbrmgj .gt_right {
+#hylilfqsov .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mnqwlbrmgj .gt_font_normal {
+#hylilfqsov .gt_font_normal {
   font-weight: normal;
 }
 
-#mnqwlbrmgj .gt_font_bold {
+#hylilfqsov .gt_font_bold {
   font-weight: bold;
 }
 
-#mnqwlbrmgj .gt_font_italic {
+#hylilfqsov .gt_font_italic {
   font-style: italic;
 }
 
-#mnqwlbrmgj .gt_super {
+#hylilfqsov .gt_super {
   font-size: 65%;
 }
 
-#mnqwlbrmgj .gt_two_val_uncert {
+#hylilfqsov .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -822,31 +1393,31 @@ Note
   margin-left: 0.1em;
 }
 
-#mnqwlbrmgj .gt_footnote_marks {
+#hylilfqsov .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#mnqwlbrmgj .gt_asterisk {
+#hylilfqsov .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mnqwlbrmgj .gt_slash_mark {
+#hylilfqsov .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#mnqwlbrmgj .gt_fraction_numerator {
+#hylilfqsov .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#mnqwlbrmgj .gt_fraction_denominator {
+#hylilfqsov .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -883,12 +1454,12 @@ Note
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="fzhhbqonfi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nopboofsmw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fzhhbqonfi .gt_table {
+#nopboofsmw .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -913,7 +1484,7 @@ Note
   border-left-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_heading {
+#nopboofsmw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -925,7 +1496,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_title {
+#nopboofsmw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -937,7 +1508,7 @@ Note
   border-bottom-width: 0;
 }
 
-#fzhhbqonfi .gt_subtitle {
+#nopboofsmw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -949,13 +1520,13 @@ Note
   border-top-width: 0;
 }
 
-#fzhhbqonfi .gt_bottom_border {
+#nopboofsmw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_col_headings {
+#nopboofsmw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -970,7 +1541,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_col_heading {
+#nopboofsmw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,7 +1561,7 @@ Note
   overflow-x: hidden;
 }
 
-#fzhhbqonfi .gt_column_spanner_outer {
+#nopboofsmw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1002,15 +1573,15 @@ Note
   padding-right: 4px;
 }
 
-#fzhhbqonfi .gt_column_spanner_outer:first-child {
+#nopboofsmw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fzhhbqonfi .gt_column_spanner_outer:last-child {
+#nopboofsmw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fzhhbqonfi .gt_column_spanner {
+#nopboofsmw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1022,7 +1593,7 @@ Note
   width: 100%;
 }
 
-#fzhhbqonfi .gt_group_heading {
+#nopboofsmw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1618,7 @@ Note
   vertical-align: middle;
 }
 
-#fzhhbqonfi .gt_empty_group_heading {
+#nopboofsmw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1062,15 +1633,15 @@ Note
   vertical-align: middle;
 }
 
-#fzhhbqonfi .gt_from_md > :first-child {
+#nopboofsmw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fzhhbqonfi .gt_from_md > :last-child {
+#nopboofsmw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fzhhbqonfi .gt_row {
+#nopboofsmw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1089,7 +1660,7 @@ Note
   overflow-x: hidden;
 }
 
-#fzhhbqonfi .gt_stub {
+#nopboofsmw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1102,7 +1673,7 @@ Note
   padding-right: 5px;
 }
 
-#fzhhbqonfi .gt_stub_row_group {
+#nopboofsmw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1116,11 +1687,11 @@ Note
   vertical-align: top;
 }
 
-#fzhhbqonfi .gt_row_group_first td {
+#nopboofsmw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fzhhbqonfi .gt_summary_row {
+#nopboofsmw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1130,16 +1701,16 @@ Note
   padding-right: 5px;
 }
 
-#fzhhbqonfi .gt_first_summary_row {
+#nopboofsmw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_first_summary_row.thick {
+#nopboofsmw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fzhhbqonfi .gt_last_summary_row {
+#nopboofsmw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1149,7 +1720,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_grand_summary_row {
+#nopboofsmw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1159,7 +1730,7 @@ Note
   padding-right: 5px;
 }
 
-#fzhhbqonfi .gt_first_grand_summary_row {
+#nopboofsmw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1169,11 +1740,11 @@ Note
   border-top-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_striped {
+#nopboofsmw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fzhhbqonfi .gt_table_body {
+#nopboofsmw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1182,7 +1753,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_footnotes {
+#nopboofsmw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1196,7 +1767,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_footnote {
+#nopboofsmw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1205,7 +1776,7 @@ Note
   padding-right: 5px;
 }
 
-#fzhhbqonfi .gt_sourcenotes {
+#nopboofsmw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1219,7 +1790,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#fzhhbqonfi .gt_sourcenote {
+#nopboofsmw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1227,36 +1798,36 @@ Note
   padding-right: 5px;
 }
 
-#fzhhbqonfi .gt_left {
+#nopboofsmw .gt_left {
   text-align: left;
 }
 
-#fzhhbqonfi .gt_center {
+#nopboofsmw .gt_center {
   text-align: center;
 }
 
-#fzhhbqonfi .gt_right {
+#nopboofsmw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fzhhbqonfi .gt_font_normal {
+#nopboofsmw .gt_font_normal {
   font-weight: normal;
 }
 
-#fzhhbqonfi .gt_font_bold {
+#nopboofsmw .gt_font_bold {
   font-weight: bold;
 }
 
-#fzhhbqonfi .gt_font_italic {
+#nopboofsmw .gt_font_italic {
   font-style: italic;
 }
 
-#fzhhbqonfi .gt_super {
+#nopboofsmw .gt_super {
   font-size: 65%;
 }
 
-#fzhhbqonfi .gt_two_val_uncert {
+#nopboofsmw .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -1265,31 +1836,31 @@ Note
   margin-left: 0.1em;
 }
 
-#fzhhbqonfi .gt_footnote_marks {
+#nopboofsmw .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#fzhhbqonfi .gt_asterisk {
+#nopboofsmw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fzhhbqonfi .gt_slash_mark {
+#nopboofsmw .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#fzhhbqonfi .gt_fraction_numerator {
+#nopboofsmw .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#fzhhbqonfi .gt_fraction_denominator {
+#nopboofsmw .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -1353,12 +1924,12 @@ Note
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="ofwokalkva" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="zckxopjplg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ofwokalkva .gt_table {
+#zckxopjplg .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1383,7 +1954,7 @@ Note
   border-left-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_heading {
+#zckxopjplg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1395,7 +1966,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_title {
+#zckxopjplg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1407,7 +1978,7 @@ Note
   border-bottom-width: 0;
 }
 
-#ofwokalkva .gt_subtitle {
+#zckxopjplg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1419,13 +1990,13 @@ Note
   border-top-width: 0;
 }
 
-#ofwokalkva .gt_bottom_border {
+#zckxopjplg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_col_headings {
+#zckxopjplg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1440,7 +2011,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_col_heading {
+#zckxopjplg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1460,7 +2031,7 @@ Note
   overflow-x: hidden;
 }
 
-#ofwokalkva .gt_column_spanner_outer {
+#zckxopjplg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1472,15 +2043,15 @@ Note
   padding-right: 4px;
 }
 
-#ofwokalkva .gt_column_spanner_outer:first-child {
+#zckxopjplg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ofwokalkva .gt_column_spanner_outer:last-child {
+#zckxopjplg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ofwokalkva .gt_column_spanner {
+#zckxopjplg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1492,7 +2063,7 @@ Note
   width: 100%;
 }
 
-#ofwokalkva .gt_group_heading {
+#zckxopjplg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1517,7 +2088,7 @@ Note
   vertical-align: middle;
 }
 
-#ofwokalkva .gt_empty_group_heading {
+#zckxopjplg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1532,15 +2103,15 @@ Note
   vertical-align: middle;
 }
 
-#ofwokalkva .gt_from_md > :first-child {
+#zckxopjplg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ofwokalkva .gt_from_md > :last-child {
+#zckxopjplg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ofwokalkva .gt_row {
+#zckxopjplg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1559,7 +2130,7 @@ Note
   overflow-x: hidden;
 }
 
-#ofwokalkva .gt_stub {
+#zckxopjplg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1572,7 +2143,7 @@ Note
   padding-right: 5px;
 }
 
-#ofwokalkva .gt_stub_row_group {
+#zckxopjplg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1586,11 +2157,11 @@ Note
   vertical-align: top;
 }
 
-#ofwokalkva .gt_row_group_first td {
+#zckxopjplg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ofwokalkva .gt_summary_row {
+#zckxopjplg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1600,16 +2171,16 @@ Note
   padding-right: 5px;
 }
 
-#ofwokalkva .gt_first_summary_row {
+#zckxopjplg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_first_summary_row.thick {
+#zckxopjplg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ofwokalkva .gt_last_summary_row {
+#zckxopjplg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1619,7 +2190,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_grand_summary_row {
+#zckxopjplg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1629,7 +2200,7 @@ Note
   padding-right: 5px;
 }
 
-#ofwokalkva .gt_first_grand_summary_row {
+#zckxopjplg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1639,11 +2210,11 @@ Note
   border-top-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_striped {
+#zckxopjplg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ofwokalkva .gt_table_body {
+#zckxopjplg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1652,7 +2223,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_footnotes {
+#zckxopjplg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1666,7 +2237,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_footnote {
+#zckxopjplg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1675,7 +2246,7 @@ Note
   padding-right: 5px;
 }
 
-#ofwokalkva .gt_sourcenotes {
+#zckxopjplg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1689,7 +2260,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#ofwokalkva .gt_sourcenote {
+#zckxopjplg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1697,36 +2268,36 @@ Note
   padding-right: 5px;
 }
 
-#ofwokalkva .gt_left {
+#zckxopjplg .gt_left {
   text-align: left;
 }
 
-#ofwokalkva .gt_center {
+#zckxopjplg .gt_center {
   text-align: center;
 }
 
-#ofwokalkva .gt_right {
+#zckxopjplg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ofwokalkva .gt_font_normal {
+#zckxopjplg .gt_font_normal {
   font-weight: normal;
 }
 
-#ofwokalkva .gt_font_bold {
+#zckxopjplg .gt_font_bold {
   font-weight: bold;
 }
 
-#ofwokalkva .gt_font_italic {
+#zckxopjplg .gt_font_italic {
   font-style: italic;
 }
 
-#ofwokalkva .gt_super {
+#zckxopjplg .gt_super {
   font-size: 65%;
 }
 
-#ofwokalkva .gt_two_val_uncert {
+#zckxopjplg .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -1735,31 +2306,31 @@ Note
   margin-left: 0.1em;
 }
 
-#ofwokalkva .gt_footnote_marks {
+#zckxopjplg .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#ofwokalkva .gt_asterisk {
+#zckxopjplg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ofwokalkva .gt_slash_mark {
+#zckxopjplg .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#ofwokalkva .gt_fraction_numerator {
+#zckxopjplg .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#ofwokalkva .gt_fraction_denominator {
+#zckxopjplg .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -1898,7 +2469,7 @@ Warning
 <li>Additionally, make a sufficient volume of <a href="ocm-w-matrix">OCM with matrix</a> to plate 1mL of cell suspension for each well, or 5mL for a T25 (determined previously).</li>
 </ul>
 <ol start="18" type="1">
-<li>Pass suspension through a <span><span class="math inline">\(100\mu m\)</span>&lt;&gt; cell strainer. A fair amount of leftover tissue is expected</span></li>
+<li>Pass suspension through a <span><span class="math inline">\(100\mu m\)</span></span> cell strainer. A fair amount of leftover tissue is expected</li>
 </ol>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -1929,6 +2500,7 @@ Tip
 
 </section>
 </section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -41,15 +41,15 @@ tibble(`Flask Size` = c("T25", "T75", "T175"), `Medium Vol` = c("5mL", "10mL", "
 
 **Base Medium:** Medium with no FBS or supplement
 
-**Supplement:** See formulation below. A mixture of reagents to promote cell growth (MEM vitamin solution, sodium pyruvate, and NEAA), prevent contamination (penicillin-streptomycin), and buffer (HEPES).
+**Supplement:** See formulation [below](#supp). A mixture of reagents to promote cell growth (MEM vitamin solution, sodium pyruvate, and NEAA), prevent contamination (penicillin-streptomycin), and buffer (HEPES).
 
 **Trypsin:** Unless otherwise stated, refers to Trypsin-EDTA($0.5\%$) that has been diluted $1:10$ in PBS (see the [trypsin preparation section](#trypsin-prep))
 
-**Ethanol:** When used in the context of spraying/wiping something down with ethanol, this usually refers to $70\%$ ethanol-water mixture. When used in the context of an assay or protocol, it usually refers to pure, molecular grade ethanol (comes in smaller, dark-colored-glass bottles than the ethanol we use for cleaning)
+**Ethanol:** When used in the context of spraying/wiping something down with ethanol, this usually refers to $70\%$ ethanol-water mixture. When used in the context of an assay or protocol, it usually refers to pure, molecular grade ethanol (usually comes in smaller, dark-colored-glass bottles than the ethanol we use for cleaning)
 
 ## Reagent Preparation
 
-### Supplement
+### Supplement {#supp}
 
 ```{r}
 #| echo: false
@@ -97,8 +97,6 @@ tibble(reagent = c("PBS", "Trypsin-EDTA(0.5%), no phenol red"),
 2.  Vortex.
 3.  Add initials, date, and "Trypsin".
 4.  Store at $4^\circ C$.
-
-
 
 ### 70% Ethanol
 
@@ -205,7 +203,7 @@ Warm medium, PBS, and trypsin
 8.  Check each minute or so to see if the cells have come loose by gently tilting the flask back and forth. Additionally, check under the microscope to see how many cells are still attached.
 
 ::: callout-tip
--   A gentle tap of the flask on the edge of the counter can help encourage weakly attached cells to become dislodged.
+-   Gently tapping the flask on your hand (side to side like throwing a frisbee, not up and down like swatting a fly) can help encourage weakly attached cells to become dislodged.
 
 -   Epithelial cell lines will tend to take longer (\>5min) while mesenchymal cell lines can be done almost immediately (\~1min).
 :::

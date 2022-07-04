@@ -90,10 +90,12 @@ tibble(`Cell Line` = c("5637", "UC9", "UC6", "RT112", "UC14"),
 
 ### Optimizing promoter
 
-Generally, we presume the optimal promoter to be PGK
+Generally, we presume the optimal promoter to be PGK. If you find you are getting poor expression of GFP and poor knockdown despite most of the population being positive, you may try performing promoter optimization for this particular cell line.
 
 
 ### Optimizing transfection conditions
+
+
 
 
 

@@ -1,0 +1,448 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
+
+# Western Blots
+
+## Reagent Preparation
+
+### RIPA Lysis Buffer {#ripa}
+Makes 10mL
+
+1. Combine the following in a 10mL centrifuge tube. Vortex.
+2. Make 1mL aliquots in 1.5mL microfuge tubes
+3. Label each tube as "RIPA + Ortho"
+4. Store at $-80^\circ C$
+
+```{r}
+#| include: false
+
+library(tibble)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(gt)
+library(viridisLite)
+
+```
+
+```{r}
+#| echo: false
+tibble(reagent = c("cOmplete protease inhibitor", "phosSTOP phosphatase inhibitor", "RIPA (10X)", "diH2O", "Sodium Orthovanadate"),
+       Volume = c("1 tablet", "1 tablet", "1 mL", "9mL", "10uL"),
+       `Cat. #` = c("11836153001", "4906837001", "20-188", "", "S6508-10G")) |>
+  gt(rowname_col = "reagent")
+```
+
+### RIPA with Additives {#ripa_plus}
+
+Use if blotting for a phosphorylated protein.
+
+As the additives degrade once mixed with the RIPA, prepare just prior to use.
+
+1. Combine the following reagents in a 1.5mL microfuge tube. Scale up as needed.
+2. Vortex
+3. Use. Discard rest, do not store.
+
+```{r}
+#| echo: false
+tibble(reagent = c("RIPA + Ortho", "NaF", "PMSF"),
+       Volume = c("98uL", "1uL", "1uL"),
+       `Cat. #` = c("", "201154-5G", "52332-1GM")) |>
+  gt(rowname_col = "reagent")
+```
+
+### TBS-T {#tbst}
+
+1. Combine the following in a 1L glass bottle
+2. Swirl vigorously to combine
+3. Label as TBS-T with tape, along with your name and date
+4. Store at $room\ temperature$
+
+```{r}
+#| echo: false
+tibble(reagent = c("diH2O", "TBS (10X)", "TWEEN 20"),
+       Volume = c("900mL", "100mL", "1mL"),
+       `Cat. #` = c("", "1706435", "100481")) |>
+  gt(rowname_col = "reagent")
+```
+
+:::{.callout-warning}
+TWEEN 20 is highly viscous. Pipette slowly to ensure accuracy.
+:::
+
+### Casein
+
+```{r}
+#| echo: false
+tibble(reagent = c("Casein 10X", "H2O"), Volume = c("5mL", "45mL"), `Cat. #` = c("B6429-500ML, Core Store", "")) |>
+  gt(rowname_col = "reagent")
+```
+
+
+1. Combine reagents in a 50mL conical tube and vortex.
+2. Label as "1x Casein" along with initials and date
+3. Store at $room\ temperature$.
+
+### Milk {#milk}
+
+:::warn
+We generally no longer use milk, as its autofluorescence keeps us from using it in the LI-COR. See [Casein] for our current blocking buffer
+:::
+
+1. Weigh out $2g$ of dry milk in a 50mL conical tube
+2. Add PBS up to the $40mL$ line
+* Note that this will less than adding 40mL, since the milk takes up space
+3. Label as "5% milk w/v in PBS" along with initials and date
+4. Store at $4^\circ C$, discard when spoiled
+
+```{r}
+#| echo: false
+tibble(reagent = c("Carnation fat free dry milk", "PBS"),
+       `Mass/Volume` = c("2g", "~38mL"),
+       `Cat. #` = c("Amazon", "20012050")) |>
+  gt(rowname_col = "reagent")
+```
+
+### Sample Buffer {#sample-buffer}
+
+1. Add 950uL Laemmli to a 1.5mL microfuge tube
+2. In the chemical hood, add 50 uL 2-mercaptoethanol
+3. Vortex
+4. Store at $room\ temperature$ for up to 1 week
+
+```{r}
+#| echo: false
+tibble(reagent = c("2-mercaptoethanol", "2X Laemmli Sample Buffer"),
+       Volume = c("50uL", "950uL"),
+       `Cat. #` = c("M3148-25ML", "1610737")) |>
+  gt(rowname_col = "reagent")
+```
+
+### Running Buffer
+
+1. Combine the following in a 1L glass bottle
+2. Swirl vigorously to combine
+3. Label as Running Buffer with tape, along with your name and date
+4. Store at room temperature
+
+```{r}
+#| echo: false
+tibble(reagent = c("diH2O", "Tris/Glycine/SDS"),
+       Volume = c("900mL", "100mL"),
+       `Cat. #` = c("", "1610732")) |>
+  gt(rowname_col = "reagent")
+```
+
+### Transfer Buffer
+
+1. Combine the following in a 1L glass bottle
+2. Swirl vigorously to combine
+3. Label as Transfer Buffer with tape, along with your name and date
+4. Store at room temperature
+
+```{r}
+#| echo: false
+tibble(reagent = c("diH2O", "Tris/Glycine", "Methanol"),
+       Volume = c("700mL", "100mL", "200mL"),
+       `Cat. #` = c("", "1610732", "BDH1135-4LP")) |>
+  gt(rowname_col = "reagent")
+```
+
+## Protocol
+
+### Obtaining Protein Lysates
+
+1. Plate cells overnight to allow for attachment
+  * If harvesting soon after overnight plating, the initial cell seeding should essentially be the target cell confluency
+  * If cells will be in the plate longer than a day, care should be taken so that the confluency on harvest is sufficient but not excessive. Seeding density optimization may be required.
+  * If treating with a drug, one should take into account if the drug is cytostatic, which will hamper cell doubling and may result in asymmetric cell densities between conditions.
+  * Some drugs degrade over time and should be replaced after a given time point
+
+:::{.callout-note}
+Prepare two sets of labeled tubes per sample
+
+* One set will be temporary, the other will be the storage label. Choose the intricacy of your labeling accordingly.
+
+* If you are collecting floating cells, one set of tubes should be 15mL (temporary tubes), the other should be microfuge tubes (permanent tubes). If not, both sets will be microfuge tubes.
+
+Get a bucket of ice and thaw [RIPA](#ripa)
+
+  * Prepare [RIPA with additives](#ripa_plus) if necessary
+:::
+
+#### Without floating cells
+
+2. On ice, one well at a time:
+  a. Aspirate medium
+  b. Rinse with $2mL$ cold PBS
+  c. Add $30\mu L$ RIPA lysis buffer to middle of well, then tilt to ensure good coverage
+  d. Move to next well
+3. Once all well have RIPA added:
+  a. Use rubber scraper along the bottom and edges of the first well, then tilt the plate and sweep the lysate to the bottom of the well
+  b. Pipette off the lysate and transfer it to a labelled microfuge tube
+  c. Move to next well
+4. Vortex each sample for $30\ seconds$
+5. Allow sample to sit $on ice$ for $10\ minutes$
+6. Spin for $10\ minutes$ at $16000 \times g$ and $4^\circ C$.
+7. Transfer supernatant to appropriately labeled tube, avoiding the small pellet at the bottom.
+8. Samples can be stored at $\le-20^\circ C$
+
+#### With floating cells
+
+For some experiments you may be interested in capturing the floating (often apoptotic) cells. To do so:
+
+1. Transfer the medium from each well into a respective labeled 15mL conical.
+2. Add $1mL$ of PBS into each well
+3. Transfer PBS to its tube with the medium
+4. Add $0.5mL$ trypsin to each well
+5. Incubate at $37^\circ C$, occasionally checking and tapping the plate to dislodge loose cells.
+6. Remove the cell suspension from each well and transfer its tube
+7. Add $2mL$ medium to each well as a final rinse and transfer to its tube to neutralize the trypsin
+8. Spin down at $300 \times g$ for $5\ minutes$
+9. Aspirate supernatant
+10. Resuspend in $1mL$ PBS and transfer to a labelled microfuge tube
+11. Spin down at $300 \times g$ for $5\ minutes$
+12. Aspirate supernatant
+13. Resuspend in $50\mu L$ RIPA
+14. Follow steps 4-8 of [the above protocol][Without floating cells]
+
+### Protein Quantification
+
+:::{.callout-note}
+* Get a bucket of ice and allow previously harvested protein lysates to begin thawing.
+* Turn on a 1.5mL microfuge tube compatible heating block to $100^\circ C$.
+* You will need an additional sample per tube for this protocol. Label them accordingly.
+* Start the protocol once the samples are thawed.
+:::
+
+We use a modified protocol of ThermoFisher's MicroBCA Assay (#23235).
+
+#### Prepare BSA standards
+1. Prepare 6 1.5mL microfuge tubes, labeled 2, 1, 0.5, 0.25, 0.125, and 0mg/mL
+2. Add $1mL$ diH2O to the 0mg/mL tube
+3. Add $0.5mL$ diH2O to all others except 2mg/mL tube
+4. Break open an ampule of BSA (#23209)
+5. Add the BSA to the 2mg/mL labeled tube
+6. Transfer $0.5mL$ of 2mg/mL BSA to the 1mg/mL labelled tube. Pipette three times to ensure the residual concentration of BSA in the tip and in the tube has reached equilibrium.
+7. Vortex 1mg/mL tube. Repeat steps to create a serial dilution. Do not add BSA to the final tube.
+8. Store tubes at $room temperature$. These can be used for many assays. 
+
+#### Running the Assay
+Each sample should be in triplicate. There are seven standards. Each sample requires $100\mu L$ reagent. With this in mind:
+
+* If you have $\le9$ samples, prepare $5mL$ reagent.
+* If you have $10-25$, prepare $10mL$.
+
+1. Prepare an ABC reagent mixture (below, prepares 5mL)
+
+```{r}
+#| echo: false
+tibble(reagent = c("A", "B", "C"),
+       Volume  = c("2.5mL", "2.4mL", "0.1mL"),
+       `Ref #` = c("23231", "23232", "1859068")) |>
+  gt(rowname_col = "reagent")
+```
+
+2. Add $100\mu L$ ABC reagent to each well. See suggested layouts below.
+3. Add $2\mu L$ of standard or sample to each well
+    * For the 4mg/mL standard, add $4\mu L$ of the 2mg/mL standard
+
+```{r, fig.width = 3.5, fig.height = 2.5}
+#| echo: false
+expand_grid(row = LETTERS[1:8], col = as.factor(1:12)) |>
+  mutate(sample = c(rep(c("0", "0.125", "0.25", "0.5", "1", "2",
+                          "4", "UNK1", "UNK2", "UNK3", NA, NA),
+                        times = 3),
+                    rep(NA, times = 60)),
+         color = c(rep(c(plasma(7, end = 0.5),
+                         rep("#22A884", times = 3),
+                         rep("#CCCCCC", times = 2)),
+                       times = 3),
+                   rep("#CCCCCC", 60))) |>
+  ggplot(aes(x = col, y = row, label = sample, color = color)) +
+  geom_point(size = 8) +
+  geom_text(color = "#FFFFFF", size = 2, na.rm = TRUE) +
+  scale_color_identity() +
+  scale_y_discrete(limits = rev) +
+  theme(axis.title = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_blank(),
+        plot.background = element_blank())
+```
+
+```{r, fig.width = 3.5, fig.height = 2.5}
+#| echo: false
+expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
+  mutate(sample = c(rep(c("0", "0.125", "0.25", "0.5", "1", "2", "4", "UNK1"),
+                        times = 3),
+                    rep(c("UNK2", "UNK3", rep(NA, times = 6)), times = 3),
+                    rep(NA, times = 48)),
+         color = c(rep(c(plasma(7, end = 0.5), "#22A884"), times = 3),
+                   rep(c("#22A884", "#22A884", rep("#CCCCCC", times = 6)),
+                       times = 3),
+                   rep("#CCCCCC", times = 48))) |>
+  ggplot(aes(x = col, y = row, label = sample, color = color)) +
+  geom_point(size = 8) +
+  geom_text(color = "#FFFFFF", size = 2,  na.rm = TRUE) +
+  scale_color_identity() +
+  scale_y_discrete(limits = rev) +
+  theme(axis.title = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_blank(),
+        plot.background = element_blank())
+```
+
+5. Shake in plate reader for $30\ seconds$
+6. Incubate in incubator for $30\ minutes$
+    * During this wait period, turn on a 1.5mL microfuge tube heating block to $100^\circ C$
+7. Mix plate for $10\ seconds$ prior to reading at $562nm$
+8. Determine concentrations using [this shiny applet](https://kai-a.shinyapps.io/quantify-protein/)
+    * [Source code](https://github.com/McConkeyLab/quantify_protein)
+9. Dilute samples with RIPA buffer as determined by the report output.
+    * If you used the [RIPA with Additives](#ripa_plus), use it to dilute your samples here.
+10. Add one volume of [sample buffer](#sample-buffer) to each sample and vortex.
+11. Boil samples at $100^\circ C$ for $5\ minutes$
+    * Add a weight to the top of the sample lids to avoid them from popping open while heating
+12. Cool on ice.
+13. Vortex, then spin down.
+14. Boiled samples can be stored at $\le-20^\circ C$.
+
+### Running Gel
+
+1. Obtain a gel tank, lid, gel holder, buffer dam (if only running one gel) and gels (from $4^\circ C$)
+  * Gels come with different well sizes/numbers as well as agarose % - ensure you've gotten the right one.
+2. Remove bottom sticker and comb from gel, then insert gel into holder
+  * Should be flipped so that the numbers can be read from the outside
+  * Put buffer dam in at this time, if applicable
+3. Fill inner chamber (between the gels/gel and dam) until it just overflows into the outer chamber and briefly check for leaks
+4. Fill outer chamber to the 2 gels line (if running 1-2 gels) or 4 gels (if running 3-4 gels)
+5. If using 10 lane gel, add $7.5\mu L$ ladder to at least one lane and $30\mu L$ of sample to the others
+  * If you are running two gels and have the extra lane, it is helpful to run one ladder on one and two on the other to help differentiate them.
+  * Add the two ladders to one side so you don't make a confusing palindromic blot!
+  * If using a 15 lane gel, use $7.5\mu L$ ladder to one lane and $15\mu L$ sample per lane for the rest.
+6. Run gel at $100V$ for $90\ minutes$
+
+### Transfering Blot
+
+1. Cut a membrane (either nitrocellulose or PVDF) to the size of a filter paper
+  * If using PVDF, place it in a plastic case and pour methanol on top - let soak for $1\ minute$, then in transfer buffer for $7\ minutes$
+2. Pour a sufficient amount of transfer buffer into a sufficiently large container (usually $\sim 1L$ buffer - should be large enough to accommodate an unfolded transfer cassette)
+3. The completed sandwich will be as follows, starting from the bottom: Black side of cassette, sponge, thick filter paper, gel, membrane, thick filter paper, sponge, clear side of cassette.
+  * Put the open cassette into the transfer buffer, then add a sponge and thick filter paper to each side of the sandwich. Add the membrane of your choice to the clear face side of the cassette sandwich.
+4. Free gel from the plastic by cracking the plastic at arrows with the green tool
+5. Gently cut off the top of the gel with a razor, removing the wells and giving a rectangular gel.
+6. Press the plastic-backed gel onto the membrane and firmly rub the plastic to adhere the gel to the membrane and be released from the plastic
+  * The plastic provides an astounding amount of integrity to the gel, so don't be bashful
+  * This may require multiple tries
+
+7. Gently sweep and pat your fingers on the gel to remove any noticeable bubbles
+  * The gel is **very** fragile at this stage, so take great care not to tear the gel
+8. Add the other thick filter paper on top of the gel, then the other sponge, then close the other side of the sandwich on top.
+  * Ensure that upon closing the cassette that gels position does not shift too dramatically. Ensure that the contents of the gel is shifted downwards (towards the hinge) so that everything is properly saturated with buffer while transferring.
+9. Insert the completed cassette into the holder, with the clear face pointing towards the red side of the holder, black facing black
+10. Insert the cassette and holder into the tank, ensuring the red side of the holder encircles the red bar on the tank, and black on black.
+11. Grab two small freeze packs from the freezer and place them in the tank, upright, side by side.
+12. Pour the transfer buffer you prepared your sandwich into the tank until it reaches the 'transfer' line
+13. From here, you can run the gel at $100V$ for $1\ hour$ or $30V$ $overnight$.
+  * If you choose to run at $100V$, place the entire tank into an ice bucket and pour ice around it.
+  * If you choose to run at $30V$, put it in the refrigerator
+  * If you are blotting for larger proteins (eg FGFR3) you may want to do a 2 hour transfer instead. 
+14. Once the transfer is done, open the sandwich and transfer the membrane to a plastic case. Pour [TBS-T](#tbst) on top or move immediately into Ponceau staining.
+  
+### Ponceau Staining
+
+1. Add enough Ponceau to cover the membrane and rock for $5\ minutes$
+
+2. Observe staining patterns, checking for even protein amount in each lane
+
+3. Cut the excess membrane off with a razor.
+
+4. Pour Ponceau into a 50mL conical tube wrapped in foil. Store at $room\ temperature$. This can be reused near indefinitely.
+
+5. Transfer blot into a more suitably sized plastic case, if necessary.
+
+6. Pour in enough TBS-T to comfortably cover the blot. Rock at $60rpm$ for $5\ minutes$. Repeat for a total of three washes.
+  * Covering with TBS-T and rocking for 5min will henceforth be called a 'wash'
+  * Pour used TBS-T into the waste container
+
+
+### Blocking
+
+1. Incubate membrane with $10mL$ [1x Casein][Casein] for $1\ hour$, up to $overnight$, rocking at $RT$
+2. Wash 3x
+
+### Primary Antibody
+
+1. Incubate membrane with $1^\circ$ antibody in $10mL$ casein for $2\ hours$
+  * Generally you should dilute the antibody 1:1000
+  * If using anti-actin, incubate for only $1\ hour$ and dilute 1:2000
+2. Wash 3x
+
+
+### Secondary Antibody
+
+1. Incubate membrane with $2^\circ$ antibody in $10mL$ casein for $1\ hour$
+  * Generally you should dilute the antibody 1:5000
+  * Generally you will use Goat-Anti-Rabbit, but this depends entirely on your primary antibody
+2. Wash 3x
+
+
+### Detection
+
+The detection method you use depends on the secondary antibody you use. If you use a secondary antibody with an HRP conjugate, you'll need to use the ChemiDoc. If you use a fluorescent antibody, you'll want to use the LI-COR. Note that you cannot use any fluorescent antibody - it needs to be LI-COR compatible, which usually means it has to be purchased from LI-COR.
+
+#### ChemiDoc
+
+:::{.callout-warning}
+Use gloves when working with the ChemiDoc - EtBr is handled there (even though it is not carcinogenic - see [here](https://blogs.sciencemag.org/pipeline/archives/2016/04/18/the-myth-of-ethidium-bromide))
+:::
+
+:::{.callout-note}
+Turn on ChemiDoc by flicking the switch on the black left of the machine. The power light on front should be green.
+
+Plug in the camera. The plug and power brick should be directly left to the machine.
+
+Ensure the camera filter lever is pulled forward (just below and to the right of the camera at the top of the machine)
+
+If you haven't created a protocol before, do so now (see below)
+:::
+
+##### Creating a Protocol
+
+1. Open ImageLab
+2. Click "Create a new protocol"
+3. Under "Application", Select -> Blots -> Chemi Hi Resolution
+4. Leave Image Area as it is (9.0x6.7)
+5. Single Accumulation Mode
+  * Choose the parameters that suit you best. I have 10, 300, and 10 as the fields for first and last image time, and Total Number of Images.
+6. Save the protocol in your folder (make one if you do not have one)
+
+##### Adding ECL
+
+1. Prepare a 1:1 working solution of ECL substrate, roughly 1mL solution per blot. Mix by pipetting.
+  * Amersham (#RPN3243) is the weakest and can be used for actin or very abundant proteins/good antibodies
+  * SignalFire is moderately sensitive. It's a good starting place for non-actin antibodies.
+  * Immobilon (#WBUL20100) is good for detecting weak signals
+
+2. Add ECL to blot, ensuring even coverage. Incubate for $2\ minutes$ (usually the time it takes to walk to the ChemiDoc).
+
+
+##### Capturing Images
+
+1. Take the blot to the ChemiDoc.
+2. Open the drawer on the bottom of the ChemiDoc
+3. Place blot in center
+4. Click "Align Blot" in ImageLab to ensure blot is centered. Adjust blot until it is centered.
+5. Click "Run protocol"
+6. Wait until the protocol has accumulated to your satisfaction^[I usually stop at the first sign of over saturation (in red), then select the image right before.]
+7. Click 'Stop acquiring and continue with selected"
+8. Under application, click: Select -> Custom -> epi
+9. Run protocol
+10. Save both images by selecting each window of the image in turn and pressing Ctrl + s.
+11. Additionally, select each window and click "Screenshot" in the upper menu. Save "to file"
+12. Remove blot
+13. Turn off machine. Unplug camera. Close Image Lab. Do not save protocol.
+
+#### LI-COR

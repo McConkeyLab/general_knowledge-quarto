@@ -1,4 +1,10 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
 # 3D Culture
+
+Many protocols here are adapted from [Padmanaban et al. 2020](https://doi.org/10.1038/s41596-020-0335-3), and that can also serve as a reference for additional protocols not (yet) listed here.
 
 ```{r}
 #| include: false
@@ -9,11 +15,7 @@ library(gt)
 
 ## Handling Matrigel {#handling-matrigel}
 
-* Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while).  
-
-:::{.callout-tip}
-Before aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can possibly impede clear imaging. 
-:::
+* Matrigel should be aliquoted to avoid freeze-thawing (which can take quite a while)^[Before aliquoting, it is often useful to spin the Matrigel to remove any solidified bits of Matrigel that may be present. If not done this can impede imaging.].
 
 * Store aliquots at $–80^\circ C$ 
 
@@ -23,22 +25,39 @@ Before aliquoting, it is often useful to spin the Matrigel to remove any solidif
 
 * Medium used to dilute Matrigel should also be chilled on ice. 
 
-
+ 
 ## Spheroids
 
 ### Forming Spheroids
 
+[This protocol was adapted from the AggreWell 400 (Stemcell, Cat# 34415) product guide (Stemcell, Document 10000001001 Ver. 3)]{.aside}
+
 :::{.callout-note}
-Grow cells to $<80\%$ in a $T75$ (plenty for a 96 well plate)
+Grow cells to $~80\%$ in a $T75$ or $T175$
 
-Warm trypsin, medium, PBS
-
-Add a glass bottom plate to plate warmer, set at $37^\circ C$.
-
-Thaw Matrigel on ice. You'll need at minimum $100\mu L$ per well. Since it is highly viscous, thaw much more than necessary - it can always be refrozen if [handled properly](#handling-matrigel)
+Warm trypsin, medium (complete), [base medium](#reagent-defition-glossary), and PBS
 :::
 
-1. Aspirate medium
+#### Preparing the Plate
+
+1. Add Anti-Adherence Rinsing Solution^[Stemcell, Cat# 07010] to each well of an AggreWell plate ($.5mL$ for 24 well, $2mL$ for 6 well)
+
+:::{.callout-note}
+There are four kinds of AggreWell plates - two well numbers (6 well and 24 well) each with two different microwell sizes within those wells (little divots that the cells form small clusters in) ($400\mu m$ and $800\mu m$ width). At the time of writing, it's not clear which is best for our purposes.
+:::
+
+2. Centrifuge for $5\ minutes$ at $1300 \times g$
+  * Balance using a normal plate with water
+  * If there are bubbles in the microwells after spinning, spin again.
+3. Aspirate the anti-adherence rinsing solution
+4. Add $2mL$ (24 well) or $5mL$ (6 well) basal medium to each well
+5. Aspirate basal medium from each well
+6. Add $1mL$ (24 well) or $2.5mL$ (6 well) complete medium to each well
+
+
+#### Preparing the Cells
+
+1. Aspirate medium from flask
 2. Wash twice with $10mL$ PBS
 3. Add $1.5mL$ trypsin. Regularly check the flask and tap against the palm of your hand.
 4. Once $~80\%$ of the cells have dissociated, add $8.5mL$ medium
@@ -47,31 +66,88 @@ Thaw Matrigel on ice. You'll need at minimum $100\mu L$ per well. Since it is hi
 7. Resuspend in $10mL$ PBS
 8. Spin down at $300 \times g$ for $5\ minutes$
 9. Resuspend in $10mL$ medium and [count cells]($count-cells)
-10. Prepare $12mL$ of cells diluted to the optimal cells/well concentration
-
+10. Prepare $10mL$ of cells diluted to the optimal cells/well concentration.
+  * Calculate using the following formula, keeping in mind the end volume is $2\frac{mL}{well}$ for 24 well plates and $5\frac{mL}{well}$ for 6 well plates:
+  
+  $$target\frac{cells}{sphere} \times S\frac{sphere}{well} = required\frac{cells}{well}$$
+  * $S$ stands for the expected number of spheroids per well (see margin table)
+```{r}
+#| column: margin
+#| echo: false
+library(tibble)
+library(gt)
+tibble(`# of Wells` = c(6, 6, 24, 24), 
+       `Size of Microwells` = c("400um", "800um", "400um", "800um"), 
+       `Expected Number of Spheroids` = c(5900, 1500, 1200, 300)) |> 
+  gt()
+```
+  * If I wanted $500\frac{cells}{sphere}$ and I had 24 well AggreWell 400 plates, I would need:
+  
+  $$500\frac{cells}{sphere} \times 1200\frac{sphere}{well} = 600,000\frac{cells}{well}$$
+  
 :::{.callout-note}
-If you are unsure of what concentration you should used, several concentrations should be prepared (250, 500, 1000, and 3000 cells/well is a good start)
-
-Generally 500 cells/well works well
-
-Each well should receive $100\mu L$ of volume
+The optimal number of cells per sphere depends somewhat on cell line and downstream application. 500 cells per sphere is a good place to start.
 :::
 
-11. Pour medium into a reagent reservoir. Use a multichannel pipette to dispense $100\mu L$ of volume to each well of a 96 well, round bottom, low-attachment plate (Cat. CLS7007-24EA)
+10. Prepare a balance plate for centrifugation
+11. Add the proper volume of cell suspension per well
+12. Pipette to mix the wells, avoiding introducing bubbles
+13. Spin down immediately, for $3\ minutes$ at $100 \times g$
 
-12. Spin plate at $300 \times g$ for $5\ minutes$
-13. Place plate in incubator
+:::{.callout-caution}
+Set the centrifuge brake to 'off' to prevent splashing of sample out of plate
+:::
+
+14. Place plate in incubator $1-2\ days$
 
 :::{.callout-tip}
-If you're having difficulty getting good spheroid formation, you can try to layering $100\mu L$ $2\%$ Matrigel (for a final concentration of 1% Matrigel) medium on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use [proper Matrigel handling technique](#handling-matrigel) when mixing medium and Matrigel.
+  If you're having difficulty getting good spheroid formation, you can try to layering medium with Matrigel (for a final concentration of 1% Matrigel after added to the well) on top of the wells after they have been spun down (being careful not to disturb the cells clustered at the bottom of the well). Remember to use [proper Matrigel handling technique](#handling-matrigel) when mixing medium and Matrigel.
+:::
+
+### Feeding Spheroids
+
+1. Slowly remove ~50% volume from the well and discard
+2. Slowly add the same volume of medium, dispensing down the side of the well
+
+### Harvesting Spheroids
+
+:::{.callout-note}
+If you plan to embed your spheroids, you should make sure you are prepared to do so soon after (eg thawing Matrigel)
+:::
+
+1. Pipette up and down once to suspend the spheres, then pull the suspension up and transfer to a 15 mL conical.
+2. Spin down spheroids ($400 \times g$ for $5\ minutes$), or simply wait until a sufficient number of spheres have settled to the bottom of the tube.
+3. Aspirate supernatant
+
+:::{.callout-caution}
+Do not repeatedly pipette up and down - you may break the spheres!
 :::
 
 ### Embedding Spheroids
 
+#### Matrigel Embedding
+
 :::{.callout-note}
-Thaw matrigel on ice.
+Thaw Matrigel on ice. This may take several hours. You will need $100\mu L$ of Matrigel per well, plus around 10% extra for inevitable loss.
+
+Warm a glass-bottom plate on the heatblock in the tissue-culture room to $37^\circ C$
 :::
 
+1. Add $110\mu L$ of Matrigel per well to your spheroid pellet and resuspend^[Note that too many spheroids per well can make imaging difficult, and can affect paracrine signalling. Aim for ~125 spheroids per well in 24 well plates.].
+
+2. Bring the heatblock with the glass-bottom plate into the hood and plug it in
+
+3. Slowly pipette $100\mu L$ of spheroid suspension into each well, trying to aim for the center of the well and not have the liquid come in contact with the edges.
+
+:::{.callout-note}
+Hold the pipette tip slightly above the bottom of the well. The goal is to form a 'bulge' or 'dome' of Matrigel, not a layer.
+:::
+
+4. Place in incubator for $30\ minutes$.
+
+5. Gently add $2mL$ medium to each well, ejecting slowly against the well wall.
+
+#### Collagen Embedding
 
 ## Organoids
 
@@ -288,7 +364,7 @@ Don't overshoot incubation time.
 17. Centrifuge for $5\ minutes$ at $400\times g$. 
 - While spinning, add $1mL$ of anti-adherence solution to each well deemed necessary of the 24 well plate, or $3mL$ of anti-adherence solution to a T25 flask. Incubate at room temperature for $10\ minutes$ 
 - Additionally, make a sufficient volume of [OCM with matrix](ocm-w-matrix) to plate 1mL of cell suspension for each well, or 5mL for a T25 (determined previously).
-18. Pass suspension through a <span>$100\mu m$<\span> cell strainer. A fair amount of leftover tissue is expected
+18. Pass suspension through a <span>$100\mu m$</span> cell strainer. A fair amount of leftover tissue is expected
 
 :::{.callout-tip}
 If you have extra Advanced DMEM/F12, pour up to $5mL$ over the strainer to get more suspension through.
