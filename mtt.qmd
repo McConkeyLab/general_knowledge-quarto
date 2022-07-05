@@ -1,0 +1,124 @@
+# MTT Assay
+```{r}
+#| include: false
+library(tibble)
+library(gt)
+library(gp)
+library(ggplot2)
+```
+
+## Reagents
+
+### MTT
+
+Resuspension of MTT should be performed in the hood, with sterile PBS.
+
+One aliquot of MTT solution can be prepared as follows:
+
+```{r}
+#| echo: false
+
+tibble(Reagent = c("MTT", "PBS"), Amount = c("5mg", "1mL"), `Cat#` = c("114-056-101CS (Core Store)", "298-93-1 (ThermoFisher)")) |> gt()
+```
+
+Generally, you should resuspend a larger amount of MTT (final volume 20-30mL) and aliquot it out into labelled 1mL aliquots. These can be frozen and stored at $-20^\circ C$
+
+## Overview
+
+
+```{r}
+#| echo: false
+#| label: mtt-layout
+#| fig-cap: "Typical MTT layout. Shapes represent different drugs, color represents concetration."
+#| column: margin
+
+gp(8, 12) |> 
+  gp_sec("Drug", 4, 6, labels = LETTERS[1:4]) |> 
+  gp_sec("conc", 4, 1, labels = c(0, 1, 10, 100, 1000, 10000)) |> 
+  gp_serve() |> 
+  ggplot(aes(.col, .row, color = log10(as.numeric(as.character(conc)) + 1), shape = Drug)) + 
+  geom_point(size = 7) + 
+  scale_y_reverse() +
+  labs(color = "log10([Drug])") + 
+  gp::gp_mini_theme()
+```
+
+A typical MTT assay is carried out in a 96-well plate^[Cat# 100027, JHU Supply Store]. The concentrations of drug you use depends on the $IC_{50}$ of the drug. This may require a bit of optimization. Your lowest condition should always be DMSO only, with a volume of DMSO equal to your highest-DMSO condition^[This is usually your highest drug condition]. The volume of DMSO should generally not exceed 0.1%^[That is, $\frac{1\ vol}{1000\ vol}$ ], and preferably is less than that (0.01% is great). Generally, we do 10-fold dilutions of the drug (ie 10uM, 1uM...)
+
+:::{.callout-tip}
+With this protocol, if you start on Thursday, you won't need to come in on the weekend.
+:::
+
+
+## Day 1: Seeding Cells
+
+:::{.callout-note}
+Prepare a suspension of your cells and count them
+:::
+
+```{r}
+#| echo: false
+#| column: margin
+
+tibble("Cell Line" = c("1A6", "5637", "BV", "HT1197", "HT1376", "J82", "RT112", "RT4", "RT4v6", "SCaBER", "SW780", "TCCSUP", "UC1", "UC3", "UC6", "UC10", "UC14", "UC15", "UC16", "UC17", "UC18"), 
+       "Cells/Well" = c(1000, 1000, 1000, 2000, 2000, 2000, 1000, 1000, 1500, 2500, 1000, 2000, 1000, 500, 350, 1500, 1000, 3000, 4000, 1000, 2000)) |> 
+  gt() |> 
+  tab_options(table.font.size = px(12))
+```
+
+1. Dilute the cells to appropriate concentration for your cell line (see table). Each well will contain $100\mu L$. You'll likely want to make one more mL of suspension than strictly needed so you can use a reagent reservoir and multichannel pipette.
+
+2. Pour cell suspension into a reagent reservoir^[Cat# 8094, ThermoFisher], then use a multichannel pipette to dispense $100\mu L$ of suspension per well.
+
+
+## Day 2: Adding Drug
+
+1. Prepare a serial dilution of your drug. Prepare a DMSO control, which should contain the same volume of DMSO as the highest DMSO, drug-containing condition (this should be your highest drug concentration condition). 
+
+:::{.callout-tip}
+If you only need 1/4 of a 96 well plate for a given drug, you can prepare a serial dilution in 1mL microfuge tubes. Otherwise, use 15mL conicals.
+:::
+
+2. Aspirate medium from one 'condition' (usually 1/4 a 96 well plate)
+
+:::{.callout-tip}
+Use a filterless $1000\mu L$ tip on the typical 2mL aspirating tip to help aspirate medium from the wells
+:::
+
+:::{.callout-warning}
+Try not to suck up the cells on the bottom. Tilt the plate towards you and aspirate on the bottom corner to limit then number of cells you aspirate.
+:::
+
+3. Use a P200 to pipette $100\mu L$ of drug medium per well.
+
+:::{.callout-tip}
+You can get away with using two tips per condition, so long as you aren't using these drugged media for other conditions. Start with the lowest (non-DMSO) drug concentration, then move to higher concentrations with the same tip. Finally, using another tip, add the DMSO medium.
+:::
+
+
+## Day 5: Replenishing Drug
+
+1. Repeat Day 2, preparing new drug to replace the old medium.
+
+:::{.callout-note}
+Depending on the $t_{1/2}$ of your drug, this may need to replace the drug more frequently. Doxycycline, for instance, needs to be replaced roughly every other day.
+:::
+
+## Day 7: Measuring Metabolic Activity
+
+1. Add a $1mL$ MTT aliquot to $11mL$ medium in a 15mL conical.
+
+2. Aspirate medium from all wells of the 96 well plate.
+
+3. Add $100\mu L$ of MTT solution to each well. Incubate for $1\ hr$ at $37^\circ C$. 
+
+
+The following steps can be done outside the hood:
+
+4. Aspirate MTT solution out of the wells. Add $50\mu L$ of DMSO to each well. Shake plate for $30\ sec$ in the SpectraMAX, then read at $562nm$ and $660nm$.
+
+## Analysis and Interpretation
+
+1. Subtract the 660nm absorbance (Background) from the 562nm absorbance (Wavelength that the MTT metabolite absorbs at) for each well
+2. Average all technical replicates
+3. Fit a dose response curve in Prism (R app coming soon)

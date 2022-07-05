@@ -15,12 +15,12 @@ book:
         - cell-modification.qmd
         - cell-line-extraction-methods.qmd
         - western-blot.qmd
+        - dd-ct-pcr.qmd
+        - mtt.qmd
 
 format:
   html:
     theme: litera
-  pdf:
-    documentclass: scrreprt
 
 
 

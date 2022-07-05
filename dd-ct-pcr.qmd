@@ -1,0 +1,147 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
+# $\Delta\Delta$ qRT-PCR
+
+
+```{r}
+#| include: false
+
+library(tibble)
+library(gt)
+```
+
+## Description
+
+$\Delta\Delta$ qRT-PCR can be used to determine *relative* RNA abundance between a control/baseline condition and an experimental condition.
+
+## Protocol
+
+:::{.callout-note}
+You should have:
+
+- RNA isolated from both a control and experimental condition
+- Primers of interest
+- Endogenous control probe (eg GAPDH, PPIA, etc)
+- Master mix materials (Cat. # AM1005)
+
+Additionally:
+
+- Get ice
+- Begin thawing all of the above on ice
+:::
+
+:::{.callout-warning}
+We do not have a 0.2mL block. Do not attempt to use 0.2mL plates.
+:::
+
+:::{.callout-tip}
+[This Shiny app](https://kai-a.shinyapps.io/plan-pcr/) can help you with dilution, mastermix preparation, and plate layouts.
+:::
+
+```{r}
+#| echo: false
+#| column: margin
+
+tibble(reagent = c("2X RT-PCR Buffer", "Primer", "25X Enzyme Mix", "Sample", "Nuclease Free H2O"), 
+       `Volume/well (uL)` = c(6.25, 0.625, 0.5, 2, 3.125),
+       `Cat. #` = c("AM1005", NA, "AM1005", NA, NA)) |> 
+  gt(rowname_col = "reagent") |> 
+  tab_header(title = "Mastermix") |> 
+  tab_options(table.font.size = px(12))
+```
+
+This protocol can be performed with 0.1 mL 96 well plates or 384 well plates.
+
+1. Dilute RNA to $5\ ng/\mu L$.
+
+2. Make master mix
+    - Make one aliquot of master mix per primer
+    - Each sample, for each primer, should be performed in triplicate
+    - Include an endogenous control primer
+    - Include an NTC (no-template control), ie add H2O instead of sample
+
+
+
+3. With the plate on ice, add $10\mu L$ of master mix and $2 \mu L$ of sample to each well
+4. Seal plate with a MicroAmp Optical Adhesive Film^[Cat# 4311971. This is not the same as MicroAmp Clear Adhesive Film (Cat# 4306311)]
+
+5. Vortex the plate for $10\ seconds$ using the IKA MS 3 vortexer
+6. Spin plate down (allow to reach $2000\ rpm$, then stop)
+7. Set up run in QuantStudio
+
+:::{.callout-note}
+Example: two primers + GAPDH and 4 samples
+
+3 primers -> 3 aliquots of mastermix
+4 samples -> (4 samples + 1 NTC) * 3 -> 15 wells per primer
+
+A safety factor of 1.3 works well for me, so 15 * 1.3 = 19.4 wells worth of master mix per primer.
+:::
+
+## QuantStudio Setup
+
+Upon creating a new experiment in the QuantStudio software, four tabs on the left will need our attention
+
+### Experimental Properties
+
+**Which instrument type are you using to run the experiment?**
+  
+  * QuantSutdio 6 Flex System
+
+**Which block are you using to run the experiment?**
+  
+  * This depends on which plate you chose.
+
+:::{.callout-warning}
+We do not have a 0.2mL block. Do not attempt to use 0.2mL plates.
+:::
+
+  * Ensure that you have to proper heating block, plate tray, and lenses installed.
+
+**What type of experiment do you want to set up?**
+  
+  * Comparative Ct ($\Delta\Delta$ CT)
+
+**Which reagents do you want to use to detect the target sequence?**
+  
+  * TaqMan Reagents
+
+**What properties do you want for the instrument run?**
+  
+  * Fast
+
+
+### Define
+
+* **Targets**: Define one target for each primer you use. Reporter should be FAM, quencher should be NFQ-MGB.
+* **Samples**: Define one sample for sample you have.
+* **Analysis Settings**: Choose a reference sample (your choice) and an endogenous control (most likely GAPDH)
+
+### Assign
+
+* Highlight the appropriate cells and select the appropriate target and sample for each well.
+* Your NTC should be assigned the given primer and no sample. Instead, change the blue "U" to a gray "N".
+
+### Run Method
+
+Click "*Open new run method*" then "*Ag Path ID One Step*"
+
+In case there is not a previously defined run method of that name, define your own with the following parameters
+
+:::{.callout-note}
+These parameters are different from those outline in the official Ag Path ID One Step protocol. They are those that were used in Houston, Texas at MDACC
+:::
+
+```{r}
+#| echo: false
+
+tibble(Step = c("RT", "RT inactivation/initial denaturation", "Amplification", ""), 
+Cycles = c("1 Cycle (Hold)", "1 Cycle (Hold)", "40 Cycles", ""), 
+`Temp (C)` = c(45, 95, 97, 60), 
+Time = c("10min", "10min", "2sec", "30sec")) |>
+gt()
+```
+
+Run the method under the "Run" button in the left panel. It may throw some errors about calibration. That's fine. If it still refuses to run, save your experiment, then try restarting the software. If the issue persists, try powercycling the QuantStudio using the switch on the back of the machine.
