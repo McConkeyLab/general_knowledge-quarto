@@ -1,0 +1,577 @@
+# FFPE Extraction Methods
+
+```{r}
+library(gt)
+library(tibble)
+```
+
+
+:::info
+Mix solutions well before using
+:::
+
+:::info
+Flick and spin down any tiny reagents before using.
+:::
+
+
+## Sample Preparation
+
+### Slides (Macrodissection)
+
+:::prep
+Ensure you have:
+
+  - FFPE slides and _marked_ H+E slide  
+  - Scalpel blade  
+:::
+
+1. Line up your unstained slide to the marked H+E slide, with the H+E slide on the bottom
+2. Trace the area of interest with your scalpel blade
+3. Carefully scrape off just the area of interest
+
+:::tip
+It's easier to carefully put the tissue in a 1.5mL tube _cap_, and try to smush it all together, _then_ move it to the tube body.
+:::
+
+:::tip
+Store scrapings at $-20^\circ C$.
+:::
+
+### Cores
+
+:::prep
+Ensure you have:
+
+  - FFPE cores  
+  - Blue mortar (to crush the cores)  
+:::
+
+To prepare the cores, crush them with a blue mortar in a 1.5mL microfuge tube. 
+
+:::tip
+It helps to position to core on the lower inclined section of the tube, a bit above the bottom.
+:::
+
+After RNA (and DNA) isolation, QC the samples using the Nanodrop, Tapestation, and Qubit.
+
+## RNA
+
+### High Pure miRNA Isolation Kit - Roche Kit (Cat. #05080576001)
+
+:::prep
+* Get ice
+* Set heatblock to $55^\circ C$ 
+* Set heatblock to $37^\circ C$
+* Prepare proteinase K by reconstituting the powder in  
+$4.5 mL$ Elution Buffer (Store at $-20^\circ C$) OR thaw pre-prepared proteinase K on ice before beginning 
+:::
+
+#### Deparaffinization using Xylenes
+
+1. Add $800 \mu L$ of __xylenes__ to the microfuge tube with the prepared tissue. Mix by inverting.
+2. Incubate for $5\ minutes$ at $RT$
+3. Add $400 \mu L$ of __ethanol__, vortex.
+4. Centrifuge for $2\ minutes$ at $20,000 \times g$
+5. Carefully remove supernatant without touching the pellet
+
+:::warn
+The supernatant for this step and the following step needs to be disposed of in a bottle specifically labeled to be xylenes and ethanol waste. This is found in the hood space in the first bay.
+:::
+
+:::tip
+For samples that are super tiny (i.e. can't see a pellet after spinning down), leave about 10-20 <span>$\mu L$<span> of the supernatant in at this step. You don't want to risk removing the sample with the supernatant.
+:::
+
+6. Add $1 mL$ of __ethanol__, vortex
+7. Centrifuge for $2\ minutes$ at $20,000 \times g$
+8. Carefully remove the supernatant without touching the pellet, take note of properly discarding supernatant
+9. Dry pellet at $55^\circ C$ for $15\ minutes$ or until all the residual ethanol has dried.
+10. Add $100 \mu L$ __Paraffin Tissue Lysis Buffer__, $16 \mu L$ __10% SDS__, and $40 \mu L$ __Proteinase K__
+11. Vortex until pellet has broken up
+12. Incubate for $3\ hours$ at $55^\circ C$
+13. Place on ice for $3\ minutes$
+14. Centrifuge for $15\ minutes$ at $20,000 \times g$
+15. Transfer the RNA-containing supernatant to a clean tube
+16. Store the pellet at $-20^\circ C$ for later DNA isolation
+
+#### RNA Isolation
+
+:::info
+For brevity, $spin$ will be shorthand for centrifuging for $30\ seconds$ at $13,000 \times g$
+:::
+
+:::warn
+Note that this shorthand $spin$ is different than that for the Qiagen kit
+:::
+
+:::prep
+Begin thawing:
+
+- 10X DNase Incubation Buffer  
+- DNase I
+:::
+
+1. Add $312 \mu L$ __Binding Buffer__ to RNA-containing supernatant, vortex
+2. Add $325 \mu L$ __Binding Enhancer__, vortex
+3. Transfer about half of the solution to a __High Pure Filter Tube__ 
+4. $Spin$. Discard flow through.
+5. Add remaining sample solution.
+6. $Spin$. Discard the flow through.
+7. Add $500 \mu L$ __Wash Buffer__ to spin column
+8. $Spin$. Discard the flow through.
+9. Repeat step 8.
+10. Add $300 \mu L$ __Wash Buffer__ to spin column
+11. $Spin$. Discard the flow through
+12. Centrifuge for $1\ minute$ at $13,000 \times g$
+13. Place filter in *new* 1.5 mL microfuge tube
+14. Add $100 \mu L$ __Elution Buffer__ to 
+filter
+15. Incubate for $1\ minute$ at $RT$
+
+:::warn
+Be careful to not touch pipette tip to the filter or the sides of the tube.
+:::
+
+16. Centrifuge for $1\ minute$ at $13,000 \times g$
+
+:::tip
+This can be a stopping point - store intermediate RNA at $-80^\circ C$ until you can continue with protocol. 
+:::
+
+:::prep
+Create DNase Solution.  
+For $n$ samples:
+
+  - $49.5 \mu L \times\ n$ Nuclease Free Water  
+  - $19.5 \mu L \times\ n$ 10X DNase Incubation Buffer  
+  - $1 \mu L \times\ n$ DNase I
+:::
+
+17. Add $56 \mu L$ __DNase Solution__, vortex
+18. Incubate for $30\ minutes$ at $37^\circ C$
+19. Add $325 \mu L$ __Binding Buffer__ 
+20. Add $210 \mu L$ __Binding Enhancer__
+21. Transfer whole solution to a *new* High Pure Filter Tube
+22. $Spin$. Discard the flow through
+23. Repeat step 22.
+24. Add $500 \mu L$ __Wash Buffer__ to spin column
+25. $Spin$. Discard the flow through.
+26. Repeat step 25.
+27. Add $300 \mu L$ __Wash Buffer__ to spin column
+28. $Spin$. Discard the flow through 
+29. Centrifuge for $1\ minute$ at $13,000 \times g$
+30. Place filter in *new* 1.5mL microfuge tube, add $40 \mu L$ __Nuclease Free Water/Elution Buffer__ directly to the filter
+
+:::warn
+Avoid touching the pipette to the filter or the sides of the tube.
+:::
+
+31. Incubate for $1\ minute$ at $RT$
+32. Centrifuge for $1\ minute$ at $13,000 \times g$, discard filter
+33. The resultant fluid is your isolated RNA. Store at $-80^\circ C$
+
+### Allprep FFPE Kit - Qiagen Kit (Cat. #80234)
+
+:::prep
+* Get ice
+* Set heatblock to $37^\circ C$ 
+* Set heatblock to $56^\circ C$
+* Set heatblock to $80^\circ C$
+* Get RNeasy MinElute (pink) spin column from $4^\circ C$ fridge.
+:::
+
+
+#### Deparaffinization of FFPE Tissue with Xylene
+
+1. Add $1 mL$ of __xylene__ to the tube containing your tissue, vortex
+2. Centrifuge for $2\ minutes$ at $20,000 \times g$.
+
+:::info
+You want the tissue to break up during this and the following steps.
+:::
+
+3. Carefully remove the supernatant without disturbing the pellet.
+
+:::warn
+The supernatant for this step and the following step needs to be disposed of in a bottle specifically labeled for xylenes and ethanol waste. This 
+is usually found in the hood space in the first bay.
+:::
+
+4. Add $1 mL$ of __ethanol__, vortex vigorously, centrifuge for $2\ minutes$ at $20,000 \times g$.
+5. Carefully remove the supernatant without disturbing the pellet.
+6. Invert the tube briefly to get rid of excess ethanol.
+
+:::tip
+I usually have a kimwipe under my tube rack, and lean the tubes upside down against the rack.
+:::
+
+7. Dry pellet for $15\ minutes$ at $37^\circ C$ or until the tissue has dried.
+8. Re-suspend the pellet in $150 \mu L$ __Buffer PKD__ and $10 \mu L$ __Proteinase K__, vortex.
+9. Incubate for $15\ minutes$ at $56^\circ C$.
+10. Incubate on ice for $3\ minutes$.
+11. Centrifuge for $15\ minutes$ at $20,000 \times g$.
+12. Carefully transfer the RNA-containing supernatant to a new tube. The pellet will be used for DNA isolation later and should be stored at $-20^\circ C$.
+
+#### RNA Isolation
+
+:::info
+For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $14,000 \times g$
+:::
+
+:::warn
+Note that this shorthand $spin$ is different than that for the Roche kit
+:::
+
+:::prep
+Take Buffer RDD out of the $4^\circ C$ fridge
+:::
+
+1. Incubate supernatant for $15\ minutes$ at $80^\circ C$.
+2. Add $320 \mu L$ __Buffer RLT__, vortex.
+3. Add $720 \mu L$ __ethanol__, vortex.
+4. Transfer $~500 \mu L$ of mixture to __RNease MinElute spin column__ (pink).
+5. $Spin$, discard flow through, $spin$ again.
+6. Repeat step 5 with any additional material.
+7. $Spin$ to dry filter
+8. Put filter in a new collection tube.
+9. Add $350 \mu L$ __Buffer FRN__ to spin column.
+10. $Spin$, discard flow through. 
+11. $Spin$ again.
+12. $Spin$ to dry filter. 
+13. Put filter in a new collection tube.
+
+:::prep
+Create DNase I Incubation mix.  
+For $n$ samples:
+
+- $10 uL \times n$ DNase I Stock  
+- $70 uL \times n$ Buffer RDD  
+:::
+
+14. Add $80 \mu L$ of __DNase I Incubation Mix__ to spin column membrane.
+15. Incubate at $RT$ for $15\ minutes$.
+16. Add $500 \mu L$ __Buffer FRN__ to spin column.
+17. $Spin$. *Save the flow through from this step.*
+18. Add spin column to a new collection tube and transfer flow through from previous step to spin column.
+19. $Spin$, discard flow through, 
+20. $Spin$ again
+21. $Spin$ to dry filter, put filter in a new collection tube.
+22. Add $500 \mu L$ __Buffer RPE__ to spin column.
+23. $Spin$, discard flow through *(x3)*.
+24. Add $500 \mu L$ __Buffer RPE__ to spin column.
+25. $Spin$, discard flow through *(x3)*.
+26. Place filter column into fresh collection tube.
+27. $Spin$ for $5\ minutes$ with lids open.
+28. Place filter column into fresh 1.5 mL microfuge tube
+29. Add $30 \mu L$ __Nuclease Free Water__ to center of filter column.
+30. Incubate for $1\ minute$ at $RT$
+31. $Spin$.
+
+:::tip
+Avoid touching the walls of the filter column when pipetting in the NF water. Try to get it directly on the filter.
+:::
+
+32. Store RNA at $-80^\circ C$.  Use Qiagen Allprep FFPE (cat. 80234) for DNA isolation.
+
+### MagMax FFPE RNA/DNA Ultra Kit (Cat. #A31881)
+
+With this protocol, you isolated DNA and RNA on the same day, unlike the previous protocols.
+
+:::prep
+- Get ice
+- Set heatblock to $55^\circ C$
+- Set heatblock to $90^\circ C$
+- Take out __Protease__
+- Locate the rack magnet
+:::
+
+:::tip
+This protocol involves using different volumes/concentrations of reagents depending on starting tissue size. It may help to do similar sized tissue at once.
+:::
+
+Before beginning, calculate the volumes of reagents you will need based on the following table.  It will help to do $(n+1)x$, where $n$ is the number of samples and $x$ is the volume of the reagent.
+
+__Protease Solution__:
+```{r echo = F}
+tibble("Reagent" = c("Protease", "Proteaste Digestion Buffer", "Total Volume"),
+       "Section <= 40 um" = c("10 uL", "100 uL", "110 uL"),
+       ">40 um" = c("10 uL", "200 uL", "210 ul")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+__DNA Binding Buffer__:
+```{r echo = F}
+tibble("Reagent" = c("Binding Solution", "Nucleic Acid Binding Beads", "Total Volume"),
+       "Section <= 40 um" = c("135 uL", "20 uL", "155 uL"),
+       "> 40 um" = c("250 uL", "20 uL", "270 uL")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+The following two solutions are not dependent on starting tissue size.
+__RNA Binding Buffer__:
+```{r echo = F}
+tibble("Reagent" = c("Binding Solution", "Isopropanol", "Total Volume"),
+       "Section <= 40 um" = c("100 uL", "300 uL", "400 uL"),
+       "> 40 um" = c("150 uL", "500 uL", "650 uL")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+__DNase Solution__:
+```{r echo = F}
+tibble("Reagent" = c("DNase", "DNase Buffer", "Nuclease-Free Water", "Total Volume"),
+       "Volume" = c("20 uL", "10 uL", "70 uL", "100 uL")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+__RNA Rebinding Buffer__:
+```{r echo = F}
+tibble("Reagent" = c("Binding Solution", "Isopronanol", "Total Volume"),
+       "Volume" = c("200 uL", "250 uL", "450 uL")) |> 
+  gt(rowname_col = "Reagent")
+```
+
+#### Deparaffinization of FFPE Tissue with Xylene
+
+The deparaffinization of the original protocol has been replaced with the deparaffinization of the Roche protocol. It just works a little bit better and is easier for the technician.
+
+1. Add $800 \mu L$ of __xylenes__, mix by flipping tube upside down, 
+incubate for $5\ minutes$ at $RT$
+2. Add $400 \mu L$ of __ethanol__, vortex, centrifuge for $2\ minutes$ at $20,000 \times g$
+3. Carefully remove supernatant without touching the pellet
+
+:::warn
+The supernatant for this step and the following step needs to be disposed of 
+in a bottle specifically labeled to be xylenes and ethanol waste. This 
+is usually found in the hood space in the first bay.
+:::
+
+:::tip
+For samples that are super tiny (i.e. can't see a pellet after spinning down), leave about 10-20 uL of the supernatant in at this step. You don't want to risk removing the sample with the supernatant.
+:::
+
+4. Add $1 mL$ of __ethanol__, vortex
+5. Centrifuge for $2\ minutes$ at $20,000 \times g$
+6. Carefully remove the supernatant without touching the pellet, take note of properly discarding supernatant
+7. Dry pellet for $15\ minutes$ at $55^\circ C$ or until all the residual ethanol has dried.
+8. Add __Protease Solution__ to the dried tissue according to the table:
+
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Volume" = c("110 uL", "210 uL")) |> 
+  gt()
+```
+9. Gently vortex to make sure the tissue becomes dislodged from the tube. 
+10. Incubate at $55^\circ C$ for $1\ hour$.
+11. Incubate at $90^\circ C$ for $1\ hour$. Let cool before moving on.
+
+:::prep
+Take out the Nucleic Acid Binding Beads.
+:::
+
+#### Isolate DNA
+
+:::info
+Quickly spin down samples after mixing.
+:::
+
+1. Add __DNA Binding Buffer__ (pipette slowly) according to the table:
+
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Volume" = c("155 uL", "270 uL")) |> 
+  gt()
+```
+
+Precipitant may form at this step, but does not interfere with DNA binding.
+
+2. Mix for $5\ minutes$ according to the table:
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Speed" = c("1000 rpm", "1150 rpm")) |> 
+  gt()
+```
+
+:::tip
+For the vortexing steps, use the 96 well plate vortex. You can move it to your bench. I've marked 2 little black lines, the first one at ~1000 rpm, the second at ~1150 rpm. You'll need to secure the tubes while you vortex.
+:::
+
+3. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears. There should be a "smear" of beads on one side of the tube.
+4. Carefully transfer the RNA containing supernatant to a fresh labelled tube.
+5. Wash the beads with __DNA Wash Buffer__ according to the table:
+
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Volume" = c("200 uL", "400 uL")) |> 
+  gt()
+```
+
+
+6. Mix for $1-2\ minutes$ at $1100\ rpm$.
+7. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+8. Carefully remove the supernatant without disturbing the pellet.
+9. Repeat steps 16-19.
+10. Wash the beads with __Wash Solution 2__ (will need ethanol added, please see bottle for instructions) according to the table:
+
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Volume" = c("200 uL", "500 uL")) |> 
+  gt()
+```
+
+11. Mix for $1\ minute$ at $1150\ rpm$.
+12. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+13. Carefully remove the supernatant without disturbing the pellet.
+14. Repeat steps 21-24.
+15. Let beads airdry (top of caps open) for $3\ minutes$. It may help to go in with a smaller pipette and remove any drops that may be left over.
+16. Add $50 \mu L$ __Elution Buffer__ to the beads.
+17. Mix for $5\ minutes$ at $1150\ rpm$.
+18. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+19. Carefully move the supernatant to a clean labelled tube.  This is your DNA.
+20. Store at $-20^\circ C$.
+
+#### Isolate RNA
+
+:::prep
+- Take out DNase and DNase buffer.
+- Set heatblock to $37^\circ C$.
+:::
+
+1. Add $20 \mu L$ __Nucleic Acid Binding Beads__ to the RNA containing supernatant.
+2. Add __RNA Binding Buffer__ according to the table:
+```{r echo = F}
+tibble("Section" = c("<= 40 um", ">40 um"),
+       "Volume" = c("400 uL", "650 uL")) |> 
+  gt()
+```
+
+3. Mix for $5\ minutes$ at $1150\ rpm$.
+4. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+5. Carefully discard the supernatant without disturbing the pellet.
+6. Wash the beads with $500 \mu l$ __RNA Wash Buffer__.
+7. Mix for $1\ minute$ at $1150\ rpm$.
+8. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+9. Carefully discard the supernatant without disturbing the pellet.
+10. Wash the beads with $500 \mu L$ __Wash Solution 2__.
+11. Mix for $1\ minute$ at $1150\ rpm$.
+12. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+13. Carefully discard the supernatant without disturbing the pellet.
+15. Let beads airdry (top of caps open) for $3\ minutes$.  It may help to go in with a smaller pipette and remove any drops that may be left over.
+16. Add $100 \mu L$ __DNase Solution__.
+17. Incubate at $37^\circ C$ for $20\ minutes$.
+18. Add $450 \mu L$ __RNA Rebinding Buffer__.
+19. Mix for $5\ minutes$ at $1150\ rpm$.
+20. Place the samples in the magnetic rack for $5\ minutes$ until the solution clears.
+21. Carefully discard the supernatant without disturbing the pellet.
+22. Wash beads with $500 \mu L$ __RNA Wash Buffer__.
+23. Mix for $1\ minute$ at $1150\ rpm$.
+24. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+25. Carefully discard the supernatant without discarding the pellet.
+26. Wash the beads with $500 \mu L$ __Wash Solution 2__.
+27. Mix for $1\ minute$ at $1150\ rpm$.
+28. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+29. Carefully discard the supernatant without discarding the pellet.
+30. Repeat steps 26-29.
+31. Let beads airdry (top of caps open) for $3\ minutes$. It may help to go in with a smaller pipette and remove any drops that may be left over.
+32. Add $50 \mu L$ __Elution Solution__.
+33. Mix for $5\ minutes$ at $1150\ rpm$.
+34. Place the samples in the magnetic rack for $2\ minutes$ until the solution clears.
+35. Carefully move the supernatant to a clean labelled tube. This is your RNA.
+36. Store RNA at $-80^\circ C$.
+
+## DNA
+
+There are two different Qiagen FFPE DNA isolation kits that we use - Qiagen Allprep FFPE (cat. 80234) and Qiagen DNA FFPE (cat. 56404).  
+
+### Qiagen Allprep FFPE (Cat. #80234)
+
+#### DNA Isolation
+
+:::info
+For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $16,000 \times g$
+:::
+
+:::warn
+Note that this shorthand is different than those above!
+:::
+
+:::prep
+* Set heatblock to $56^\circ C$.
+* Set heatblock to $90^\circ C$.
+* Get QIAamp MinElute column (white) from $4^\circ C$.
+:::
+
+1. Re-suspend pellet in $180 \mu L$ __Buffer ATL__ and $20 \mu L$ __Proteinase K__. Vortex.
+2. Incubate at $56^\circ C$ for $1\ hour$.
+3. Incubate at $90^\circ C$ for $2\ hours$.
+
+:::tip
+When incubating tubes at high temperatures, it's helpful to place a block on the tubes to keep them from popping open during incubation.
+:::
+
+4. Briefly centrifuge to remove any drops from the lid.
+5. Add $20 \mu L$ __Rnase A__ to the sample, mix.
+6. Incubate for $2 minutes$ at $RT$.
+7. Add $200 \mu L$ __Buffer AL__ to the sample, vortex.  You will see precipitants form.
+8. Add $200 \mu L$ __ethanol__ to the sample, vortex. Spin down.
+9. Transfer the sample to a QIAamp MinElute Column (white).
+10. $Spin$. Discard flow through.
+11. $Spin$.
+12. Repeat steps 9-11 with any leftover sample.
+13. Add $650 \mu L$ __Buffer AW1__ to spin column.
+14. $Spin$. Discard flow through. (x2)
+15. Add $650 \mu L$ __Buffer AW2__ to spin column.
+16. Repeat step 14.
+17. Add $650 \mu L$ __ethanol__ to spin column.
+18. Repeat step 14.
+19. Place spin column in a new collection tube.
+20. $Spin$ for $5\ minutes$ with lids open.
+21. Place column into labelled 1.5 mL tube.
+22. Add $60 \mu L$ __Nuclease Free Water__.
+23. Incubate for $1\ minute$ at $RT$.
+24. $Spin$.
+25. The flow-through is your DNA - store at $-20^\circ C$.
+
+
+### Qiagen DNA FFPE (Cat. #56404)
+
+#### DNA Isolation
+
+:::info
+For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $16,000 \times g$
+:::
+
+:::prep
+* Set heatblock to $56^\circ C$.
+* Set heatblock to $90^\circ C$.
+* Get QIAamp MinElute column (white) from $4^\circ C$.
+:::
+
+1. Re-suspend pellet in $180 \mu L$ __Buffer ATL__ and $20 \mu L$ __Proteinase K__. Vortex.
+2. Incubate at $56^\circ C$ for $1\ hour$.
+3. Incubate at $90^\circ C$ for $2\ hours$.
+
+:::tip
+When incubating tubes at high temperatures, it's helpful to place a block on the tubes to keep them from popping open during incubation.
+:::
+
+4. Briefly centrifuge to remove any drops from the lid.
+5. Add $20 \mu L$ __Rnase A__ to the sample, vortex.
+6. Incubate for $2\ minutes$ at $RT$.
+7. Add $200 \mu L$ __Buffer AL__ to the sample, vortex. You will see precipitants form.
+8. Add $200 \mu L$ __ethanol__ to the sample, vortex. Spin down.
+9. Transfer the sample to a QIAamp MinElute Column (white).
+10. $Spin$. Discard flow through.
+11. $Spin$.
+12. Repeat steps 9-11 with any leftover sample.
+13. Add $500 \mu L$ __Buffer AW1__ to spin column.
+14. $Spin$. Discard flow through. (x2)
+15. Add $500 \mu L$ __Buffer AW2__ to spin column.
+16. Repeat step 14.
+19. Place spin column in a new collection tube.
+20. $Spin$ for $3\ minutes$ with lids open.
+21. Place column into labelled 1.5 mL tube.
+22. Add $60 \mu L$ __Nuclease Free Water__.
+23. Incubate for $1\ minute$ at $RT$.
+24. $Spin$.
+25. The flow-through is your DNA - store at $-20^\circ C$.

@@ -1,5 +1,4 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+Welcome! This book is a central repository of protocols used in the McConkey lab.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.

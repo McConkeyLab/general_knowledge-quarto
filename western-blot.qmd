@@ -150,6 +150,19 @@ tibble(reagent = c("diH2O", "Tris/Glycine", "Methanol"),
   gt(rowname_col = "reagent")
 ```
 
+### Antibodies
+
+#### Primary Antibodies {#ab1}
+1. Combine $10mL$ 1X [Casein] and $10\mu L$^[*Unless* you're using actin, which a 1:2000 dilution (or $5\mu L$) is more appropriate] primary antibody in a 15mL conical.
+2. Vortex
+3. Label with the antibody's target name, as well as company (such as Cell Signalling Technologies, AKA CST), the date, the diluent (milk or casein), and your initials.
+4. Once you are finished with the antibody, you can pour it back into the tube and store at $-20^\circ C$.
+
+#### Secondary Antibodies {#ab2}
+1. Combine $10mL$ 1X [Casein] and $2\mu L$ of secondary antibody^[The secondary you use depends on what your primary antibody was produced in, eg If your primary antibody was produced in goat, you want an anti-goat secondary] in a 15mL conical.
+2. Vortex
+3. Do not save secondary antibody like you would primary antibody.
+
 ## Protocol
 
 ### Obtaining Protein Lysates
@@ -351,20 +364,22 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
   * If you are blotting for larger proteins (eg FGFR3) you may want to do a 2 hour transfer instead. 
 14. Once the transfer is done, open the sandwich and transfer the membrane to a plastic case. Pour [TBS-T](#tbst) on top or move immediately into Ponceau staining.
   
-### Ponceau Staining
+### Visualizing transfer efficiency with Ponceau
 
-1. Add enough Ponceau to cover the membrane and rock for $5\ minutes$
+1. Add enough Ponceau to cover the membrane and rock for $\sim 5\ minutes$
 
-2. Observe staining patterns, checking for even protein amount in each lane
+2. Pour Ponceau into a 50mL conical tube wrapped in foil. Store at $room\ temperature$. This can be reused near indefinitely.
 
-3. Cut the excess membrane off with a razor.
+3. Add a small amount of TBS-T and rock briefly ($\sim 10\ sec$) to excess stain
 
-4. Pour Ponceau into a 50mL conical tube wrapped in foil. Store at $room\ temperature$. This can be reused near indefinitely.
+3. Observe staining patterns, checking for even protein amount in each lane
+
+4. Cut the excess membrane off with a razor.
 
 5. Transfer blot into a more suitably sized plastic case, if necessary.
 
 6. Pour in enough TBS-T to comfortably cover the blot. Rock at $60rpm$ for $5\ minutes$. Repeat for a total of three washes.
-  * Covering with TBS-T and rocking for 5min will henceforth be called a 'wash'
+  * Covering with TBS-T and rocking for 5 minutes will henceforth be called a 'wash'
   * Pour used TBS-T into the waste container
 
 
@@ -375,17 +390,13 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
 
 ### Primary Antibody
 
-1. Incubate membrane with $1^\circ$ antibody in $10mL$ casein for $2\ hours$
-  * Generally you should dilute the antibody 1:1000
-  * If using anti-actin, incubate for only $1\ hour$ and dilute 1:2000
+1. Incubate membrane with [$1^\circ$ antibody](#ab1) in $10mL$ casein for $2\ hours$
 2. Wash 3x
 
 
 ### Secondary Antibody
 
-1. Incubate membrane with $2^\circ$ antibody in $10mL$ casein for $1\ hour$
-  * Generally you should dilute the antibody 1:5000
-  * Generally you will use Goat-Anti-Rabbit, but this depends entirely on your primary antibody
+1. Incubate membrane with [$2^\circ$ antibody](#ab2) in $10mL$ casein for $1\ hour$
 2. Wash 3x
 
 
@@ -446,3 +457,22 @@ If you haven't created a protocol before, do so now (see below)
 13. Turn off machine. Unplug camera. Close Image Lab. Do not save protocol.
 
 #### LI-COR
+
+:::{.callout-note}
+Before you use the LI-COR, you should make sure you:
+1. Ask the Pienta-Amend lab if it's ok
+2. Ask to be added to the LI-COR signup calendar
+3. Sign up for time on the LI-COR
+:::
+
+1. Open Image Studio
+2. Open your profile or create one if you don't have one
+3. Open the blot scanner lid
+4. If necessary, squirt some diH2O on the scanning surface and wipe it down with a kimwipe.
+4. Place the blot so that the protein is on the glass, the top edge of the blot is on the bottom edge of the scanning surface, and the blot is past the arrow in the corner both vertically and horizontally.
+5. If there are any bubbles, use the roller to roll the blot flat.
+6. Take note of how many 'ticks' tall and wide the blot is, then make a rectangular section of that size in Image Studio.
+7. Close the scanner lid.
+8. Start the scan.
+9. Once the scan is finished, click the yellow "IS" button.
+10. Export the scan.
