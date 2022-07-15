@@ -1,8 +1,11 @@
+---
+execute:
+  echo: false
+---
+
 # FFPE Extraction Methods
 
 ```{r}
-#| echo: false
-
 library(gt)
 library(tibble)
 ```
