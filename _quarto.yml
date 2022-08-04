@@ -19,6 +19,7 @@ book:
         - western-blot.qmd
         - dd-ct-pcr.qmd
         - mtt.qmd
+        - transwells.qmd
 
 format:
   html:
