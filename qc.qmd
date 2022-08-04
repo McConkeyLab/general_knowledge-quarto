@@ -1,0 +1,148 @@
+---
+title: "Library Quality Control"
+execute: 
+  echo: false
+fig-cap-location: margin
+reference-location: margin
+---
+
+
+```{r}
+#| include: false
+
+library(tibble)
+library(flextable)
+```
+
+## NanoDrop
+
+The NanoDrop is a small-scale absorbance spectrophotometer. It allows you to provide a small $(1-2\mu L)$ volume of RNA to measure its concentration, as well as common sources of contamination (protein, salt, and other foreign agents).
+
+### Protocol
+
+1. Select the nucleotide you want to detect on the NanoDrop touchscreen. Typically this is RNA.
+2. Follow the prompts on screen. When instructed, place $2\mu L$ of blank^[Your blank will be whatever your sample is diluted in. Often, this will be nuclease-free water] on the small metal pedestal.
+3. Lower the arm and allow the machine to blank
+4. Raise the arm when the machine has finished blanking and gently wipe away the liquid with a KimWipe on both the pedestal and the portion of the arm that comes in contact with the droplet^[To use fewer KimWipes, you can tear off a little bit of a single KimWipe instead of using a whole new KimWipe each time].
+5. Place $1-2\mu L$^[The amount of sample you add depends on how much you have. $2\mu L$ tends to be less finicky, but if you have very little sample you may choose to use $1\mu L$ instead. You do not need to adjust your concentrations based on the volume you add.] of sample on the pedestal and lower the arm.
+6. Allow the machine to read the sample.
+7. Repeat steps 4-7 for all samples
+8. Once you have read your last sample and wiped off the pedestal, touch 'End Experiment', then insert a USB stick into the front of the NanoDrop
+9. Once the NanoDrop has recognized the USB, touch 'Export' and then 'ok' (you only need the .csv file)
+10. Once the export is complete, touch 'End Experiment'
+
+:::{.callout-note}
+You can retrieve the NanoDrop file at a later time by going through the data stored on the NanoDrop, though digging through the files is a slightly more cumbersome process.
+:::
+
+
+### Interpreting results
+
+The NanoDrop measures, broadly speaking, three things:
+
+1. Sample concentration. This is fairly straightforward. What concentrations you expect and hope to see depends largely on your upstream and downstream protocols.
+2. 260/280. Nucleotides like RNA absorb at 260nm, will protein absorbs at 280nm. By taking the ratio of these absorbances, we can determine how much of the sample is contaminated by protein. A lower ratio implies more contamination. A good score to see is close to 2. 
+3. 260/230. Salts, such as guanidine thiocyanate, are common contaminants of the RNA lysis and extraction process. These absorb at around 230nm. Like 260/280, a lower ratio implies more contamination. A good value is above 1.8; however, samples with low 260/230 values can still be sequenced with little issue.
+
+
+## TapeStation
+
+The TapeStation is an automated electrophoresis system for RNA and DNA. In the context of library preparation, the TapeStation allows you to determine:
+
+1. The quality of the RNA put into library preparation
+2. The quality of the cDNA libraries produced from library preparation
+
+### Protocol
+
+There are protocols, each with their own set of reagents:
+
+- RNA
+- High Sensitivity RNA
+- D1000 (DNA)
+- High Sensitivity D1000 (DNA)
+
+Depending on the concentration of your input RNA (determined via NanoDrop), you may choose to use either RNA or High Sensitivity RNA reagents. However, only High Sensitivity D1000 is used to measure generated library quality.
+
+:::{.callout-note}
+- Get ice
+- Thaw the corresponding sample buffer at $RT$ for at least $30\ minutes$
+- Thaw the corresponding ladder on ice
+- Thaw samples on ice
+- If doing RNA, set heatblock to $72^\circ C$
+:::
+
+1. Get enough optical tube strips (Cat# 401428) and caps (Cat# 401425) to accommodate the number of samples you want to run, plus one more for the ladder. 
+
+:::{.callout-note}
+If this is above 15 samples (ie, more than two tube strips) you will need to do this protocol in multiple rounds.
+:::
+
+2. Vortex sample buffer for $15\ seconds$
+3. Add sample buffer to each tube (see below for amount)
+4. Add ladder or sample to each tube (see below for amount)
+5. Mark the tube tops to indicate the tubestrip polarity, as well as to distinguish one tubestrip from the other (if applicable)
+6. Vortex for $1\ minute$ at $2000\ rpm$ on the IKA vortexer
+7. Spin down samples briefly
+8. If doing RNA or High Sensitivity RNA, heat at $72^\circ C$ for $3\ minutes$, then cool on ice for $2\ minutes$. Spin down briefly.
+
+```{r}
+instructions <- tibble(Assay = c("RNA", "RNA HS", "D1000", "D1000 HS"),
+                       `Buffer (uL)` = c(5, 1, 3, 2),
+                       `Ladder/Sample (uL)` = c(1, 2, 1, 2),
+                       Shake = c("1 min", "1 min", "1 min", "1 min"),
+                       Heat = c("72C, 3 minutes", "72C, 3 minutes", NA, NA), 
+                       Chill = c("Ice, 2 minutes", "Ice, 2 minutes", NA, NA))
+
+bd <- fp_border_default(color = "#FFFFFF", width = 1.5)
+
+flextable(instructions) |> 
+  merge_v() |> 
+  merge_h_range(i = 3:4, j1 = 5, j2 = 6) |> 
+  border_inner(border = bd) |> 
+  border_outer(border = bd) |> 
+  align(part = "all", align = "center") |> 
+  align(j = 1, part = "all", align = "right") |> 
+  bg(part = "all", bg = "#d1e2e6") |> 
+  bg(3:4, 5:6, bg = "#888888") |>
+  bold(part = "header") |> 
+  bold(j = 1) |> 
+  autofit()
+```
+
+9. Gently remove the tubestrip caps and place the tubestrips into the TapeStation, such that the ladder is in the upper left corner
+10. Drop a ScreenTape (corresponding with the reagents you are using) into the slot with the blinking light. The colored strip that says "Agilent" should be on the right, facing you.
+
+:::{.callout-note}
+If not all ScreenTape is used, it can be slid back into its packaging and saved for up to two weeks. Write the date it was opened, along with how many uses are left.
+
+You can use a combination of partially used ScreenTape and unused ScreenTape by queuing them in the slots to the right of where you put the initial ScreenTape.
+:::
+
+11. On the laptop, name your samples as you see fit
+
+:::{.callout-warning}
+Ensure that the caps of the tubestrips are removed. If not, the needle will be damaged.
+:::
+
+12. Run the program, following the prompts on screen.
+
+
+### Interpreting Results
+
+#### RNA
+
+RNA is given a 'RINe', which is a measure of RNA integrity. This score ranges from 0 (very poor integrity) to 10 (very good integrity). In RNA extracted from cell lines, you should expect a value close to 10. However, for RNA isolated from FFPE samples, you can expect an RINe of around 1-2. Being in FFPE is very tough on samples, so there is a lot of fragmentation. Therefore, we accept these lower values. 
+
+Since the RINe value is of little use to us in values that are highly degraded, we instead use the DV200. The DV200 is the percent of RNA fragments that are > 200 nucleotides in length. Traditionally, we accept DV200 values that are greater than 30%.
+
+
+### DNA
+
+Libraries form a smooth peak at around 3000nt. This should look as a smooth gradient on the electropherogram and a bell-curve on the histograms
+
+
+## qPCR
+
+### Protocol
+
+### Interpreting Results
