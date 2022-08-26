@@ -222,16 +222,18 @@ Warm medium, PBS, and trypsin
 Flasks should be healthy and $~80\%$ confluent for making packs.
 :::
 
-1.  Follow the [cell-splitting protocol](#split-cells) up and through transfering the cell suspension into a conical tube.
+::: callout-note
+Prepare labels for cryovials. If you have a T75, you'll need $3$ cryovials. If you have a T175, you'll need $6$ cryovials
+
+The labels should include the cell name on the top. On the side, they should include the cell line, the passage (if known), you initials, and the date frozen.
+:::
+
+1.  Follow the [cell-splitting protocol](#split-cells) up and through transferring the cell suspension into a conical tube.
 2.  Spin cells down at $300 \times g$ for $5\ minutes$
 3.  Aspirate off medium supernatant
-4.  Resuspend with $5mL$ PBS
-5.  Spin cells down at $300 \times g$ for $5\ minutes$
-6.  Aspirate off PBS supernatant
 7.  Resuspend in cool (straight from fridge) cell freezing medium (such as CryoStor).
     -   If the cells were from a $T75$, $3mL$ is appropriate. If $T175$, $6mL$ is appropriate.
-8.  Aliquot $1mL$ of cell suspension into cryovials
-9.  Label cryovials with cell name, passage, date, and your initials
+8.  Aliquot $1mL$ of cell suspension into the labelled cryovials.
 10. Store vials in $-80^\circ C$. Transfer to liquid nitrogen when possible.
 
 ## Counting Cells {#count-cells}
