@@ -1,0 +1,52 @@
+# $\Delta\Delta$ qRT-PCR
+
+:::{.callout-note}
+This protocol assumes you have finished the $\Delta\Delta$ qRT-PCR protocol.
+
+This protocol also requires you have installed R, RStudio, and the `amplify` package. `amplify` is a GitHub package. Use `devtools::install_github("KaiAragaki/amplify")` to install it. For more information, see 'Installing GitHub Packages'.
+:::
+
+## Data Acquisition
+1. Click the 'export' tab in the left hand side of the QuantStudio software. 
+2. Ensure that at least the 'Results' box is checked, and that all boxes for that tab are checked. (This should be the default).
+3. Uncheck "Open file(s) when export is complete"
+
+:::{.callout-note}
+If you don't do this, it will open the results file using Notepad, as that computer doesn't have Excel - and it will look like nonsense!
+:::
+
+4. Ensure you are exporting as .xls
+5. Choose the export location - probably a USB drive.
+6. Click export.
+
+## Reading data into R
+1. Open RStudio
+2. Press Shift + Ctrl/Command + N. This will open a new script.
+3. Paste the following into your script:
+
+```{r eval=FALSE, echo=TRUE}
+library(amplify)
+
+read_pcr("path/to/my/file") |> 
+  pcr_plot()
+```
+
+:::{.callout-note}
+If you don't know how to get a path to a file, you replace it with the following in instead:
+  
+  `read_pcr(file.choose())`
+
+This will open a file picker so that you can choose what file you want.
+:::
+  
+  
+4. Run the file by pressing Control/Command + Shift + S
+5. A plot will be shown under the 'Plots' tab. You can click the 'Export' button and choose if you would like to save it as an image, PDF, or copy it to your clipboard.
+
+## Interpretation
+'RQ' stands for 'Relative Quantity'. It is the abundance of a given RNA as compared to some reference condition. For the reference condition itself, that is always 1. An RQ > 1 means that this condition has a higher abundance of the given RNA, after normalizing to some endogenous control (like GAPDH). An RQ of <1 means that this condition has a lower abundance of a given RNA, after normalizing to the endogenous control.
+
+## Diving deeper
+- `amplify` can also let you renormalize your data to a different sample using `pcr_rq`. You can also choose a different primer to be your endogenous control using `pcr_control`. Learn more about it [here](https://kaiaragaki.github.io/amplify/)
+- Ideally, you would upload your analysis scripts into a GitHub repository
+- In addition, ideally, you would upload your raw data to the SharePoint and point to the data on the SharePoint using the `Microsoft365R` package. This is a bit more challenging, so if you must, you can include your data within the GitHub repository and use relative paths to refer to it so it works on everyone's machine, so long as the file is small (< 5MB), the GitHub repo is private, and it does not contain any Patient Health Information (PHI).

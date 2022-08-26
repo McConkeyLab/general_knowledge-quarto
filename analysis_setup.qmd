@@ -1,0 +1,25 @@
+# Installing R
+
+If you have already installed R, ensure is is updated to at least version 4.1 or the packages will not work!
+
+If you have not installed R before, go [here](https://cran.r-project.org/) and click the link for your specific operating system. If you use Mac OS, make sure you get the R version for your particular type of Mac. If you have a Mac using Apple's silicon (eg M1), choose the 'arm64' version. If not, choose the other version. 
+
+:::{.callout-note}
+If you don't know what kind of processor you have, you can click on the 'Apple' button in the top left corner of your screen, then click 'About This Mac'. The 'Processor' heading will tell you if it is Intel or Apple silicon.
+:::
+
+# Installing RStudio
+
+Go [here](https://www.rstudio.com/products/rstudio/download/#download) to download the package. Run the downloaded file to install.
+
+# Installing Packages
+
+1. Open RStudio
+2. Find the tab that says 'Console' and click on it. Alternatively, press Control + 2 (not command + 2)
+3. Type the following: `install.packages("mypackage")`. Replace `mypackage` with what you want to install, but keep the double quotes. Press enter.
+4. Wait a bit for the package to install, and say yes to any prompts. Your package is now installed!
+
+# Installing GitHub Packages
+
+1. First, follow the "Installing Packages" instructions to install the `devtools` package
+2. Then type the following into the console: `devtools::install_github("user/package")`, where `user` is the GitHub user and `package` is the repository name.

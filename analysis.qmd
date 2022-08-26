@@ -1,0 +1,12 @@
+# Analysis
+
+Once you have data, you'd probably like to analyze it. Often we analyze our data the same way for each type of experiment, so writing protocols for data analysis is possible. Sometime we analyze our data the exact same way every single time, so it's possible to automate the process using R scripts. For some of these analyses, you will be on your own having to analyze your own data - particularly if your data are messy or if you want to do a particularly elaborate analysis. However, for the rest you can use some of the programs that I've made for the lab to expedite the otherwise boring process of spreadsheet wrangling (this is what drove me to get into R).
+
+The workflows contained within are meant to be approachable to the non-R user. However, in order to make these workflows approachable, they are also riddled with bad practices. If you plan on using these workflows a lot, your future self and your labmates will enjoy if you learn how to do the following as well:
+  
+1. Version control, using git + GitHub. See [here](https://happygitwithr.com/) for a gentle introduction
+2. Using R Projects, to avoid Jenny Bryan [setting your computer on fire](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+A good place to sweep up info about 'R etiquette' can be found [here](https://rstats.wtf/)
+
+Additionally, this isn't an intro to R. If you'd like an intro to R, I'd highly recommend this very gentle introduction [here](https://moderndive.com/index.html)

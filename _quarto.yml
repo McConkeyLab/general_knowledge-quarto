@@ -22,6 +22,10 @@ book:
         - mtt.qmd
         - transwells.qmd
         - qc.qmd
+    - part: analysis.qmd
+      chapters:
+        - analysis_setup.qmd
+        - qpcr_analysis.qmd
 
 format:
   html:
