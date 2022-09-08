@@ -252,6 +252,8 @@ Matrix can refer to either Corning Matrigel or Cultrex Basement Membrane Extract
 #### Hepatocyte Culture Medium (HCM) {#hcm}
 
 ```{r}
+#| echo: false
+
 tibble(Reagent = c("HCM Hepatocyte Culture Medium BulletKit"), 
        Volume = c("500 mL"), 
        `Cat. #` = c("CC-3198")) |> gt(rowname_col = "Reagent")
