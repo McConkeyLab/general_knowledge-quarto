@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.494">
+<meta name="generator" content="quarto-1.2.11">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -35,7 +40,7 @@ ul.task-list{list-style: none;}
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -100,112 +105,117 @@ ul.task-list{list-style: none;}
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
-    <div class="sidebar-item-container"> 
-        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Protocols</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
-        <i class="bi bi-chevron-right ms-2"></i>
-      </a>
-    </div>
-    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-        <li class="sidebar-item">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Protocols</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cell-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cell Culture</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./three-d-cell-culture.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">3D Culture</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cell-modification.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cell Modification</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cell-line-extraction-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cell Line Extraction Methods</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ffpe-extraction-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">FFPE Extraction Methods</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lib-prep.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Library Prep for FFPE Tissue RNA</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./western-blot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Western Blots</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dd-ct-pcr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><span class="math inline">\(\Delta\Delta\)</span> qRT-PCR</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mtt.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">MTT Assay</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./transwells.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Transwell Assays</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./qc.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Library Quality Control</span></a>
   </div>
 </li>
-    </ul>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-    <div class="sidebar-item-container"> 
-        <a href="./analysis.html" class="sidebar-item-text sidebar-link">Analysis</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
-        <i class="bi bi-chevron-right ms-2"></i>
-      </a>
-    </div>
-    <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-        <li class="sidebar-item">
+      <div class="sidebar-item-container"> 
+            <a href="./analysis.html" class="sidebar-item-text sidebar-link">Analysis</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./analysis_setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Installing R</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./qpcr_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><span class="math inline">\(\Delta\Delta\)</span> qRT-PCR</span></a>
   </div>
 </li>
-    </ul>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mtt_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">MTT Analysis</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sirna-transfection" id="toc-sirna-transfection" class="nav-link active" data-scroll-target="#sirna-transfection"> <span class="header-section-number">4.1</span> siRNA Transfection</a>
+  <li><a href="#sirna-transfection" id="toc-sirna-transfection" class="nav-link active" data-scroll-target="#sirna-transfection"><span class="toc-section-number">4.1</span>  siRNA Transfection</a>
   <ul class="collapse">
-  <li><a href="#sirna-resuspension" id="toc-sirna-resuspension" class="nav-link" data-scroll-target="#sirna-resuspension"> <span class="header-section-number">4.1.1</span> siRNA Resuspension</a></li>
-  <li><a href="#performing-transfection" id="toc-performing-transfection" class="nav-link" data-scroll-target="#performing-transfection"> <span class="header-section-number">4.1.2</span> Performing Transfection</a></li>
+  <li><a href="#sirna-resuspension" id="toc-sirna-resuspension" class="nav-link" data-scroll-target="#sirna-resuspension"><span class="toc-section-number">4.1.1</span>  siRNA Resuspension</a></li>
+  <li><a href="#performing-transfection" id="toc-performing-transfection" class="nav-link" data-scroll-target="#performing-transfection"><span class="toc-section-number">4.1.2</span>  Performing Transfection</a></li>
   </ul></li>
-  <li><a href="#inducible-shrna" id="toc-inducible-shrna" class="nav-link" data-scroll-target="#inducible-shrna"> <span class="header-section-number">4.2</span> Inducible shRNA</a>
+  <li><a href="#inducible-shrna" id="toc-inducible-shrna" class="nav-link" data-scroll-target="#inducible-shrna"><span class="toc-section-number">4.2</span>  Inducible shRNA</a>
   <ul class="collapse">
-  <li><a href="#optimized-cell-line-data" id="toc-optimized-cell-line-data" class="nav-link" data-scroll-target="#optimized-cell-line-data"> <span class="header-section-number">4.2.1</span> Optimized cell line data</a></li>
-  <li><a href="#optimizing-promoter" id="toc-optimizing-promoter" class="nav-link" data-scroll-target="#optimizing-promoter"> <span class="header-section-number">4.2.2</span> Optimizing promoter</a></li>
-  <li><a href="#optimizing-transfection-conditions" id="toc-optimizing-transfection-conditions" class="nav-link" data-scroll-target="#optimizing-transfection-conditions"> <span class="header-section-number">4.2.3</span> Optimizing transfection conditions</a></li>
-  <li><a href="#determining-transduction-efficiency" id="toc-determining-transduction-efficiency" class="nav-link" data-scroll-target="#determining-transduction-efficiency"> <span class="header-section-number">4.2.4</span> Determining transduction efficiency</a></li>
+  <li><a href="#optimized-cell-line-data" id="toc-optimized-cell-line-data" class="nav-link" data-scroll-target="#optimized-cell-line-data"><span class="toc-section-number">4.2.1</span>  Optimized cell line data</a></li>
+  <li><a href="#optimizing-promoter" id="toc-optimizing-promoter" class="nav-link" data-scroll-target="#optimizing-promoter"><span class="toc-section-number">4.2.2</span>  Optimizing promoter</a></li>
+  <li><a href="#optimizing-transfection-conditions" id="toc-optimizing-transfection-conditions" class="nav-link" data-scroll-target="#optimizing-transfection-conditions"><span class="toc-section-number">4.2.3</span>  Optimizing transfection conditions</a></li>
+  <li><a href="#determining-transduction-efficiency" id="toc-determining-transduction-efficiency" class="nav-link" data-scroll-target="#determining-transduction-efficiency"><span class="toc-section-number">4.2.4</span>  Determining transduction efficiency</a></li>
   </ul></li>
-  <li><a href="#crispr" id="toc-crispr" class="nav-link" data-scroll-target="#crispr"> <span class="header-section-number">4.3</span> CRISPR</a></li>
+  <li><a href="#crispr" id="toc-crispr" class="nav-link" data-scroll-target="#crispr"><span class="toc-section-number">4.3</span>  CRISPR</a></li>
   </ul>
 </nav>
     </div>
@@ -277,12 +287,12 @@ Tip
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="nkjwifauin" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="abwmytjxsv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nkjwifauin .gt_table {
+:where(#abwmytjxsv) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -307,7 +317,7 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_heading {
+:where(#abwmytjxsv) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -319,7 +329,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_title {
+:where(#abwmytjxsv) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -331,7 +341,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#nkjwifauin .gt_subtitle {
+:where(#abwmytjxsv) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -343,13 +353,13 @@ Tip
   border-top-width: 0;
 }
 
-#nkjwifauin .gt_bottom_border {
+:where(#abwmytjxsv) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_col_headings {
+:where(#abwmytjxsv) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -364,7 +374,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_col_heading {
+:where(#abwmytjxsv) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -384,7 +394,7 @@ Tip
   overflow-x: hidden;
 }
 
-#nkjwifauin .gt_column_spanner_outer {
+:where(#abwmytjxsv) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -396,15 +406,15 @@ Tip
   padding-right: 4px;
 }
 
-#nkjwifauin .gt_column_spanner_outer:first-child {
+:where(#abwmytjxsv) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nkjwifauin .gt_column_spanner_outer:last-child {
+:where(#abwmytjxsv) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nkjwifauin .gt_column_spanner {
+:where(#abwmytjxsv) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -416,7 +426,7 @@ Tip
   width: 100%;
 }
 
-#nkjwifauin .gt_group_heading {
+:where(#abwmytjxsv) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -441,7 +451,7 @@ Tip
   vertical-align: middle;
 }
 
-#nkjwifauin .gt_empty_group_heading {
+:where(#abwmytjxsv) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -456,15 +466,15 @@ Tip
   vertical-align: middle;
 }
 
-#nkjwifauin .gt_from_md > :first-child {
+:where(#abwmytjxsv) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nkjwifauin .gt_from_md > :last-child {
+:where(#abwmytjxsv) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nkjwifauin .gt_row {
+:where(#abwmytjxsv) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -483,7 +493,7 @@ Tip
   overflow-x: hidden;
 }
 
-#nkjwifauin .gt_stub {
+:where(#abwmytjxsv) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -496,7 +506,7 @@ Tip
   padding-right: 5px;
 }
 
-#nkjwifauin .gt_stub_row_group {
+:where(#abwmytjxsv) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -510,11 +520,11 @@ Tip
   vertical-align: top;
 }
 
-#nkjwifauin .gt_row_group_first td {
+:where(#abwmytjxsv) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#nkjwifauin .gt_summary_row {
+:where(#abwmytjxsv) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -524,16 +534,16 @@ Tip
   padding-right: 5px;
 }
 
-#nkjwifauin .gt_first_summary_row {
+:where(#abwmytjxsv) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_first_summary_row.thick {
+:where(#abwmytjxsv) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#nkjwifauin .gt_last_summary_row {
+:where(#abwmytjxsv) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -543,7 +553,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_grand_summary_row {
+:where(#abwmytjxsv) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -553,7 +563,7 @@ Tip
   padding-right: 5px;
 }
 
-#nkjwifauin .gt_first_grand_summary_row {
+:where(#abwmytjxsv) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -563,11 +573,11 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_striped {
+:where(#abwmytjxsv) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nkjwifauin .gt_table_body {
+:where(#abwmytjxsv) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -576,7 +586,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_footnotes {
+:where(#abwmytjxsv) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -590,7 +600,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_footnote {
+:where(#abwmytjxsv) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -599,7 +609,7 @@ Tip
   padding-right: 5px;
 }
 
-#nkjwifauin .gt_sourcenotes {
+:where(#abwmytjxsv) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -613,7 +623,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#nkjwifauin .gt_sourcenote {
+:where(#abwmytjxsv) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -621,90 +631,83 @@ Tip
   padding-right: 5px;
 }
 
-#nkjwifauin .gt_left {
+:where(#abwmytjxsv) .gt_left {
   text-align: left;
 }
 
-#nkjwifauin .gt_center {
+:where(#abwmytjxsv) .gt_center {
   text-align: center;
 }
 
-#nkjwifauin .gt_right {
+:where(#abwmytjxsv) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nkjwifauin .gt_font_normal {
+:where(#abwmytjxsv) .gt_font_normal {
   font-weight: normal;
 }
 
-#nkjwifauin .gt_font_bold {
+:where(#abwmytjxsv) .gt_font_bold {
   font-weight: bold;
 }
 
-#nkjwifauin .gt_font_italic {
+:where(#abwmytjxsv) .gt_font_italic {
   font-style: italic;
 }
 
-#nkjwifauin .gt_super {
+:where(#abwmytjxsv) .gt_super {
   font-size: 65%;
 }
 
-#nkjwifauin .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#nkjwifauin .gt_footnote_marks {
+:where(#abwmytjxsv) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#nkjwifauin .gt_asterisk {
+:where(#abwmytjxsv) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#nkjwifauin .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+:where(#abwmytjxsv) .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#nkjwifauin .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+:where(#abwmytjxsv) .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#nkjwifauin .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+:where(#abwmytjxsv) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#abwmytjxsv) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#abwmytjxsv) .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Volume</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Ref #</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Volume</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Ref #</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_right gt_stub">Opti-MEM Medium</td>
+    <tr><th scope="row" class="gt_row gt_left gt_stub">Opti-MEM Medium</th>
 <td class="gt_row gt_left">150uL</td>
-<td class="gt_row gt_left">31985062</td></tr>
-    <tr><td class="gt_row gt_right gt_stub">Lipofectamine RNAiMAX Reagent</td>
+<td class="gt_row gt_right">31985062</td></tr>
+    <tr><th scope="row" class="gt_row gt_left gt_stub">Lipofectamine RNAiMAX Reagent</th>
 <td class="gt_row gt_left">9uL</td>
-<td class="gt_row gt_left">13778150</td></tr>
+<td class="gt_row gt_right">13778150</td></tr>
   </tbody>
   
   
@@ -718,12 +721,12 @@ Tip
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="vbgmthbfgr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mlahtuhdhi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vbgmthbfgr .gt_table {
+:where(#mlahtuhdhi) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -748,7 +751,7 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_heading {
+:where(#mlahtuhdhi) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -760,7 +763,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_title {
+:where(#mlahtuhdhi) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -772,7 +775,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#vbgmthbfgr .gt_subtitle {
+:where(#mlahtuhdhi) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -784,13 +787,13 @@ Tip
   border-top-width: 0;
 }
 
-#vbgmthbfgr .gt_bottom_border {
+:where(#mlahtuhdhi) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_col_headings {
+:where(#mlahtuhdhi) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -805,7 +808,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_col_heading {
+:where(#mlahtuhdhi) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -825,7 +828,7 @@ Tip
   overflow-x: hidden;
 }
 
-#vbgmthbfgr .gt_column_spanner_outer {
+:where(#mlahtuhdhi) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -837,15 +840,15 @@ Tip
   padding-right: 4px;
 }
 
-#vbgmthbfgr .gt_column_spanner_outer:first-child {
+:where(#mlahtuhdhi) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vbgmthbfgr .gt_column_spanner_outer:last-child {
+:where(#mlahtuhdhi) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vbgmthbfgr .gt_column_spanner {
+:where(#mlahtuhdhi) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -857,7 +860,7 @@ Tip
   width: 100%;
 }
 
-#vbgmthbfgr .gt_group_heading {
+:where(#mlahtuhdhi) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -882,7 +885,7 @@ Tip
   vertical-align: middle;
 }
 
-#vbgmthbfgr .gt_empty_group_heading {
+:where(#mlahtuhdhi) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -897,15 +900,15 @@ Tip
   vertical-align: middle;
 }
 
-#vbgmthbfgr .gt_from_md > :first-child {
+:where(#mlahtuhdhi) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vbgmthbfgr .gt_from_md > :last-child {
+:where(#mlahtuhdhi) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vbgmthbfgr .gt_row {
+:where(#mlahtuhdhi) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -924,7 +927,7 @@ Tip
   overflow-x: hidden;
 }
 
-#vbgmthbfgr .gt_stub {
+:where(#mlahtuhdhi) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -937,7 +940,7 @@ Tip
   padding-right: 5px;
 }
 
-#vbgmthbfgr .gt_stub_row_group {
+:where(#mlahtuhdhi) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -951,11 +954,11 @@ Tip
   vertical-align: top;
 }
 
-#vbgmthbfgr .gt_row_group_first td {
+:where(#mlahtuhdhi) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vbgmthbfgr .gt_summary_row {
+:where(#mlahtuhdhi) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -965,16 +968,16 @@ Tip
   padding-right: 5px;
 }
 
-#vbgmthbfgr .gt_first_summary_row {
+:where(#mlahtuhdhi) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_first_summary_row.thick {
+:where(#mlahtuhdhi) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vbgmthbfgr .gt_last_summary_row {
+:where(#mlahtuhdhi) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -984,7 +987,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_grand_summary_row {
+:where(#mlahtuhdhi) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -994,7 +997,7 @@ Tip
   padding-right: 5px;
 }
 
-#vbgmthbfgr .gt_first_grand_summary_row {
+:where(#mlahtuhdhi) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1004,11 +1007,11 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_striped {
+:where(#mlahtuhdhi) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vbgmthbfgr .gt_table_body {
+:where(#mlahtuhdhi) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1017,7 +1020,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_footnotes {
+:where(#mlahtuhdhi) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1031,7 +1034,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_footnote {
+:where(#mlahtuhdhi) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1040,7 +1043,7 @@ Tip
   padding-right: 5px;
 }
 
-#vbgmthbfgr .gt_sourcenotes {
+:where(#mlahtuhdhi) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1054,7 +1057,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#vbgmthbfgr .gt_sourcenote {
+:where(#mlahtuhdhi) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1062,88 +1065,81 @@ Tip
   padding-right: 5px;
 }
 
-#vbgmthbfgr .gt_left {
+:where(#mlahtuhdhi) .gt_left {
   text-align: left;
 }
 
-#vbgmthbfgr .gt_center {
+:where(#mlahtuhdhi) .gt_center {
   text-align: center;
 }
 
-#vbgmthbfgr .gt_right {
+:where(#mlahtuhdhi) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vbgmthbfgr .gt_font_normal {
+:where(#mlahtuhdhi) .gt_font_normal {
   font-weight: normal;
 }
 
-#vbgmthbfgr .gt_font_bold {
+:where(#mlahtuhdhi) .gt_font_bold {
   font-weight: bold;
 }
 
-#vbgmthbfgr .gt_font_italic {
+:where(#mlahtuhdhi) .gt_font_italic {
   font-style: italic;
 }
 
-#vbgmthbfgr .gt_super {
+:where(#mlahtuhdhi) .gt_super {
   font-size: 65%;
 }
 
-#vbgmthbfgr .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#vbgmthbfgr .gt_footnote_marks {
+:where(#mlahtuhdhi) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#vbgmthbfgr .gt_asterisk {
+:where(#mlahtuhdhi) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vbgmthbfgr .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+:where(#mlahtuhdhi) .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#vbgmthbfgr .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+:where(#mlahtuhdhi) .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#vbgmthbfgr .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+:where(#mlahtuhdhi) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#mlahtuhdhi) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#mlahtuhdhi) .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Volume</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Ref #</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Volume</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Ref #</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_right gt_stub">Opti-MEM Medium</td>
+    <tr><th scope="row" class="gt_row gt_left gt_stub">Opti-MEM Medium</th>
 <td class="gt_row gt_left">150uL</td>
 <td class="gt_row gt_left">31985062</td></tr>
-    <tr><td class="gt_row gt_right gt_stub">siRNA (10 uM)</td>
+    <tr><th scope="row" class="gt_row gt_left gt_stub">siRNA (10 uM)</th>
 <td class="gt_row gt_left">3uL (30pmol)</td>
 <td class="gt_row gt_left">varies</td></tr>
   </tbody>
@@ -1172,12 +1168,12 @@ Tip
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="eeynmyrtml" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="sbskdvjoqd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#eeynmyrtml .gt_table {
+:where(#sbskdvjoqd) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1202,7 +1198,7 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_heading {
+:where(#sbskdvjoqd) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1214,7 +1210,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_title {
+:where(#sbskdvjoqd) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1226,7 +1222,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#eeynmyrtml .gt_subtitle {
+:where(#sbskdvjoqd) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1238,13 +1234,13 @@ Tip
   border-top-width: 0;
 }
 
-#eeynmyrtml .gt_bottom_border {
+:where(#sbskdvjoqd) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_col_headings {
+:where(#sbskdvjoqd) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1259,7 +1255,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_col_heading {
+:where(#sbskdvjoqd) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1279,7 +1275,7 @@ Tip
   overflow-x: hidden;
 }
 
-#eeynmyrtml .gt_column_spanner_outer {
+:where(#sbskdvjoqd) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1291,15 +1287,15 @@ Tip
   padding-right: 4px;
 }
 
-#eeynmyrtml .gt_column_spanner_outer:first-child {
+:where(#sbskdvjoqd) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eeynmyrtml .gt_column_spanner_outer:last-child {
+:where(#sbskdvjoqd) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eeynmyrtml .gt_column_spanner {
+:where(#sbskdvjoqd) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1311,7 +1307,7 @@ Tip
   width: 100%;
 }
 
-#eeynmyrtml .gt_group_heading {
+:where(#sbskdvjoqd) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1336,7 +1332,7 @@ Tip
   vertical-align: middle;
 }
 
-#eeynmyrtml .gt_empty_group_heading {
+:where(#sbskdvjoqd) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1351,15 +1347,15 @@ Tip
   vertical-align: middle;
 }
 
-#eeynmyrtml .gt_from_md > :first-child {
+:where(#sbskdvjoqd) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eeynmyrtml .gt_from_md > :last-child {
+:where(#sbskdvjoqd) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eeynmyrtml .gt_row {
+:where(#sbskdvjoqd) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1378,7 +1374,7 @@ Tip
   overflow-x: hidden;
 }
 
-#eeynmyrtml .gt_stub {
+:where(#sbskdvjoqd) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1391,7 +1387,7 @@ Tip
   padding-right: 5px;
 }
 
-#eeynmyrtml .gt_stub_row_group {
+:where(#sbskdvjoqd) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1405,11 +1401,11 @@ Tip
   vertical-align: top;
 }
 
-#eeynmyrtml .gt_row_group_first td {
+:where(#sbskdvjoqd) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eeynmyrtml .gt_summary_row {
+:where(#sbskdvjoqd) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1419,16 +1415,16 @@ Tip
   padding-right: 5px;
 }
 
-#eeynmyrtml .gt_first_summary_row {
+:where(#sbskdvjoqd) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_first_summary_row.thick {
+:where(#sbskdvjoqd) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eeynmyrtml .gt_last_summary_row {
+:where(#sbskdvjoqd) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1438,7 +1434,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_grand_summary_row {
+:where(#sbskdvjoqd) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1448,7 +1444,7 @@ Tip
   padding-right: 5px;
 }
 
-#eeynmyrtml .gt_first_grand_summary_row {
+:where(#sbskdvjoqd) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1458,11 +1454,11 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_striped {
+:where(#sbskdvjoqd) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eeynmyrtml .gt_table_body {
+:where(#sbskdvjoqd) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1471,7 +1467,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_footnotes {
+:where(#sbskdvjoqd) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1485,7 +1481,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_footnote {
+:where(#sbskdvjoqd) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1494,7 +1490,7 @@ Tip
   padding-right: 5px;
 }
 
-#eeynmyrtml .gt_sourcenotes {
+:where(#sbskdvjoqd) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1508,7 +1504,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#eeynmyrtml .gt_sourcenote {
+:where(#sbskdvjoqd) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1516,86 +1512,79 @@ Tip
   padding-right: 5px;
 }
 
-#eeynmyrtml .gt_left {
+:where(#sbskdvjoqd) .gt_left {
   text-align: left;
 }
 
-#eeynmyrtml .gt_center {
+:where(#sbskdvjoqd) .gt_center {
   text-align: center;
 }
 
-#eeynmyrtml .gt_right {
+:where(#sbskdvjoqd) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eeynmyrtml .gt_font_normal {
+:where(#sbskdvjoqd) .gt_font_normal {
   font-weight: normal;
 }
 
-#eeynmyrtml .gt_font_bold {
+:where(#sbskdvjoqd) .gt_font_bold {
   font-weight: bold;
 }
 
-#eeynmyrtml .gt_font_italic {
+:where(#sbskdvjoqd) .gt_font_italic {
   font-style: italic;
 }
 
-#eeynmyrtml .gt_super {
+:where(#sbskdvjoqd) .gt_super {
   font-size: 65%;
 }
 
-#eeynmyrtml .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#eeynmyrtml .gt_footnote_marks {
+:where(#sbskdvjoqd) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#eeynmyrtml .gt_asterisk {
+:where(#sbskdvjoqd) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eeynmyrtml .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+:where(#sbskdvjoqd) .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#eeynmyrtml .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+:where(#sbskdvjoqd) .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#eeynmyrtml .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+:where(#sbskdvjoqd) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#sbskdvjoqd) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#sbskdvjoqd) .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Cell Line</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Seeding density (cells/100uL)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Need serum?</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Max polybrene (ug/mL)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Relative transduction efficiency</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Optimal puromycin (ug/mL)</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Date</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Operator</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Cell Line</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Seeding density (cells/100uL)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Need serum?</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Max polybrene (ug/mL)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Relative transduction efficiency</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Optimal puromycin (ug/mL)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Date</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Operator</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -1605,7 +1594,7 @@ Tip
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_right">NA</td>
 <td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_left">2021-03-17</td>
+<td class="gt_row gt_right">2021-03-17</td>
 <td class="gt_row gt_left">Kai Aragaki</td></tr>
     <tr><td class="gt_row gt_left">UC9</td>
 <td class="gt_row gt_right">5000</td>
@@ -1613,7 +1602,7 @@ Tip
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_right">NA</td>
 <td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_left">2021-03-17</td>
+<td class="gt_row gt_right">2021-03-17</td>
 <td class="gt_row gt_left">Kai Aragaki</td></tr>
     <tr><td class="gt_row gt_left">UC6</td>
 <td class="gt_row gt_right">1000</td>
@@ -1621,7 +1610,7 @@ Tip
 <td class="gt_row gt_left">&gt;14</td>
 <td class="gt_row gt_right">0.43</td>
 <td class="gt_row gt_right">2.5</td>
-<td class="gt_row gt_left">2021-04-28</td>
+<td class="gt_row gt_right">2021-04-28</td>
 <td class="gt_row gt_left">Kai Aragaki</td></tr>
     <tr><td class="gt_row gt_left">RT112</td>
 <td class="gt_row gt_right">3000</td>
@@ -1629,7 +1618,7 @@ Tip
 <td class="gt_row gt_left">&gt;14</td>
 <td class="gt_row gt_right">NA</td>
 <td class="gt_row gt_right">2.5</td>
-<td class="gt_row gt_left">2021-04-28</td>
+<td class="gt_row gt_right">2021-04-28</td>
 <td class="gt_row gt_left">Kai Aragaki</td></tr>
     <tr><td class="gt_row gt_left">UC14</td>
 <td class="gt_row gt_right">NA</td>
@@ -1637,7 +1626,7 @@ Tip
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_right">NA</td>
 <td class="gt_row gt_right">10.0</td>
-<td class="gt_row gt_left">2022-05-19</td>
+<td class="gt_row gt_right">2022-05-19</td>
 <td class="gt_row gt_left">Kai Aragaki</td></tr>
   </tbody>
   
@@ -1667,6 +1656,24 @@ Tip
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1716,7 +1723,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

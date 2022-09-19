@@ -1,0 +1,77 @@
+# MTT Analysis
+
+:::{.callout-note}
+This protocol assumes you have finished the [MTT Protocol](#sec-mtt-assay).
+
+This protocol also requires you have installed R, RStudio, as well as the mop and bladdr package. bladdr is a GitHub package. Use `devtools::install_github("McConkeyLab/bladdr")` to install bladdr and `devtools::install_github("KaiAragaki/mop")` to install mop. For more information, see 'Installing GitHub Packages'.
+:::
+
+## Data Acquisition
+
+1. In the Spectramax software, click 'File > Import/Export > Export...' and export the results as a .txt file to a USB drive
+
+## Reading Data into R
+1. Open RStudio
+2. Press Shift + Ctrl/Command + N. This will open a new script.
+3. Run the following in your script, with the path to your file replacing the `"dummy_mtt_spectramax.txt"`
+
+```{r echo=TRUE}
+library(bladdr)
+library(mop)
+
+my_spectramax <- read_spectramax("dummy_mtt_spectramax.txt")
+
+```
+
+You should now have a `spectramax` object that looks like this:
+```{r}
+my_spectramax
+```
+
+
+Now we need to calculate the proper values for plotting. This means we need to annotate our plate with our experimental conditions. To do this, we use `mtt_calc`.
+
+`mtt_calc` takes three arguments. One is the `my_spectramax` you just created. The second is the names of the conditions of each 'sector' of your plate. The third is the drug concentrations within that sector.
+
+The order of sectors goes as follows:
+```{r}
+library(gp)
+library(ggsci)
+gp(wells = 96) |> 
+  gp_sec("Sector", 4, 6, labels = c("1", "2", "3", "4")) |> 
+  gp_plot(Sector, size = 9) +
+  gp_mini_theme() +
+  theme_tufte() + 
+  scale_color_npg()
+```
+
+In my data, I know I only used two sectors - sector 1 and 2.
+
+Additionally, you need to annotate the concentration of drug. It all needs numeric - not text - so it needs to be the same units. Additionally, it moves from left to right in each section - like this:
+
+```{r}
+library(ggplot2)
+gp(wells = 96) |> 
+  gp_sec("Sector", 4, 6, labels = c("1", "2", "3", "4")) |> 
+  gp_sec("Drug", 4, 1, labels = c("1", "2", "3", "4", "5", "6")) |> 
+  gp_plot(Drug, size = 9) +
+  gp_mini_theme() +
+  theme_tufte() +
+  scale_color_brewer()
+```
+
+All this being said, here's how I'll annotate my plate:
+
+```{r echo = TRUE}
+my_mtt_calc <- mtt_calc(my_spectramax, 
+                        condition_names = c("Drug 1", "Drug 2", NA, NA),
+                        drug_conc = c(0, 1, 10, 100, 1000, 10000))
+my_mtt_calc
+```
+
+And these can be plotted like so:
+
+```{r echo = TRUE}
+my_mtt_calc |> mtt_plot()
+```
+
