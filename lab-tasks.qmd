@@ -1,0 +1,19 @@
+---
+fig-cap-location: margin
+reference-location: margin
+---
+
+# General Lab Tasks
+
+## Refilling 70% EtOH
+
+70% ethanol is used for disinfecting. We store a large^[But not too large - health and safety will not allow for a larger EtOH reservoir than we currently have] bottle of ethanol near the sink.
+
+To make more:
+
+1. Add 70% (by volume) ethanol^[This is the CLEANING ethanol (large, multi-liter bottle) and not the molecular grade ethanol. Molecular grade ethanol should say it is molecular grade on the bottle.] and 30% water (normal tap water is fine) to a graduated cylinder.
+2. Ensure that the bottom spigot of the large ethanol bottle is closed, then unscrew the lid.
+3. Pour the 70% ethanol in the top
+4. Screw the lid closed and give the ethanol bottle a little swirl.
+5. Unscrew the lid slightly to allow air to come in to the top. Otherwise, a vacuum will form and ethanol can not flow out.
+
