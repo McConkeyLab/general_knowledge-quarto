@@ -264,7 +264,7 @@ tibble(reagent = c("NF water", "1:100 Dilution"), Volume = c("45 uL", "5 uL")) |
   tab_header("1:1000 Dilution")
 ```
 
-For samples with low region molarity (As dertermined by TapeStation), you might want to use 1:100 dilutions. For all others, use 1:1000.
+For samples with low region molarity (As determined by TapeStation), you might want to use 1:100 dilutions. For all others, use 1:1000.
 
 :::{.callout-tip}
 It is helpful to have each dilution in a different color tube to avoid confusion. So, all 1:10 dilutions will be in an orange tube, etc.
