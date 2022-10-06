@@ -59,7 +59,6 @@ Prepare a suspension of your cells and count them
 ```{r}
 #| echo: false
 #| column: margin
-#| label: tbl-seeding
 
 tibble("Cell Line" = c("1A6", "5637", "BV", "HT1197", "HT1376", "J82", "RT112", "RT4", "RT4v6", "SCaBER", "SW780", "TCCSUP", "UC1", "UC3", "UC6", "UC10", "UC14", "UC15", "UC16", "UC17", "UC18"), 
        "Cells/Well" = c(1000, 1000, 1000, 2000, 2000, 2000, 1000, 1000, 1500, 2500, 1000, 2000, 1000, 500, 350, 1500, 1000, 3000, 4000, 1000, 2000)) |> 
