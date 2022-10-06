@@ -11,6 +11,7 @@ book:
     - intro.qmd
     - part: "Protocols"
       chapters:
+        - diluting-things.qmd
         - cell-culture.qmd
         - three-d-cell-culture.qmd
         - cell-modification.qmd
