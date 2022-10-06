@@ -30,7 +30,9 @@ book:
 
 format:
   html:
-    theme: litera
+    theme:
+      - litera
+      - custom.sass
 
 
 
