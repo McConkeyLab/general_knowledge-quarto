@@ -1,0 +1,76 @@
+---
+title: "Diluting things"
+execute: 
+  echo: FALSE
+---
+
+Very little math knowledge is needed to get by in the lab. However, the math that is needed is used frequently: the calculation to dilute a substance from a higher concentration to a lower concentration. This work is really driven only by a single equation:
+
+$$
+C_1\times V_1  = C_2 \times V_2
+$$
+
+
+## Diluting Liquids
+
+Suppose you have a drug that you know has a concentration of $1\mu M$, and you want to perform an experiment with it. The questions you have to ask yourself first are:
+
+1. What concentration do I **want** the drug to be?
+2. How much volume of diluted drug to I need?
+
+Suppose you ask yourself this and decide you need $10mL$ of $10nM$ drug.
+
+Now we apply our equation - but first, let's describe what the variables mean.
+
+- $C_1$: The concentration you start with. For us, this is $1\mu M$
+- $V_1$: The volume of the stock you will dilute with medium to get the final volume. We don't know this.
+- $C_2$: The concentration you want. This is $10nM$.
+- $V_2$: The volume you want. This is $10mL$
+
+If you rearrange the equation, you can get:
+
+$$
+V_1 = \frac{C_2\times V_2}{C_1}
+$$
+
+Which we substitute in our known values for:
+
+$$
+V_1 = \frac{10nM\times 10mL}{10\mu M}
+$$
+
+Now we need to convert units - I find it's (generally) easier to convert to a smaller unit than vice-versa - do what ever works best for you, just don't make a mistake!
+
+$$
+V_1 = \frac{10nM\times 10mL}{10,000nM} = \frac{1mL}{100} = 0.01mL = 10\mu L
+$$
+
+Ok, our answer is $10\mu L$. But what does this mean?
+
+This is the amount of stock ($10\mu M$) drug we are going to *dilute to* $10mL$. Note that I did *not* say we would *add to* $10mL$. While this would work (and this is in fact what we do in this case), the wording matters if, say, we wanted to dilute from $10\mu M$ to $5 \mu M$ with a final volume of $5mL$:
+
+$$
+V_1 = \frac{5\mu M\times 10mL}{10\mu M} = 5mL
+$$
+
+If we took our $5mL$ of stock and *added to* $10mL$, we would have a final volume of $15mL$. Instead of having a final concentration of $5\mu M$, we would have a final concentration of $\sim 3.3 \mu M$. And woe to thee who is using this method to do a serial dilution, where the error will multiply!
+
+So, back to our problem. We are going to dilute $10\mu L$ of our stock *to* $10mL$. We *theoretically* should dilute in $9.99mL$ of whatever we're diluting with. However, the difference is negligable. In fact, we can use our equation in another way to see just how little it matters:
+
+$$
+C_2 = \frac{C_1\times V_1}{V_2} 
+= \frac{10\mu M \times 10\mu L}{10.01mL} 
+= \frac{10\mu M \times 10\mu L}{10010\mu L}
+= 9.99001nM
+$$
+
+To put that in perspective, you would get the same error if you pipetted $9.99\mu L$ vs $10\mu L$ of stock into your solution - a much more likely error!
+
+So when SHOULD you care?
+
+Generally, I typically care when the volume is $\ge 1\%$ of my final volume.
+
+
+### Serial Dilutions
+
+## Diluting Solids
