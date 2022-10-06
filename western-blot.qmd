@@ -165,7 +165,7 @@ tibble(reagent = c("diH2O", "Tris/Glycine", "Methanol"),
 
 ## Protocol
 
-### Obtaining Protein Lysates
+### Obtaining Protein Lysates {#sec-obtaining-protein-lysates}
 
 1. Plate cells overnight to allow for attachment
   * If harvesting soon after overnight plating, the initial cell seeding should essentially be the target cell confluency

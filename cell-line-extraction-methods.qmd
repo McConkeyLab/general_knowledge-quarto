@@ -129,4 +129,4 @@ Ensure you do not get any of the pellet.
 
 ## Protein
 
-See [Obtaining Protein Lysates]
+See [Obtaining Protein Lysates](#sec-obtaining-protein-lysates)
