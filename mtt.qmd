@@ -67,7 +67,7 @@ tibble("Cell Line" = c("1A6", "5637", "BV", "HT1197", "HT1376", "J82", "RT112", 
   tab_options(table.font.size = px(12))
 ```
 
-1. Dilute the cells to appropriate concentration for your cell line (see @tbl-seeding). Each well will contain $100\mu L$. You'll likely want to make one more mL of suspension than strictly needed so you can use a reagent reservoir and multichannel pipette.
+1. Dilute the cells to appropriate concentration for your cell line (see table). Each well will contain $100\mu L$. You'll likely want to make one more mL of suspension than strictly needed so you can use a reagent reservoir and multichannel pipette.
 
 2. Pour cell suspension into a reagent reservoir^[Cat# 8094, ThermoFisher], then use a multichannel pipette to dispense $100\mu L$ of suspension per well.
 
