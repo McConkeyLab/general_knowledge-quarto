@@ -1,4 +1,4 @@
-# MTT Assay
+# MTT Assay {#sec-mtt-assay}
 ```{r}
 #| include: false
 library(tibble)

@@ -26,6 +26,7 @@ book:
       chapters:
         - analysis_setup.qmd
         - qpcr_analysis.qmd
+        - mtt_analysis.qmd
 
 format:
   html:
