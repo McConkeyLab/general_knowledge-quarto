@@ -116,9 +116,3 @@ Depending on the $t_{1/2}$ of your drug, this may need to replace the drug more 
 The following steps can be done outside the hood:
 
 4. Aspirate MTT solution out of the wells. Add $50\mu L$ of DMSO to each well. Shake plate for $30\ sec$ in the SpectraMAX, then read at $562nm$ and $660nm$.
-
-## Analysis and Interpretation
-
-1. Subtract the 660nm absorbance (Background) from the 562nm absorbance (Wavelength that the MTT metabolite absorbs at) for each well
-2. Average all technical replicates
-3. Fit a dose response curve in Prism (R app coming soon)
