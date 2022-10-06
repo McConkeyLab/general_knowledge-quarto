@@ -279,10 +279,10 @@ $$
 $$
 
 $$
-(n_{sample} \times 3) + (1 \times 3) + (5\times 5) + 10
+(n_{sample} \times 3) + (1 \times 3) + (5\times 5) + 5
 $$
 
-4. Make the mastermix. For $n$ wells, do $vol_{reagent}(n+1)$ for the following:
+4. Make the mastermix. For $n$ wells, do $vol_{reagent}\times n$ for the following:
 ```{r}
 tibble(reagent = c("2X TaqMan Master Mix", "20X Ion TaqMan Assay"),
        Volume = c("5.0 uL", "0.5 uL")) |> 
