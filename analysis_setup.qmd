@@ -1,4 +1,6 @@
-# Installing R
+# Analysis Setup
+
+## Installing R
 
 If you have already installed R, ensure is is updated to at least version 4.1 or the packages will not work!
 
@@ -8,18 +10,78 @@ If you have not installed R before, go [here](https://cran.r-project.org/) and c
 If you don't know what kind of processor you have, you can click on the 'Apple' button in the top left corner of your screen, then click 'About This Mac'. The 'Processor' heading will tell you if it is Intel or Apple silicon.
 :::
 
-# Installing RStudio
+## Installing RStudio
 
 Go [here](https://www.rstudio.com/products/rstudio/download/#download) to download the package. Run the downloaded file to install.
 
-# Installing Packages
+## Installing Packages
 
 1. Open RStudio
 2. Find the tab that says 'Console' and click on it. Alternatively, press Control + 2 (not command + 2)
 3. Type the following: `install.packages("mypackage")`. Replace `mypackage` with what you want to install, but keep the double quotes. Press enter.
 4. Wait a bit for the package to install, and say yes to any prompts. Your package is now installed!
 
-# Installing GitHub Packages
+## Installing GitHub Packages
 
 1. First, follow the "Installing Packages" instructions to install the `devtools` package
 2. Then type the following into the console: `devtools::install_github("user/package")`, where `user` is the GitHub user and `package` is the repository name.
+
+## Tools for compiling packages
+
+Many times you'll need to be able to compile packages on your machine, since they don't come precompiled. To do that, you'll need some additional tools. Follow the instructions for your operating system [here](https://r-pkgs.org/Setup.html#setup-tools)
+
+## Packages these analyses use
+
+If you want to get all package installing out of the way in one go, run the following:
+
+```{r}
+#| eval: false
+
+install.packages("devtools")
+
+# This package is for qPCR activities, like analyzing library prep
+# quantification results, or ddCT qPCR results.
+devtools::install_github("KaiAragaki/amplify")
+
+# This package ALSO automatically installs two other packages of note
+# because it relies on them (among others, but only two are important).
+# They are:
+
+# This package helps you tidy microwell data, as well as plot it. Most of
+# the plots of plates in this book are made using this package.
+# devtools::install_github("KaiAragaki/gp")
+
+# This package helps you turn weirdly formatted data that comes off our
+# machines into data that is much easier to work with in R.
+# devtools::install_github("KaiAragaki/mop")
+
+
+# Additionally, you'll want to install this one:
+
+# This package contains a lot of odds and ends that can't yet be parted out
+# into their own package, or are hyper-GBCI-specific
+devtools::install_github("McConkeyLab/bladdr")
+
+```
+
+## Getting R to talk to SharePoint
+
+There are certain functions in the packages above that pull files from SharePoint. In order to connect to SharePoint, you need to set an *Environmental Variable*. This is actually quite simple. Running the below code will open up a file:
+
+```{r}
+#| eval: false
+
+usethis::edit_r_profile()
+```
+
+Paste the following into that file, then save it:
+
+```{r}
+#| eval: false
+
+Sys.setenv(
+  CLIMICROSOFT365_AADAPPID = "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+)
+```
+
+Reload RStudio and you should be good to go.^[This is not a password - it is a publicly available, default app ID. However, you generally should not share your environmental variables, since this is a fairly secure way for you to supply passwords to scripts without actually writing down your password, since code often is made publicly available. However, not all environmental variables are passwords - they're just one way of storing them] Once you run a function like `bladdr::get_gbci_file`, you'll need to authenticate like you would normally when logging into SharePoint on the web to make sure that you're a person who should be allowed to see these files.
