@@ -28,7 +28,7 @@ You'll need:
   - Ion Xpress Barcode Adapters  
 :::
 
-# Day 1
+## Day 1
 
 :::{.callout-note}
   - Get a 0.1 mL 96 well plate  
@@ -45,7 +45,7 @@ You'll need:
 Flick and spin down reagents and samples, rather than vortexing them. Vortexing can degrade samples and reagents.
 :::
 
-## Diltute RNA Sample
+### Diltute RNA Sample
 
 The final concentration of a samples RNA should be $5.71ng/\mu L\ (20ng/3.5\mu L)$. Use the TapeStation concentration for dilution calculations.
 
