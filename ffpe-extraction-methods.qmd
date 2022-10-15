@@ -18,9 +18,9 @@ Flick and spin down any tiny reagents before using.
 :::
 
 
-# Sample Preparation
+## Sample Preparation
 
-## Slides (Macrodissection)
+### Slides (Macrodissection)
 
 :::{.callout-note}
 You'll need:
@@ -47,9 +47,9 @@ It helps to position to core on the lower inclined section of the tube, a bit ab
 
 After RNA (and DNA) isolation, QC the samples using the Nanodrop, Tapestation, and Qubit.
 
-# RNA
+## RNA
 
-## High Pure miRNA Isolation Kit - Roche Kit (Cat. #05080576001)
+### High Pure miRNA Isolation Kit - Roche Kit (Cat. #05080576001)
 
 :::{.callout-note}
 * Get ice
@@ -59,7 +59,7 @@ After RNA (and DNA) isolation, QC the samples using the Nanodrop, Tapestation, a
 $4.5 mL$ Elution Buffer (Store at $-20^\circ C$) OR thaw previously prepared proteinase K on ice before beginning 
 :::
 
-### Deparaffinization with Xylenes
+#### Deparaffinization with Xylenes
 
 1. Add $800 \mu L$ of xylenes to the microfuge tube with the prepared tissue. Mix by inverting.
 2. Incubate for $5\ minutes$ at $room\ temperature$
@@ -87,7 +87,7 @@ For samples that are super tiny (i.e. can't see a pellet after spinning down), l
 15. Transfer the RNA-containing supernatant to a clean tube
 16. Store the pellet at $-20^\circ C$ for later DNA isolation
 
-### RNA Isolation
+#### RNA Isolation
 
 :::{.callout-note}
 For brevity, $spin$ will be shorthand for centrifuging for $30\ seconds$ at $13,000 \times g$
@@ -163,7 +163,7 @@ Avoid touching the pipette to the filter or the sides of the tube.
 32. Centrifuge for $1\ minute$ at $13,000 \times g$, discard filter
 33. The resultant fluid is your isolated RNA. Store at $-80^\circ C$
 
-## Allprep FFPE Kit - Qiagen Kit (Cat. #80234)
+### Allprep FFPE Kit - Qiagen Kit (Cat. #80234)
 
 :::{.callout-note}
 * Get ice
@@ -174,7 +174,7 @@ Avoid touching the pipette to the filter or the sides of the tube.
 :::
 
 
-### Deparaffinization of FFPE Tissue with Xylene
+#### Deparaffinization with Xylenes
 
 1. Add $1 mL$ of xylene to the tube containing your tissue, vortex
 2. Centrifuge for $2\ minutes$ at $20,000 \times g$.
@@ -205,7 +205,7 @@ I usually have a kimwipe under my tube rack, and lean the tubes upside down agai
 11. Centrifuge for $15\ minutes$ at $20,000 \times g$.
 12. Carefully transfer the RNA-containing supernatant to a new tube. The pellet will be used for DNA isolation later and should be stored at $-20^\circ C$.
 
-### RNA Isolation
+#### RNA Isolation
 
 :::{.callout-note}
 For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $14,000 \times g$
@@ -266,7 +266,7 @@ Avoid touching the walls of the filter column when pipetting in the water.
 
 32. Store RNA at $-80^\circ C$.  Use Qiagen Allprep FFPE (cat. 80234) for DNA isolation.
 
-## MagMax FFPE RNA/DNA Ultra Kit (Cat. #A31881)
+### MagMax FFPE RNA/DNA Ultra Kit (Cat. #A31881)
 
 With this protocol, you isolated DNA and RNA on the same day, unlike the previous protocols.
 
@@ -323,7 +323,7 @@ tibble("Reagent" = c("Binding Solution", "Isopronanol", "Total Volume"),
   gt(rowname_col = "Reagent")
 ```
 
-#### Deparaffinization of FFPE Tissue with Xylene
+#### Deparaffinization with Xylenes
 
 The deparaffinization of the original protocol has been replaced with the deparaffinization of the Roche protocol. It just works a little bit better and is easier for the technician.
 
@@ -469,11 +469,11 @@ tibble("Section" = c("<= 40 um", ">40 um"),
 35. Carefully move the supernatant to a clean labelled tube. This is your RNA.
 36. Store RNA at $-80^\circ C$.
 
-# DNA
+## DNA
 
 There are two different Qiagen FFPE DNA isolation kits that we use - Qiagen Allprep FFPE (cat. 80234) and Qiagen DNA FFPE (cat. 56404).  
 
-## Qiagen Allprep FFPE (Cat. #80234)
+### Qiagen Allprep FFPE (Cat. #80234)
 
 :::{.callout-note}
 For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $16,000 \times g$
@@ -521,7 +521,7 @@ Place an unused heating block on the tube lids to keep them from opening during 
 25. The flow-through is your DNA - store at $-20^\circ C$.
 
 
-## Qiagen DNA FFPE (Cat. #56404)
+### Qiagen DNA FFPE (Cat. #56404)
 
 :::{.callout-note}
 For brevity, $spin$ will be shorthand for centrifuging for $1\ minute$ at $16,000 \times g$
