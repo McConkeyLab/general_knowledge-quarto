@@ -4,7 +4,7 @@ project:
 book:
   number-depth: 1
   title: "The Book of Knowledge"
-  author: "Kai Aragaki, Bridget McGuire, Alyssa Arbuiso"
+  author: "Kai Aragaki, Bridget McGuire"
   date: "2022-01-06"
   chapters:
     - index.qmd
