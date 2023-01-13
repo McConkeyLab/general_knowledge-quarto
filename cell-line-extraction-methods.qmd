@@ -40,11 +40,15 @@ The night before, plate cells in a 6 well plate. 200K cells/well is a good numbe
 1. Add $\frac{1}{10}vol$^[A 'volume' refers to the pre-miRNA-Homogenate-Additive volume. If you follow this protocol, $\frac{1}{10}vol$ is $30 \mu L$] miRNA Homogenate Additive
 2. Vortex $15\ seconds$
 3. Put on ice for $10\ minutes$
-4. Add $1\ vol$ phenol
+4. Add $1\ vol$ phenol:chloroform
+
+:::{.callout-warning}
+Perform addition of phenol:chloroform and transfer of upper phase to a new tube under the fume hood - phenol:chloroform vapors are toxic.
+:::
 
 5. Vortex for $45\ seconds$
 6. Centrifuge at $max\ speed$ for $5\ minutes$
-7. Put phenol away
+7. Put phenol:chloroform away
 8. Remove upper phase, transfer to fresh 1.5mL microfuge tube
 
 :::{.callout-warning}
