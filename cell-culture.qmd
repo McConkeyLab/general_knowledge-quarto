@@ -122,7 +122,7 @@ Can be made outside of hood.
 Ensure the vial cap does not become wet - this can possibly contaminate the cells!
 :::
 
-2.  Wipe down the vial with ethanol, then open.
+2.  In the hood, wipe down the vial with ethanol, then open.
 3.  Gently pipette to mix, then transfer the contents of the cryovial to a $15mL$ conical tube.
 4.  Very slowly add $9mL$ of medium
     -   The first mL should take $~30\ seconds$
