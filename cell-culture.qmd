@@ -129,11 +129,9 @@ Ensure the vial cap does not become wet - this can possibly contaminate the cell
     -   The second mL should take $~10\ seconds$
     -   The next $8mL$ should take $~30\ seconds$
 5.  Centrifuge at $300 \times g$ for $5\ minutes$
-6.  Look for a pellet and note its size
-7.  Aspirate the medium from the pellet and resuspend in medium
-    -   If the pellet was quite large, resuspend in 10mL medium and transfer to a T75.
-    -   If the pellet was smaller, resuspend in 5mL medium and transfer to a T25.
-8.  Label flask with cell line, passage, date, and initials
+6.  Aspirate the medium from the pellet.
+7.  Resuspend in 10mL medium and transfer to a T75.
+8.  Label flask with cell line, passage, date, and initials.
 
 ## Regular Cell Care
 
