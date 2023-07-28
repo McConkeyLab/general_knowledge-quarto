@@ -21,7 +21,10 @@ library(gt)
 
 ```{r}
 #| echo: false
-tibble(`Flask Size` = c("T25", "T75", "T175"), `Medium Vol` = c("5mL", "10mL", "25mL"), `Trypsin Vol` = c("1", "3", "6mL")) |> 
+tibble(
+  `Flask Size` = c("T25", "T75", "T175"),
+  `Medium Vol` = c("5mL", "10mL", "25mL"),
+  `Trypsin Vol` = c("1", "3", "6mL")) |>
   gt(rowname_col = "Flask Size")
 ```
 
