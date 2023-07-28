@@ -212,7 +212,7 @@ Warm medium, PBS, and trypsin
 10. Transfer the cells to a conical tube of appropriate size
 11. Prepare a new flask by writing the cell line, passage number, percent of split (ie 10%, see below) initials, and date
 12. Add an appropriate volume of medium, minus the volume of cell suspension you plan to add.
-13. Add how ever much cell suspension you want. This will depend on the growth rate of the cell line as well as when you want them ready. A good starting point is 1:10, or one tenth of the cell suspension.
+13. Add how ever much cell suspension you want. This will depend on the growth rate of the cell line as well as when you want them ready. A good starting point is 10%, or one tenth of the cell suspension. If you want to use plate the cells again within the next couple days, a 50% split is a good start.
 14. Gently tilt the flask to ensure medium and cell suspension are mixed and cover the bottom of the flask entirely.
 15. Place cells in incubator.
 
