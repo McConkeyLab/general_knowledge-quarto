@@ -56,11 +56,10 @@ tibble(
 
 ```{r}
 #| echo: false
-#| column: margin
 tibble(reagent = c("MEM Vitamin Solution (100x)", "Sodium Pyruvate", "Penicillin Streptomycin", "MEM NEAA (100x)", "HEPES (1M)"), 
-       Volume = c("5mL", "5mL", "5mL", "5mL", "5mL"), 
-       `Cat. #` = c("11120052", "11360070", "15140122", "11140050", "15630080")) |> 
-  gt(rowname_col = "reagent") |> 
+       Volume = c("5mL", "5mL", "5mL", "5mL", "5mL"),
+       `Cat. #` = c("11120052", "11360070", "15140122", "11140050", "15630080")) |>
+  gt(rowname_col = "reagent") |>
   tab_options(table.font.size = 10)
 ```
 
