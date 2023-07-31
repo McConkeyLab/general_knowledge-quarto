@@ -127,7 +127,7 @@ Ensure that the caps of the tubestrips are removed. If not, the needle will be d
 
 #### RNA
 
-RNA is given a 'RINe', which is a measure of RNA integrity. This score ranges from 0 (very poor integrity) to 10 (very good integrity). In RNA extracted from cell lines, you should expect a value close to 10. However, for RNA isolated from FFPE samples, you can expect an RINe of around 1-2. Being in FFPE is very tough on samples, so there is a lot of fragmentation. Therefore, we accept these lower values. 
+RNA is given a 'RINe', which is a measure of RNA integrity. This is measured by looking at the sharpness of the 28 and 16S rRNA bands - the sharper, the better. This score ranges from 0 (very poor integrity) to 10 (very good integrity). In RNA extracted from cell lines, you should expect a value close to 10. However, for RNA isolated from FFPE samples, you can expect an RINe of around 1-2. Being in FFPE is very tough on samples, so there is a lot of fragmentation. Therefore, we accept these lower values. 
 
 Since the RINe value is of little use to us in values that are highly degraded, we instead use the DV200. The DV200 is the percent of RNA fragments that are > 200 nucleotides in length. Traditionally, we accept DV200 values that are greater than 30%.
 
