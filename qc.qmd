@@ -93,19 +93,15 @@ instructions <- tibble(Assay = c("RNA", "RNA HS", "D1000", "D1000 HS"),
                        Heat = c("72C, 3 minutes", "72C, 3 minutes", NA, NA), 
                        Chill = c("Ice, 2 minutes", "Ice, 2 minutes", NA, NA))
 
-bd <- fp_border_default(color = "#FFFFFF", width = 1.5)
-
-flextable(instructions) |> 
-  merge_v() |> 
-  merge_h_range(i = 3:4, j1 = 5, j2 = 6) |> 
-  border_inner(border = bd) |> 
-  border_outer(border = bd) |> 
-  align(part = "all", align = "center") |> 
-  align(j = 1, part = "all", align = "right") |> 
-  bg(part = "all", bg = "#d1e2e6") |> 
+flextable(instructions) |>
+  merge_v() |>
+  merge_h_range(i = 3:4, j1 = 5, j2 = 6) |>
+  align(part = "all", align = "center") |>
+  align(j = 1, part = "all", align = "right") |>
   bg(3:4, 5:6, bg = "#888888") |>
-  bold(part = "header") |> 
-  bold(j = 1) |> 
+  bold(part = "header") |>
+  bold(j = 1) |>
+  theme_box() |>
   autofit()
 ```
 
