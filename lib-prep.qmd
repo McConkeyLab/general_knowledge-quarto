@@ -284,16 +284,20 @@ $$
 (n_{sample} \times 3) + (1 \times 3) + (5\times 5) + 5
 $$
 
-4. Make the mastermix. For $n$ wells, do $vol_{reagent}\times n$ for the following:
+$$
+(n_{sample} \times 3) + 33
+$$
+
+6. Make the mastermix. For $n$ wells, do $vol_{reagent}\times n$ for the following:
 ```{r}
 tibble(reagent = c("2X TaqMan Master Mix", "20X Ion TaqMan Assay"),
        Volume = c("5.0 uL", "0.5 uL")) |> 
   gt(rowname_col = "reagent")
 ```
 
-5. Pipette by mixing. Be careful not to make bubbles.
+7. Pipette by mixing. Be careful not to make bubbles.
 
-6. Figure out where you want to put your controls, water, and samples. It helps to have the controls in order of decreasing concentration. A sample layout is shown below.
+8. Figure out where you want to put your controls, water, and samples. It helps to have the controls in order of decreasing concentration. A sample layout is shown below.
 
 ```{r}
 #| fig.width: 3.5
@@ -321,11 +325,11 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
         plot.background = element_blank())
 ```
 
-7. Load $5.5 \mu L$ of the master-mix to each well you intend to use.
-8. Carefully load $4.5 \mu L$ of your samples, water, and controls.
-9. Cover with adhesive film well. 
-10. Spin down for $10\ seconds$, vortex at $2000\ rpm$ for $5\ seconds$, spin down again
-11. Run the following program on the RT-qPCR machine: 
+9. Load $5.5 \mu L$ of the master-mix to each well you intend to use.
+10. Carefully load $4.5 \mu L$ of your samples, water, and controls.
+11. Cover with adhesive film well. 
+12. Spin down for $10\ seconds$, vortex at $2000\ rpm$ for $5\ seconds$, spin down again
+13. Run the following program on the RT-qPCR machine: 
 ```{r}
 tibble(Temp = c("50C", "95C", "95C", "60C"),
        Time = c("2 min", "20 sec", "1 sec", "20 sec")) |> 
