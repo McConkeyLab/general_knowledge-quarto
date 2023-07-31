@@ -147,7 +147,7 @@ For Day 2, get ice and a magnetic rack. Then, thaw on ice:
   - FuPa Reagent (brown cap)
   - Switch Solution (yellow cap) 
   - DNA Ligase (blue cap)
-  - Ion P1 Adapter (purple cap)   
+  - Ion P1 Adapter (purple cap)
   - A different Ion Xpress Barcode X (white cap) for each sample
 :::
 
@@ -205,7 +205,7 @@ At this point, take out the low TE and AMPure XP Reagent (beads). Also, label yo
 
 1. Prepare __70% ethanol__ by combining $3 mL$ __NF Water__ and $7 mL$ __ethanol__.
 2. Carefully remove the seal.
-3. To each well, add $45 \mu L$ of the beads.  
+3. To each well, add $45 \mu L$ of the beads.
 4. Mix by pipetting up and down $10\ times$.
 
 :::{.callout-tip}
@@ -214,7 +214,7 @@ Vortex the beads very well at the beginning, and then after every 8 samples.
 
 5. Incubate at $RT$ for $5\ minutes$.
 6. Place plate on the magnetic rack. Let sit for $2 minutes$. 
-7. While still on the rack, carefully remove the supernatant without disturbing the pellet.  
+7. While still on the rack, carefully remove the supernatant without disturbing the pellet.
 
 :::{.callout-tip}
 Steps 5-9 can be done using a 8 channel pipette.
@@ -229,7 +229,7 @@ Steps 5-9 can be done using a 8 channel pipette.
 ### Elute the Library
 
 :::{.callout-tip}
-Use a multichannel pipette for this step.  
+Use a multichannel pipette for this step.
 :::
 
 1. Remove the plate from the magnet. Add in $45 \mu L$ __Low TE__ and mix well by pipetting. All of the beads should be suspended.
@@ -248,7 +248,7 @@ If there is no band, your library prep failed.
 1. For samples with a band, prepare serial dilutions as follows:
 
 ```{r}
-tibble(reagent = c("NF water", "Sample"), Volume = c("9 uL", "1 uL")) |> 
+tibble(reagent = c("NF water", "Sample"), Volume = c("18 uL", "2 uL")) |> 
   gt(rowname_col = "reagent") |> 
   tab_header("1:10 Dilution")
 ```
