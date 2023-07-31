@@ -271,9 +271,11 @@ It is helpful to have each dilution in a different color tube to avoid confusion
 :::
 
 2. Prepare the controls via serial dilution. Set up 5 tubes, each with $36 \mu L$ __NF Water__. 
-3. Label them 1-5. Using a P20 pipette, take $4 \mu L$ __E. coli DH10B Control Library__ and add it to tube 1. Mix by pipetting 10 times. Using the same tip, take $4 \mu L$ from tube 1 and add it to tube 2. Mix by pipetting 10 times. Repeat until you have mixed tubes 1-5.
+3. Label them 1-5. Using a P20 pipette, take $4 \mu L$ __E. coli DH10B Control Library__ and add it to tube 1. Mix by flicking and spinning down.
 
-3. Determine the number wells you will need. Each sample is run in triplicate, you need a triplicate of water, and it helps to have 5 of each control. So,
+4. Tape $4 \mu L$ of that sample and transfer it to the next tube in line. Repeat step 3 to tubes 1-5.
+
+5. Determine the number wells you will need. Each sample is run in triplicate, you need a triplicate of water, and it helps to have 5 of each control. So,
 $$
 (n_{sample} \times 3) + (n_{H_2O} \times 3) + (n_{control} \times 5) + extra
 $$
