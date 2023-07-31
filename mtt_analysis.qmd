@@ -42,7 +42,7 @@ The order of sectors can be seen in @fig-sectors.
 #| column: margin
 #| label: fig-sectors
 #| fig-cap: "Order of sector labelling in the `condition_names` argument"
-library(gp)
+library(gplate)
 library(ggsci)
 gp(wells = 96) |> 
   gp_sec("Sector", 4, 6, labels = c("1", "2", "3", "4")) |> 
