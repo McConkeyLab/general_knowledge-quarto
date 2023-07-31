@@ -63,7 +63,7 @@ There are protocols, each with their own set of reagents:
 
 Depending on the concentration of your input RNA (determined via NanoDrop), you may choose to use either RNA or High Sensitivity RNA reagents. However, only High Sensitivity D1000 is used to measure generated library quality.
 
-:::{.callout-note}
+:::{.callout-prep .icon}
 - Get ice
 - Thaw the corresponding sample buffer at $RT$ for at least $30\ minutes$
 - Thaw the corresponding ladder on ice
