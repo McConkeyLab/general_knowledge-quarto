@@ -5,6 +5,7 @@
 
 library(tidyverse)
 library(gt)
+library(flextable)
 ```
 
 ## General Notes {#gen-notes}
@@ -235,6 +236,105 @@ The labels should include the cell name on the top. On the side, they should inc
     -   If the cells were from a $T75$, $3mL$ is appropriate. If $T175$, $6mL$ is appropriate.
 8.  Aliquot $1mL$ of cell suspension into the labelled cryovials.
 10. Store vials in $-80^\circ C$. Transfer to liquid nitrogen when possible.
+
+## Fingerprinting
+
+
+
+
+## Mycoplasma Testing
+
+Before cells are added to the common liquid nitrogen storage, they need to be mycoplasma negative. We can test them using the ATCC Universal Detection Kit (Cat. No 30-1012K). This protocol is adapted (and largely unchanged) from that protocol.
+
+### Sample Preparation
+
+1. Plate cells in a 100mm dish, using roughly 50% of a confluent T75.
+2. Allow cells to adhere overnight
+3. Set one heat block to $37^\circ C$, and another to $95^\circ C$. Both must be able to accommodate 1.5mL microfuge tubes.
+4. *Scrape* cells, do not use trypsin, in their medium
+5. [Count the number of cells](#count-cells) and transfer the amount of medium containing $10^5$ cells into a Sample Lysis Tube (included in kit)
+6. Centrifuge at $13,000 \times g$ for $3\ minutes$ at $4^\circ C$.
+7. Remove and discard supernatant.
+8. Add $50\mu L$ **Lysis Buffer** and vortex to resuspend pellet.
+9. Centrifuge at $13,000 \times g$ for $5\ minutes$ at $4^\circ C$.
+10. Transfer supernatant to a regular 1.5mL microfuge tube (not the ones included in the kit).
+11. Start PCR or store for up to 6 months at $-80^\circ C$
+
+### PCR
+
+1. Thaw Universal PCR Mix, Universal Primers, and positive control (and samples if frozen). Briefly vortex and spin down.
+2. Prepare the following *per assay*
+   - You will need at least $2$ *additional* assays - one positive control and one negative control.
+   - The protocol suggests doing the samples in duplicate and doing a positive control + sample to ensure PCR is not inhibited in each sample. While theoretically a good idea, this effectively triples the size of the experiment and reagents used. I typically just do one assay per sample - no duplicate, no PCR inhibition control.
+   
+
+```{r}
+#| echo: false
+tibble(reagent = c("Universal PCR Mix", "Universal Primers"), 
+       Volume = c("20uL", "2.5uL")) |> 
+  gt(rowname_col = "reagent") |> 
+  tab_options(table.font.size = 10)
+```
+
+3. Get a 0.2mL 96 well PCR plate^[Cat. No. N8010560]
+4. For each assay, add the volumes - depending on the sample type - according to the table below
+
+```{r}
+#| echo: false
+tibble(
+  reagent = c("Universal PCR Mix + Primers", "Test Sample", "Positive Control", "H2O or TE"),
+  `Test Sample`                    = c("22.5uL", "2.5uL", "----",  "----"),
+  `Positive Control`               = c("22.5uL", "----",  "2.5uL", "----"),
+  `Positive Control + Test Sample` = c("22.5uL", "2.5uL", "1.0uL", "----"),
+  `Negative Control`               = c("22.5uL", "----",  "----",  "2.5uL")) |> 
+    gt(rowname_col = "reagent") |> 
+    tab_options(table.font.size = 10)
+```
+
+5. Pipette each solution up and down a few times to mix.
+6. Seal with a MicroAmp Clear Adhesive Film^[Cat. No. 4306311]
+7. Place in the thermocycler and run the following protocol:
+
+```{r}
+#| echo: false
+instructions <- tibble(
+  Step = c("Denaturation", 
+           "Touchdown PCR", "Touchdown PCR", "Touchdown PCR", 
+           "Continue PCR", "Continue PCR", "Continue PCR", 
+           "Final Elogation", 
+           "Hold"),
+  `Temperature (C)` = c("94", "94", "70 -> 60.5", "72",
+                        "94", "60", "72", "72", "4"),
+  `Time` = c("1.5min", "30s", "30s", "45s", "30s", "30s", "45s", "4min", "HOLD"),
+  `Cycles` = c(NA, 20, 20, 20, 12, 12, 12, NA, NA)
+)
+
+
+flextable(instructions) |>
+  footnote(3, 2, as_paragraph("Temperature decreases 0.5C per cycle"), ref_symbols = "a") |>
+  merge_v(j = c(1, 4)) |> 
+  theme_box() |>
+  autofit()
+```
+
+### Gel Electrophoresis
+
+1. Weigh $3g$ of agarose powder on weigh paper. Add it to an erlenmeyer flask.
+2. Add $100mL$ of TAE
+3. Heat in lab microwave $30s$ at a time, watching carefully. Swirl after every $30s$, using a silicone glove to pick up the very hot erlenmeyer.
+4. As soon as it starts to boil, stop the microwave and swirl until it cools down some. Keep heating and swirling until all the agarose is dissolved.
+5. Once all agarose is dissolved, let it sit for around 5 minutes, until you can comfortably put your hand on it (50C, or 122F)
+6. Add $3\mu L$ EtBr to solution and swirl to mix.
+7. Pour solution slowly (to avoid bubbles) into casting tray with well comb in place.
+8. Wait around $30\ minutes$ for gel to solidify
+9. Remove well comb and transfer to gel box
+10. Mix $300mL$ TAE with $10\mu L$ of EtBr
+11. Pour over the top of the gel until reservoirs are filled and gel is covered
+12. Add $1\mu L$ of gel loading buffer^[Cat. No. 10816015] to $10\mu L$ of each sample
+13. Add $5\mu L$ of ladder^[A 50 or 100bp ladder, like GoldBio D100-500] to the first well
+14. Add $10\mu L$ of sample to each well
+15. Run until the tracking dye is around 60-70% migrated (~100V for 1.5hr, maybe)
+16. Image via ChemiDoc
 
 ## Counting Cells {#count-cells}
 
