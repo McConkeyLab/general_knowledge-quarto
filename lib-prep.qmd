@@ -217,7 +217,7 @@ Vortex the beads very well at the beginning, and then after every 8 samples.
 7. While still on the rack, carefully remove the supernatant without disturbing the pellet.
 
 :::{.callout-tip}
-Steps 5-9 can be done using a 8 channel pipette.
+Steps 5-9 can be done using an 8 channel pipette.
 :::
 
 7. Add $150 \mu L$ __70% ethanol__ and move the plate to the left one column. Wait until the beads migrate, then move the plate back to the original position. Repeat this $5\ times$.
