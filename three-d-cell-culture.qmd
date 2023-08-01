@@ -19,7 +19,7 @@ library(gt)
 
 * Store aliquots at $–80^\circ C$ 
 
-* Thaw on ice or in the refrigerator. For larger quantities, this make take overnight. 
+* Thaw on ice or in the refrigerator. For larger quantities, this may take overnight. 
 
 * Any tubes that Matrigel is going to be added to should be chilled on ice. 
 
