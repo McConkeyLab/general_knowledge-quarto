@@ -411,7 +411,7 @@ Use gloves when working with the ChemiDoc - EtBr is handled there (even though i
 :::
 
 :::{.callout-note}
-Turn on ChemiDoc by flicking the switch on the black left of the machine. The power light on front should be green.
+Turn on ChemiDoc by flicking the switch on the back left of the machine. The power light on front should be green.
 
 Plug in the camera. The plug and power brick should be directly left to the machine.
 
