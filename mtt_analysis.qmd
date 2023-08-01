@@ -44,11 +44,11 @@ The order of sectors can be seen in @fig-sectors.
 #| fig-cap: "Order of sector labelling in the `condition_names` argument"
 library(gplate)
 library(ggsci)
-gp(wells = 96) |> 
-  gp_sec("Sector", 4, 6, labels = c("1", "2", "3", "4")) |> 
+gp(wells = 96) |>
+  gp_sec("Sector", 4, 6, labels = c("1", "2", "3", "4")) |>
   gp_plot(Sector, size = 9) +
   gp_mini_theme() +
-  theme_tufte() + 
+  theme_tufte() +
   scale_color_npg()
 ```
 
