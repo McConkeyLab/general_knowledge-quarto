@@ -116,7 +116,7 @@ If samples have a high fat content, centrifuge the lysate for $5\ minutes$ at $1
 This kit is much more expensive per sample than TRIzol, but tends to produce purer results. It's typically only necessary for higher-stakes experiments like sequencing, but not for qPCR.
 
 :::{.callout-prep}
-The night before, plate cells in a 6 well plate. 200K cells/well is a good number.
+The night before, plate cells in a 6 well plate. 200K cells/mL is a good number.
 
 **Before you begin:**
 
