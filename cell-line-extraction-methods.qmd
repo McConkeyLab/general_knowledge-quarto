@@ -181,7 +181,9 @@ Make sure to note the volume of upper phase removed.
 
 [Adapted from Cat# AM1907 publication 1907M, revision H]{.aside}
 
-:::{.callout-note}
+:::{.callout-prep}
+**Before you begin:**
+
 - Remove reagents from refrigerator, leave on ice. 
 - Turn heat block to $37^\circ C$ 
 - Label one set of 1.5mL microfuge tubes, another set of 0.5mL microfuge tubes. 
