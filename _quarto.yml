@@ -33,7 +33,4 @@ format:
     number-depth: 1
     theme:
       - litera
-      - custom.sass
-
-
-
+      - custom.scss
