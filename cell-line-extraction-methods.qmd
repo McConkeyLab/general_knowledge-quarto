@@ -9,37 +9,45 @@ reference-location: margin
 ## RNA (TRIzol)
 [The following method is adapted from the Invitrogen TRIzol reagent user guide]{.aside}
 
-:::{.callout-note}
-Required Materials:
-- TRIzol
-- Chloroform
-- RNase-free glycogen
-- Isopropanol
-- Freshly prepared 75% ethanol
+:::{.callout-prep}
+**Required materials:**
+
+   - TRIzol
+   - Chloroform
+   - RNase-free glycogen
+   - Isopropanol
+   - Freshly prepared 75% ethanol
+   
+**Before you begin:**
+
+   - Get ice
+   - Set a heatblock to $60^\circ C$
 :::
 
 ### Lysis and Phase Separation
 
 Lyse and homogenize samples in TRIzol Reagent according to your starting material: 
+
 #### Tissues
 1. Add $1mL$ of TRIzol Reagent per $50–100mg$ of tissue to the sample and homogenize using a homogenizer
 
 #### Cell grown in monolayer
 
 ##### Trypsinizing
-If you are planning to measure GFP or you are isolating cells from one well of a multi-well plate e.g. during a time course experiment:
+If you are planning to measure %GFP+ or you are isolating cells from only one well of a multi-well plate e.g. during a time course experiment:
 
-1. Trypsinize the cells and put them in a 1.5mL microfuge tube (this step is performed under the hood)
+1. In the hood, trypsinize the cells and transfer them to a 15mL conical
+   - For a 6 well plate, trypsinize with $0.5mL$ trypsin and quench with $1mL$ medium.
+   - At this point, you can measure %GFP+, for instance.
 2. Centrifuge at $300\times g$ for $5\ minutes$
 3. Aspirate the supernatant
-4. Add $300\mu L$ TRIzol to the tube
-5. Vortex
+4. Add $300\mu L$ TRIzol to the tube and transfer to a 1.5mL microfuge tube
 
 ##### Direct Lysis
 1. Aspirate the medium
 2. Add $0.3–0.4 mL$ of TRIzol Reagent per $1 \times 10^5—1 \times 10^7$ cells directly to the culture dish to lyse the cells
 3. Use a cell scraper to scrape the cells off the plate
-4. Transfer the lysate to a 1.5mL microfuge tube  
+4. Transfer the lysate to a 1.5mL microfuge tube
 
 #### Cells grown in suspension: 
 1. Pellet the cells by centrifugation and discard the supernatant. 
@@ -58,39 +66,48 @@ Samples can be stored at $4^\circ C$ overnight or at $–20^\circ C$ for up to a
 If samples have a high fat content, centrifuge the lysate for $5\ minutes$ at $12,000 \times g$ at $4^\circ C$, then transfer the clear supernatant to a new tube
 :::
 
-Incubate for 5 minutes to permit complete dissociation of the nucleoproteins complex
-Add 0.2 mL of chloroform per 1 mL of TRIzol™ Reagent used for lysis, then securely cap the tube
-Vortex briefly
-Incubate for 2–3 minutes
-Centrifuge the sample for 15 minutes at 12,000 × g at 4°C. The mixture separates into a lower red phenol-chloroform, and interphase, and a colorless upper aqueous phase
-Transfer the aqueous phase containing the RNA to a new tube
-Transfer the aqueous phase containing the RNA to a new tube by angling the tube at 45° and pipetting the solution out
-IMPORTANT! Avoid transferring any of the interphase or organic layer into the ppeĴe when removing the aqueous phase.
+#### Lysis and Phase Separation Cont.
+1. Vortex for $10\ seconds$
+2. Incubate for $5\ minutes$ to permit complete dissociation of the nucleoproteins complex
+3. **In the fume hood**, add $0.2\ mL$ of chloroform **per 1 mL of TRIzol Reagent** used for lysis, then securely cap the tube
+   - For $300\mu L$ TRIzol, add $60\mu L$ chloroform 
+4. Mix by shaking, for about $30\ seconds$
+   - This is best done putting the tubes on one rack, then sandwiching another rack atop the lids. Grab the whole sandwich and shake it.
+5. Incubate for $3\ minutes$
+6. Centrifuge samples for $15\ minutes$ at $12,000\times g$ at $4^\circ C$. The mixture separates into a lower red phenol-chloroform, and interphase, and a colorless upper aqueous phase
+7. Transfer the aqueous phase containing the RNA to a new tube by angling the tube at 45° and pipetting the solution out
+   - For a 6-well with $300 \mu L$ of TRIzol used, $200\mu L$ tends to be the right amount to take
+   - Avoid transferring any of the interphase or organic layer when removing the aqueous phase.
 
-Isolate RNA
-Precipitate the RNA
-(Optional but HIGHLY RECOMMENDED) Add 5–10 µg of RNase-free glycogen as a carrier to the aqueous phase
-Note: The glycogen is co-precipitated with the RNA, but does not interfere with subsequent applications
-Add 0.5 mL of isopropanol to the aqueous phase, per 1 mL of TRIzol™ Reagent used for lysis
-Vortex briefly
-Incubate for 10 minutes
-Centrifuge for 10 minutes at 12,000 × g at 4°C 
-Total RNA precipitate forms a white gel-like pellet at the bottom of the tube. 
-Aspirate the supernatant 
-Wash the RNA
-Resuspend the pellet in 1 mL of 75% ethanol per 1 mL of TRIzol™ Reagent used for lysis. Note: The RNA can be stored in 75% ethanol for at least 1 year at –20°C, or at least 1 week at 4°C
-Vortex briefly
-Centrifuge for 5 minutes at 7500 × g at 4°C
-Aspirate the supernatant 
-Vacuum or air dry the RNA pellet for 5–10 minutes
-Tip: try flicking the tube to separate the pellet and aspirate the liquid
-IMPORTANT! Do not dry the pellet by vacuum centrifuge. Do not let the RNA pellet dry, to ensure total solubilization of the RNA. Partially dissolved RNA samples have an A230/280 ratio <1.6
-Solubilize the RNA
-Resuspend the pellet in 20–50 µL of RNase-free water, 0.1 mM EDTA, or 0.5% SDS solution by pipetting up and down
-IMPORTANT! Do not dissolve the RNA in 0.5% SDS if the RNA is to be used in subsequent enzymatic reactions
-Incubate in a water bath or heat block set at 55–60°C for 10–15 minutes
-Measure samples inn NanoDrop to check that your extraction worked
-Proceed to downstream applications, or store the RNA at –70°C.
+#### Isolate RNA
+    
+##### Precipitate the RNA
+
+1. (Optional but HIGHLY RECOMMENDED) Add $10\mu g$ of RNase-free glycogen as a carrier to the aqueous phase
+2. Add $0.5mL$ of isopropanol to the aqueous phase per $1mL$ of TRIzol used for lysis
+   - For $300\mu L$ TRIzol, add $150\mu L$ isopropanol
+2. Vortex for a few seconds until mixed.
+3. Incubate for $10\ minutes$
+4. Centrifuge for $10\ minutes$ at $12,000\times g$ at $4^\circ C$ 
+   - Total RNA precipitate forms a white gel-like pellet at the bottom of the tube. 
+5. Aspirate the supernatant
+   - It is helpful to take most of the volume out with a P1000, then remove the liquid closer to the pellet with a P200
+
+#### Wash the RNA
+
+1. Resuspend the pellet in 1mL of 75% ethanol per 1 mL of TRIzol Reagent used for lysis. 
+   - For $300\mu L$ TRIzol, add $300\mu L$ 75% ethanol
+   - Note: The RNA can be stored in 75% ethanol for at least 1 year at $–20^{\circ}C$, or at least 1 week at $4^{\circ}C$
+2. Vortex briefly
+3. Centrifuge for $5\ minutes$ at $7500\times g$ at $4^\circ C$
+4. Aspirate the supernatant
+   - It is helpful to take most of the volume out with a P1000, then remove the liquid closer to the pellet with a P200
+   - You can speed up the drying time, and increase your 260/230 metrics, by *gently* flicking the pellet to dislodge the liquid from it, then using a P20 or aspirator to remove the dispersed droplets not containing the pellet.
+5. Let the pellet air dry, just before the pellet turns clear.
+   - If the pellet overdries, it may not solubilize and may have a low A260/A280.
+6. Add $20-50 \mu L$ of RNAse-free water to each pellet 
+7. Incubate at $60^{\circ}C$ for $10\ minutes$
+8. Store the RNA at $–80^{\circ}C$.
 
 
 ## RNA (mirVana)
@@ -98,11 +115,11 @@ Proceed to downstream applications, or store the RNA at –70°C.
 
 This kit is much more expensive per sample than TRIzol, but tends to produce purer results. It's typically only necessary for higher-stakes experiments like sequencing, but not for qPCR.
 
-:::{.callout-note}
+:::{.callout-prep}
 The night before, plate cells in a 6 well plate. 200K cells/well is a good number.
-:::
 
-:::{.callout-note}
+**Before you begin:**
+
 * Get a bucket of ice
 * Set the heatblock to $95^\circ C$ and add a microfuge tube with nuclease free H2O. You will need at least 50uL per sample - be generous with this!
 * For each sample, label 4 tubes - two standard 1.5mL microfuge tubes, two collection tubes
