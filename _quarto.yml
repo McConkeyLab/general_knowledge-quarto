@@ -34,3 +34,5 @@ format:
     theme:
       - litera
       - custom.scss
+    filters:
+      - custom-callout.lua
