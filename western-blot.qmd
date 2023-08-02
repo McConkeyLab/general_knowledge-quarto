@@ -240,7 +240,7 @@ We use a modified protocol of ThermoFisher's MicroBCA Assay (#23235).
 5. Add the BSA to the 2mg/mL labeled tube
 6. Transfer $0.5mL$ of 2mg/mL BSA to the 1mg/mL labelled tube. Pipette three times to ensure the residual concentration of BSA in the tip and in the tube has reached equilibrium.
 7. Vortex 1mg/mL tube. Repeat steps to create a serial dilution. Do not add BSA to the final tube.
-8. Store tubes at $room temperature$. These can be used for many assays. 
+8. Store tubes at $room\ temperature$. These can be used for many assays. 
 
 #### Running the Assay
 Each sample should be in triplicate. There are seven standards. Each sample requires $100\mu L$ reagent. With this in mind:
