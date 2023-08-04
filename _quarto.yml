@@ -2,6 +2,7 @@ project:
   type: book
 
 book:
+  favicon: logo.png
   title: "The Book of Knowledge"
   author: "Kai Aragaki, Bridget McGuire, and Dr. Elina Vlachou"
   date: "2022-01-06"
@@ -30,7 +31,6 @@ book:
 
 format:
   html:
-    number-depth: 1
     theme:
       - litera
       - custom.scss
