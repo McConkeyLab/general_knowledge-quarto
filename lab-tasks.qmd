@@ -5,7 +5,8 @@ reference-location: margin
 
 # General Lab Tasks
 
-## Refilling 70% EtOH
+## Cell culture
+### Refilling 70% EtOH {#making-etoh}
 
 70% ethanol is used for disinfecting. We store a large^[But not too large - health and safety will not allow for a larger EtOH reservoir than we currently have] bottle of ethanol near the sink.
 
@@ -17,3 +18,87 @@ To make more:
 4. Screw the lid closed and give the ethanol bottle a little swirl.
 5. Unscrew the lid slightly to allow air to come in to the top. Otherwise, a vacuum will form and ethanol can not flow out.
 
+### Making 20% bleach {#making-bleach}
+
+We use 20% bleach for clearing the aspiration line in the tissue culture fume hoods. Generally this means making a 1.05% sodium hypochlorite solution, so the % dilution may vary based on the bleach used.
+
+1. Fill a 500mL bottle^[Use the bottles that are marked for bleach - they should be in or around the hood] with roughly^[Prefer too much to too little] $100 mL$ bleach^[Usually found underneath the sink]. 
+2. Fill the bottle to the 500mL mark with tap water
+3. Shake to mix
+
+### Emptying liquid traps {#emptying-liquid-traps}
+
+Liquid traps need to be emptied before they reach their max fill line, or they may aspirate liquid into the next reservoir, moistening the in-line HEPA filter along the way and rendering aspiration very slow, if not impossible.
+
+1. Unscrew the liquid trap bottom from the top
+2. Carefully pour the liquid down the sink. Be careful not to splash.
+3. Screw the trap back in.
+
+#### Help! The Vacuum isn't working!
+
+1. Make sure the vacuum is on.
+2. Make sure other vacuums are working, and that it isn't a floor-wide vacuum outage.
+3. Try changing out the in-line filter, particularly if it looks like it has liquid in in.
+4. Undo the quick-release connectors between the tubes and the liquid trap top, and unscrew the lid from the liquid trap. Sometimes fragments of serological pipettes can become lodged in the intake. Gently tapping it over the sink and rinsing it out can help dislodge the fragments (if any). Make sure that when you plug the tubes back in that they are going to the right spots - the tube that goes to the working end (the part you'll be holding when you aspirate) should go to the side that has the long tube attachment on the inside. 
+5. If all else fails, try swapping out individual components from a working vacuum system.
+
+### Refilling incubator pan
+
+1. Fill a large graduated cylinder with 2L of nanopure water.
+2. Open the incubator, lift the pan cover, and gently and carefully slide out the pan. 
+3. Pour the water into the pan. Don't bring it up to the brim - you'll need to push it back in and you don't want to slosh it anywhere.
+4. Slowly push the pan back. Be sure it is firmly pushed back in the incubator so the probe that senses the water levels is flipped back down into the pan.
+
+### Opening the hood
+
+:::{.callout-warning}
+Turn on the blower FIRST, wait for it to come up to speed (you should hear the whistling noise stop increasing), THEN lift the sash. Otherwise, you risk having outside contaminants drifting into the hood without the blade of air protecting it.
+:::
+
+1. Turn on blower
+2. Lift sash to proper height^[You'll know it's the proper height because it's just above the red arrows on either side of the hood. You'll also be able to hear a tiny 'click' when it's at the right height. You'll know it's at the wrong height because you'll hear beeping.].
+3. Turn on the light
+4. Spray down the hood with 70% EtOH and wipe it up with a KimWipe 
+
+### Closing the hood
+
+Once you're done in the hood, do the following to keep your hood clean:
+
+1. Turn off the aspirator.
+2. Plug in the serological pipette gun.
+3. Refill the serological pipettes.
+   - If the TC room storage stashes are low, refill those too/
+4. If any pipette tips are almost out^[If you must have an exact number, two columns or fewer], get a new box unopened box and put it in the hood.
+5. Spray down the working area with 70% EtOH and wipe up with a KimWipe.
+6. If necessary^[If you must have an exact number, < 100mL], refill the 70% EtOH bottle and - if necessary - [make more 70% EtOH](#making-etoh).
+6. Replace KimWipes if necessary.
+7. If necessary, make new [10% bleach](#making-bleach)
+8. If the liquid trap is anywhere near the fill line, [empty it](#emptying-liquid-traps).
+9. Lower the sash all the way.
+10. Turn off hood blower.
+11. Turn off light.
+12. Empty serological trash.
+13. If necessary, [close up the biohazard box](#closing-biohazard-box) and [make a new one](#making-biohazard-box).
+14. Pat yourself on the back. You've made someone's life a little brighter (maybe your own?)
+
+## Water bath care
+
+The water bath is a hotbed for microbes. Therefore, it's important to keep it clean.
+
+1. 
+
+## Safety
+### Checking eye-washes
+
+Once weekly, eyewashes must be run for 3 minutes or until water runs clear, whatever is longer. 
+
+1. Turn on eye wash and start a timer for $3 \minutes$
+2. During this time, check that the water is a comfortable temperature (between cool and warm)
+3. Check that the flow is even (one eye does not significantly differ from the other) and sufficient (does not dribble out)
+4. If all this looks good, log the date, building room, and your initials. Denote that it is in working order.
+   - If the eye wash is NOT in working order, log it as such and fill out a work order [https://facilities.jhmi.edu/FacilitiesV4/FacilitiesEngineering/ServiceRequests/ChooseSiteSR.aspx](here).
+   
+### Biohazard boxes
+
+#### Making {#making-biohazard-box}
+#### Closing up {#closing-biohazard-box}
