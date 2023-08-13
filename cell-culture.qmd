@@ -2,7 +2,6 @@
 
 ```{r}
 #| include: false
-
 library(tidyverse)
 library(gt)
 library(flextable)
@@ -79,6 +78,10 @@ tibble(reagent = c("MEM Vitamin Solution (100x)", "Sodium Pyruvate", "Penicillin
 
 ### Medium
 
+:::{.callout-note}
+Different cells require different kinds of medium. While this is generally how medium is prepared for human bladder cancer cell lines, this isn't always the case.
+:::
+
 1.  Add $50mL$ (1x aliquot) of FBS and $25mL$ (1x aliquot) of supplement to a bottle of MEM.
 2.  Shake to mix.
 3.  Write initials and date on bottle.
@@ -88,7 +91,6 @@ tibble(reagent = c("MEM Vitamin Solution (100x)", "Sodium Pyruvate", "Penicillin
 
 ```{r}
 #| echo: false
-#| column: margin
 tibble(reagent = c("PBS", "Trypsin-EDTA(0.5%), no phenol red"), 
        Volume = c("45mL", "5mL"), 
        `Cat. #` = c("114-056-101CS", "15400054")) |> 
