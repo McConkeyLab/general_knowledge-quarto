@@ -254,13 +254,15 @@ Before cells are added to the common liquid nitrogen storage, they need to be my
 2. Allow cells to adhere overnight
 3. Set one heat block to $37^\circ C$, and another to $95^\circ C$. Both must be able to accommodate 1.5mL microfuge tubes.
 4. *Scrape* cells, do not use trypsin, in their medium
-5. [Count the number of cells](#count-cells) and transfer the amount of medium containing $10^5$ cells into a Sample Lysis Tube (included in kit)
+5. [Count the number of cells](#count-cells) and transfer the amount of medium containing $10^5$ cells into a 1.5mL microfuge tube^[anywhere between $10^4$ - $10^5$ cells is acceptable] 
 6. Centrifuge at $13,000 \times g$ for $3\ minutes$ at $4^\circ C$.
 7. Remove and discard supernatant.
 8. Add $50\mu L$ **Lysis Buffer** and vortex to resuspend pellet.
-9. Centrifuge at $13,000 \times g$ for $5\ minutes$ at $4^\circ C$.
-10. Transfer supernatant to a regular 1.5mL microfuge tube (not the ones included in the kit).
-11. Start PCR or store for up to 6 months at $-80^\circ C$
+9. Incubate at $37^\circ C$ for $15 \minutes$ to lyse cells and degrade proteins
+10. Incubate samples at $95^\circ C$ for $10 \minutes$ to inactivate the protease
+11. Centrifuge at $13,000 \times g$ for $5\ minutes$ at $4^\circ C$.
+12. Transfer supernatant to a regular 1.5mL microfuge tube.
+13. Start PCR or store for up to 6 months at $-80^\circ C$
 
 ### PCR
 
