@@ -258,8 +258,8 @@ Before cells are added to the common liquid nitrogen storage, they need to be my
 6. Centrifuge at $13,000 \times g$ for $3\ minutes$ at $4^\circ C$.
 7. Remove and discard supernatant.
 8. Add $50\mu L$ **Lysis Buffer** and vortex to resuspend pellet.
-9. Incubate at $37^\circ C$ for $15 \minutes$ to lyse cells and degrade proteins
-10. Incubate samples at $95^\circ C$ for $10 \minutes$ to inactivate the protease
+9. Incubate at $37^\circ C$ for $15\ minutes$ to lyse cells and degrade proteins
+10. Incubate samples at $95^\circ C$ for $10\ minutes$ to inactivate the protease
 11. Centrifuge at $13,000 \times g$ for $5\ minutes$ at $4^\circ C$.
 12. Transfer supernatant to a regular 1.5mL microfuge tube.
 13. Start PCR or store for up to 6 months at $-80^\circ C$
