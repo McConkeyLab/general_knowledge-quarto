@@ -28,7 +28,7 @@ tibble(
   gt(rowname_col = "Flask Size")
 ```
 
-## Reagent Definition Glossary {#reagent-defition-glossary}
+## Reagent Definition Glossary {#reagent-definition-glossary}
 
 **FBS:** Fetal bovine serum
 
@@ -236,8 +236,8 @@ The labels should include the cell name on the top. On the side, they should inc
 3.  Aspirate off medium supernatant
 7.  Resuspend in cool (straight from fridge) cell freezing medium (such as CryoStor).
     -   If the cells were from a $T75$, $3mL$ is appropriate. If $T175$, $6mL$ is appropriate.
-8.  Aliquot $1mL$ of cell suspension into the labelled cryovials.
-10. Store vials in $-80^\circ C$. Transfer to liquid nitrogen when possible.
+8.  Aliquot $1mL$ of cell suspension into the labeled cryovials.
+10. Store vials in $-80^∘ C$. Transfer to liquid nitrogen when possible.
 
 ## Fingerprinting
 
@@ -305,7 +305,7 @@ instructions <- tibble(
   Step = c("Denaturation", 
            "Touchdown PCR", "Touchdown PCR", "Touchdown PCR", 
            "Continue PCR", "Continue PCR", "Continue PCR", 
-           "Final Elogation", 
+           "Final Elongation",
            "Hold"),
   `Temperature (C)` = c("94", "94", "70 -> 60.5", "72",
                         "94", "60", "72", "72", "4"),
