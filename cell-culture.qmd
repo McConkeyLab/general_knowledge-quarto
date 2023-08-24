@@ -321,6 +321,10 @@ flextable(instructions) |>
   autofit()
 ```
 
+::: callout-note
+Begin the next section while your PCR runs
+:::
+
 ### Gel Electrophoresis
 
 1. Weigh $3g$ of agarose powder on weigh paper. Add it to an erlenmeyer flask.
@@ -332,7 +336,7 @@ flextable(instructions) |>
 7. Pour solution slowly (to avoid bubbles) into casting tray with well comb in place.
 8. Wait around $30\ minutes$ for gel to solidify
 9. Remove well comb and transfer to gel box
-10. Mix $300mL$ TAE with $10\mu L$ of EtBr
+10. Mix $400mL$ TAE with $10\mu L$ of EtBr
 11. Pour over the top of the gel until reservoirs are filled and gel is covered
 12. Add $1\mu L$ of gel loading buffer^[Cat. No. 10816015] to $10\mu L$ of each sample
 13. Add $5\mu L$ of ladder^[A 50 or 100bp ladder, like GoldBio D100-500] to the first well
