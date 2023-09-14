@@ -7,7 +7,19 @@ reference-location: margin
 
 :::{.callout-tip}
 'Traditional', gentian-violet staining transwell assays have been superseded by a more rapid DAPI staining protocol
+
+This has in turn been superseded by an updated gentian-violet staining protocol. Everything that is old is new again
 :::
+
+## Transwell assay with absorbance-based quantification
+
+### Plating
+
+1. Plate cells in 100mm dishes such that they will be $\lt 80\%$
+
+
+## Traditional transwell assay (SUPERSEDED)
+
 
 ## Plating
 
