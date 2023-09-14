@@ -30,7 +30,7 @@ This book serves as a community contributed repository of protocols for the McCo
 
 ## Acknowledgements
 
-This book is a collation of protocols created and tweaked by a collection of talented individuals. Among those include Megan Fong, Bridget McGuire, Jack Mountain, and Dr. Bryan Wehrenberg. 
+This book is a collation of protocols created and tweaked by a collection of talented individuals. Among those include Megan Fong, Bridget McGuire, Jack Mountain, Dr. Bryan Wehrenberg, Dr. Elina Valchou, and Gabriela Colocho.
 
 This work was performed in the lab of Dr. David McConkey. Thank you for supporting us in working on secondary projects like these.
 
@@ -44,8 +44,14 @@ MTT protocol adapted from Jack Mountain's MTT protocol.
 
 The FFPE extraction methods, library preparation, and library quantification methods sections were written by Bridget.
 
+The TRIzol extraction protocol was written and  sent in by Dr. Elina Vlachou.
+
+The histone extraction protocol was written and sent in by Gabriela Colocho.
+
 ## Contributing
 
 Creating and maintaining a quality compendium is impossible without your help. Your contributions and suggestions to make this document fuller and clearer is highly encouraged. 
+
+If you would like to make a contribution but submitting via GitHub pull is complex enough to prevent your from contributing, feel free to submit protocols written in your favorite text editor to me (Kai) via email. Don't worry too much about formatting as it will likely be significantly changed during the transcription process. 
 
 This document is written in `quarto`, knit using `knitr`. You can find the source code of this book (where you can fork, edit, and submit pull requests for) [here](https://github.com/McConkeyLab/general_knowledge-quarto).

@@ -264,7 +264,7 @@ Briefly centrifuge small vials at low speed prior to opening. Prepare fresh reag
 
 ### Sample Preparation 
 
-#### Tissues (treated or untreated)
+#### Tissues
 1. Weigh the sample and record its mass
 2. Cut the sample into small pieces (1-2 mm³) with a scalpel or scissors.
 3. Transfer the tissue pieces to a Dounce homogenizer.
@@ -273,12 +273,29 @@ Briefly centrifuge small vials at low speed prior to opening. Prepare fresh reag
 6. If total mixture volume is less than 1mL, transfer mixture to a 1.5mL microfuge tube and centrifuge at $10,000×g$ for $1\ minute$ at $4°C$. Otherwise, transfer homogenized mixture to a 15 mL conical tube and centrifuge at $2000×g$ for $5\ min$ at $4°C$. 
 7. Remove supernatant.
  
-#### Cells (treated or untreated)
-1. Harvest and pellet the cells by centrifugation at $200×g$ for $5\ minutes$ at $4°C$ 
-2. Re-suspend cells in the **1X Pre-Lysis Buffer** at $10^7\ cells/mL$
-3. Lyse cells on ice for $10\ minutes$ with gentle stirring. 
-4. If lysates were prepared in a 1.5mL microfuge tube, centrifuge at $10,000×g$ for $1\ minute$ at $4°C$. If prepared in a 15mL conical, centrifuge at $2000×g$ for $5\ minutes$ at $4°C$. 
-5. Remove supernatant.
+#### Cells
+1. In the hood, [trypsinize and resuspend](#split-cells) cells in medium in a 15mL conical
+2. [Count the number of cells](#count-cells) to determine the volume of reagents required for each sample (see info box)
+
+::: callout-info
+# Calculating Required Reagent Volume
+
+Calculate the total number of cells suspension by multiplying the volume of the suspension by the concentration of cells
+
+To calculate the amount of:
+
+- **Pre-lysis buffer** needed, divide the number of cells by $10⁷\ cells/mL$
+
+- **Lysis buffer** needed, divide the number of cells by $5×10⁷\ cells/mL$
+
+- **BDTT** needed, *multiply* the amount of **lysis buffer** needed by $0.3$
+:::
+
+3. Pellet the cells at $200×g$ for $5\ minutes$ at $4°C$ and remove the supernatant
+4. Re-suspend cells in the **1X Pre-Lysis Buffer** at $10^7\ cells/mL$
+5. Lyse cells on ice for $10\ minutes$, flicking every $3\ minutes$
+6. If lysates were prepared in a 1.5mL microfuge tube, centrifuge at $10,000×g$ for $1\ minute$ at $4°C$. If prepared in a 15mL conical, centrifuge at $2000×g$ for $5\ minutes$ at $4°C$. 
+7. Remove supernatant.
 
 ### Extraction Protocol
 1. Re-suspend pellet in **3 volumes** (approximately 200 µL/10^7 cells or 100 mg of tissue) of **Lysis Buffer**. If not in a 1.5mL tube, transfer it to one.
@@ -287,12 +304,3 @@ Briefly centrifuge small vials at low speed prior to opening. Prepare fresh reag
 4. Transfer the supernatant fraction (containing acid-soluble proteins) to a fresh 1.5mL microfuge tube
 5. Immediately add $0.3\ volumes$ of the **Balance-DTT Buffer** to the supernatant (e.g., 0.3 mL of Balance-DTT Buffer to 1 ml of supernatant). 
 6. Store the extract at $-20°C$ for several days, or $-80°C$ for long-term storage. Avoid repeated thawing and freezing. 
-
-### PROTOCOL QUESTIONS:
-1. What does it mean to be treated or untreated?
-2. Is the change in rpm due to an assumed decrease in rotor arm length?
-3. I've modified it such that the volume is less than 1mL, since we don't usually have 2mL vials
-4. Protocol said to do 12000 rpm but did never said to transfer it to a smaller tube if it was in a big one...leading me to believe they wanted me to spin something down at 12000 rpm in my big beckman coulter?
-5. Removed the quantify part. This doesn't seem necessary
-6. Had transfer in step 4 of extraction protocol be to a 1.5mL microfuge tube. Is this what you do?
-7. Is the amount of reagent you prepare enough? How do you know how much to prepare ahead of time?
