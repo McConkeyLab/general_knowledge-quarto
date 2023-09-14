@@ -250,7 +250,7 @@ Before cells are added to the common liquid nitrogen storage, they need to be my
 
 ### Sample Preparation
 
-1. Plate cells in a 100mm dish, using roughly 50% of a confluent T75.
+1. Plate $3 \times 10^5$ cells in a well of a 6 well plate ($1.5 \times 10^5 cells/mL$)
 2. Allow cells to adhere overnight
 3. Set one heat block to $37^\circ C$, and another to $95^\circ C$. Both must be able to accommodate 1.5mL microfuge tubes.
 4. *Scrape* cells, do not use trypsin, in their medium
