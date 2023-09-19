@@ -19,29 +19,29 @@ This uses the Ion AmpliSeq Transcriptome Human Gene Expressioin Kit. The protoco
 
 This is a 2 day protocol. Start the first day around 2PM.
 
-:::{.callout-note}
-You'll need:  
+::: callout-note
+You'll need:
 
-  - Ion AmpliSeq Library Kit  
-  - SuperScript VILO cDNA Synthesis Kit  
-  - Ion Ampliseq Transcriptome Human Gene Expression Core Panel  
-  - Ion Xpress Barcode Adapters  
+-   Ion AmpliSeq Library Kit\
+-   SuperScript VILO cDNA Synthesis Kit\
+-   Ion Ampliseq Transcriptome Human Gene Expression Core Panel\
+-   Ion Xpress Barcode Adapters\
 :::
 
 ## Day 1
 
-:::{.callout-note}
-  - Get a 0.1 mL 96 well plate  
-  - Get ice  
-  - Set heatblock to $80^\circ C$  
-  - Get 5X VILO RT Reaction Mix (blue cap)   
-  - Get 10X SuperScript III Enzyme Mix (black cap)    
-  - Get 5X Ion Ampliseq HiFi Mix (red cap)  
-  - Get Ion Ampliseq Transcriptome Human Gene Expression Core Panel   
-  - Samples you intend to prep
+::: callout-note
+-   Get a 0.1 mL 96 well plate\
+-   Get ice\
+-   Set heatblock to $80^\circ C$\
+-   Get 5X VILO RT Reaction Mix (blue cap)\
+-   Get 10X SuperScript III Enzyme Mix (black cap)\
+-   Get 5X Ion Ampliseq HiFi Mix (red cap)\
+-   Get Ion Ampliseq Transcriptome Human Gene Expression Core Panel\
+-   Samples you intend to prep
 :::
 
-:::{.callout-warning}
+::: callout-warning
 Flick and spin down reagents and samples, rather than vortexing them. Vortexing can degrade samples and reagents.
 :::
 
@@ -49,7 +49,7 @@ Flick and spin down reagents and samples, rather than vortexing them. Vortexing 
 
 The final concentration of a samples RNA should be $5.71ng/\mu L\ (20ng/3.5\mu L)$. Use the TapeStation concentration for dilution calculations.
 
-If your concentration is $>\sim 20 ng/\mu L$, chose a dilution factor (DF) that brings the concentration to $\sim 20 ng/\mu L$. 
+If your concentration is $>\sim 20 ng/\mu L$, chose a dilution factor (DF) that brings the concentration to $\sim 20 ng/\mu L$.
 
 So, for a starting concentration of $\sim 130 ng/\mu L$:
 
@@ -61,18 +61,15 @@ $$
 130 ng/\mu L \times 10 = 13ng/\mu L
 $$
 
-
-To make a dilution, combine 1 part __sample__ and (DF - 1) parts __Nuclease Free (NF) water__. In the above example, with a DF of 10, you'll take $1 \mu L$ sample, $9 \mu L$ NF water. 
+To make a dilution, combine 1 part **sample** and (DF - 1) parts **Nuclease Free (NF) water**. In the above example, with a DF of 10, you'll take $1 \mu L$ sample, $9 \mu L$ NF water.
 
 After you've made the first dilution, follow C1V1=C2V2 to get to a concentration of $5.71 ng/\mu L$ in $5.0 \mu L$ in a separate tube.
 
 $$
 C_1V_1=C_2V_2
-$$
-$$
+$$ $$
 (13ng/\mu L)\times V_1 = \frac{20ng}{3.5\mu l}\times 5\mu L
-$$
-$$
+$$ $$
 V_1 = \frac{\frac{20ng}{3.5\mu l}\times 5\mu L}{(13ng/\mu L)} \approx 2.2 \mu L \ sample
 $$
 
@@ -80,82 +77,91 @@ So, in this instance you would add $2.2 \mu L$ sample to $5\mu L - 2.2\mu L = 2.
 
 ### Reverse Transcribe RNA
 
-1. Incubate the RNA at $80^\circ C$ for $10\ minutes$. Let cool on ice for $5\ minutes$. Spin down briefly. 
-2. Make the first mastermix. For $vol_{reagent}(n_{samples} + 1)$:
+1.  Incubate the RNA at $80^\circ C$ for $10\ minutes$. Let cool on ice for $5\ minutes$. Spin down briefly.
+2.  Make the first mastermix. For $vol_{reagent}(n_{samples} + 1)$:
+
 ```{r}
 tibble("Reagents" = c("5X VILO RT Reaction Mix (blue cap)", "10X SuperScript III Enzyme Mix"), 
        "Volume" = c("1.0 uL", "0.5 uL")) |> 
   gt()
 ```
+
 Flick or mix by pipetting, and spin down.
 
-3. Add $1.5 \mu L$ of the mastermix to the bottom of the wells you intend to use. 
+3.  Add $1.5 \mu L$ of the mastermix to the bottom of the wells you intend to use.
 
-:::{.callout-tip}
+::: callout-tip
 If you are left-handed, try to keep your samples in odd columns. If you are right-handed, try to keep your samples in even columns. This helps with the cleaning steps in Day 2. It will also help to keep your samples in the same column rather than spreading them out.
 :::
 
-4. Add $3.5\mu L$ of your sample to the wells.
-5. Seal the plate well with a MicroAmp adhesive film. 
-6. Spin down for $10\ seconds$
-7. vortex at $2000\ rpm$ for $5\ seconds$
-8. Spin down again.
-9. Load the plate into the thermocycler and run the program __RT-Ampliseq__:
+4.  Add $3.5\mu L$ of your sample to the wells.
+5.  Seal the plate well with a MicroAmp adhesive film.
+6.  Spin down for $10\ seconds$
+7.  vortex at $2000\ rpm$ for $5\ seconds$
+8.  Spin down again.
+9.  Load the plate into the thermocycler and run the program **RT-Ampliseq**:
+
 ```{r}
 tibble("Temp" = c("42C", "85C", "4C"), 
        "Time" = c("30 min", "5 min", "Hold")) |> 
   gt()
 ```
+
 Your final volume is $5.0 \mu L$. The program will say $10.0 \mu L$ (it won't set as low as $5.0 \mu L$).
 
 ### Amplify Targets
 
-1. Make the second mastermix. For $vol_{reagent}(n_{samples} + 1)$:
+1.  Make the second mastermix. For $vol_{reagent}(n_{samples} + 1)$:
+
 ```{r}
 tibble(reagent = c("5X Ion AmpliSeq HiFi Mix", "Ion Ampliseq Transcriptome Human Gene Expression Core Panel", "Nuclease Free Water"),
        "Volume" = c("4 uL", "8 uL", "3 uL")) |> 
   gt(rowname_col = "reagent") |> 
   cols_width(reagent ~ px(300))
 ```
+
 Flick or mix by pipetting, and spin down.
 
-:::{.callout-tip}
+::: callout-tip
 The Gene Expression Core Panel is the limiting reagent in these reactions. Add this one last, in case you make a mistake adding the other 2 components.
 :::
 
-2. Carefully remove the seal.
-3. Add $15\mu L$ of mastermix to each well.
-4. Seal the plate well with a MicroAmp adhesive film. 
-5. Spin down for $10\ seconds$. 
-6. Vortex at $2000\ rpm$ for $5\ seconds$.
-7. Spin down again.
-8. Load the plate into the thermocycler and run the program __Ampliseq Target__:
+2.  Carefully remove the seal.
+3.  Add $15\mu L$ of mastermix to each well.
+4.  Seal the plate well with a MicroAmp adhesive film.
+5.  Spin down for $10\ seconds$.
+6.  Vortex at $2000\ rpm$ for $5\ seconds$.
+7.  Spin down again.
+8.  Load the plate into the thermocycler and run the program **Ampliseq Target**:
+
 ```{r}
 tibble(Temp = c("99C", "99C", "60C", "4C"),
        Time = c("2 min", "15 sec", "16 min", "Hold")) |> 
   gt()
 ```
+
 For this protocol, it should cycle 16 times.
 
-9. Let this run overnight.
+9.  Let this run overnight.
 
 ## Day 2
 
-:::{.callout-note}
+::: callout-note
 For Day 2, get ice and a magnetic rack. Then, thaw on ice:
 
-  - FuPa Reagent (brown cap)
-  - Switch Solution (yellow cap) 
-  - DNA Ligase (blue cap)
-  - Ion P1 Adapter (purple cap)
-  - A different Ion Xpress Barcode X (white cap) for each sample
+-   FuPa Reagent (brown cap)
+-   Switch Solution (yellow cap)
+-   DNA Ligase (blue cap)
+-   Ion P1 Adapter (purple cap)
+-   A different Ion Xpress Barcode X (white cap) for each sample
 :::
 
 ### Partially Digest Primer Sequences
 
-1. Carefully remove the seal.
-2. Add $2 \mu L$ __FuPa Reagent__ to each well.
-3. Load the plate into the thermocycler and run the program __digestion__:
+1.  Carefully remove the seal.
+2.  Add $2 \mu L$ **FuPa Reagent** to each well.
+3.  Load the plate into the thermocycler and run the program **digestion**:
+
 ```{r}
 tibble(Temp = c("50C", "55C", "60C", "10C"),
        Time = c("10 min", "10 min", "20 min", "Hold (up to 1 hr)")) |> 
@@ -164,16 +170,19 @@ tibble(Temp = c("50C", "55C", "60C", "10C"),
 
 ### Ligate Adapters and Purify
 
-1. For each unique barcode, add to a new tube:
+1.  For each unique barcode, add to a new tube:
+
 ```{r}
 tibble(Component = c("Ion P1 Adapter", "Ion Xpress Barcode X", "NF Water"),
        Volume = c("2 uL", "2 uL", "4 uL")) |> 
   gt()
 ```
+
 Flick and spin down.
 
-2. Carefully remove the seal.
-3. Into each well, add **in order**:
+2.  Carefully remove the seal.
+3.  Into each well, add **in order**:
+
 ```{r}
 tibble(Order = c("1", "2", "3"),
        Component = c("Switch Solution", "Diluted Barcode", "DNA Ligase"),
@@ -182,60 +191,60 @@ tibble(Order = c("1", "2", "3"),
   tab_footnote("Each sample usually gets a unique barcode", cells_body(columns = Component, rows = 2))
 ```
 
-:::{.callout-tip}
+::: callout-tip
 To keep track of what you've added, you can add the reagents as a dot to one side of the well. You can add the other reagents to different spots on the side of the well. At the end, you should see 3 dots on the wells.
 :::
 
-4. Seal the plate well with a MicroAmp adhesive film.
-5. Spin down for $10\ seconds$
-6. Vortex at $2000\ rpm$ for $5\ seconds$
-7. Spin down again.
-8. Load the plate into the thermocycler and run the program __Ligation__:
+4.  Seal the plate well with a MicroAmp adhesive film.
+5.  Spin down for $10\ seconds$
+6.  Vortex at $2000\ rpm$ for $5\ seconds$
+7.  Spin down again.
+8.  Load the plate into the thermocycler and run the program **Ligation**:
+
 ```{r}
 tibble(Temp = c("22C", "72C", "10C"), 
        Time = c("60 min", "5 min", "Hold (up to 1 hour)")) |> 
   gt()
 ```
 
-:::{.callout-tip}
+::: callout-tip
 At this point, take out the low TE and AMPure XP Reagent (beads). Also, label your 0.6mL tubes with the sample name, barcode added, and date.
 :::
 
 ### Purify the Library
 
-1. Prepare __70% ethanol__ by combining $3 mL$ __NF Water__ and $7 mL$ __ethanol__.
-2. Carefully remove the seal.
-3. To each well, add $45 \mu L$ of the beads.
-4. Mix by pipetting up and down $10\ times$.
+1.  Prepare **70% ethanol** by combining $3 mL$ **NF Water** and $7 mL$ **ethanol**.
+2.  Carefully remove the seal.
+3.  To each well, add $45 \mu L$ of the beads.
+4.  Mix by pipetting up and down $10\ times$.
 
-:::{.callout-tip}
+::: callout-tip
 Vortex the beads very well at the beginning, and then after every 8 samples.
 :::
 
-5. Incubate at $RT$ for $5\ minutes$.
-6. Place plate on the magnetic rack. Let sit for $2 minutes$. 
-7. While still on the rack, carefully remove the supernatant without disturbing the pellet.
+5.  Incubate at $RT$ for $5\ minutes$.
+6.  Place plate on the magnetic rack. Let sit for $2 minutes$.
+7.  While still on the rack, carefully remove the supernatant without disturbing the pellet.
 
-:::{.callout-tip}
+::: callout-tip
 Steps 5-9 can be done using an 8 channel pipette.
 :::
 
-7. Add $150 \mu L$ __70% ethanol__ and move the plate to the left one column. Wait until the beads migrate, then move the plate back to the original position. Repeat this $5\ times$.
-8. While keeping the plate on the rack, carefully remove the supernatant without disturbing the pellet.
-9. Repeat step 7-8.
+7.  Add $150 \mu L$ **70% ethanol** and move the plate to the left one column. Wait until the beads migrate, then move the plate back to the original position. Repeat this $5\ times$.
+8.  While keeping the plate on the rack, carefully remove the supernatant without disturbing the pellet.
+9.  Repeat step 7-8.
 10. With the plate on the rack, try to remove any leftover droplets in the wells with a $10 \mu L$ pipette.
-11. Air-dry the beads for $2\ minutes$. 
+11. Air-dry the beads for $2\ minutes$.
 
 ### Elute the Library
 
-:::{.callout-tip}
+::: callout-tip
 Use a multichannel pipette for this step.
 :::
 
-1. Remove the plate from the magnet. Add in $45 \mu L$ __Low TE__ and mix well by pipetting. All of the beads should be suspended.
-2. Place the plate back on the magnetic rack. Wait $2\ minutes$.
-3. Carefully transfer the supernatant without disturbing the pellet. The supernatant is your library.
-
+1.  Remove the plate from the magnet. Add in $45 \mu L$ **Low TE** and mix well by pipetting. All of the beads should be suspended.
+2.  Place the plate back on the magnetic rack. Wait $2\ minutes$.
+3.  Carefully transfer the supernatant without disturbing the pellet. The supernatant is your library.
 
 ### QC Libraries
 
@@ -245,13 +254,14 @@ If there is no band, your library prep failed.
 
 ## Quantify Library by qPCR
 
-1. For samples with a band, prepare serial dilutions as follows:
+1.  For samples with a band, prepare serial dilutions as follows:
 
 ```{r}
 tibble(reagent = c("NF water", "Sample"), Volume = c("18 uL", "2 uL")) |> 
   gt(rowname_col = "reagent") |> 
   tab_header("1:10 Dilution")
 ```
+
 ```{r}
 tibble(reagent = c("NF water", "1:10 Dilution"), Volume = c("45 uL", "5 uL")) |> 
   gt(rowname_col = "reagent") |> 
@@ -266,19 +276,19 @@ tibble(reagent = c("NF water", "1:100 Dilution"), Volume = c("45 uL", "5 uL")) |
 
 For samples with low region molarity (As determined by TapeStation), you might want to use 1:100 dilutions. For all others, use 1:1000.
 
-:::{.callout-tip}
+::: callout-tip
 It is helpful to have each dilution in a different color tube to avoid confusion. So, all 1:10 dilutions will be in an orange tube, etc.
 :::
 
-2. Prepare the controls via serial dilution. Set up 5 tubes, each with $36 \mu L$ __NF Water__. 
-3. Label them 1-5. Using a P20 pipette, take $4 \mu L$ __E. coli DH10B Control Library__ and add it to tube 1. Mix by flicking and spinning down.
+2.  Prepare the controls via serial dilution. Set up 5 tubes, each with $36 \mu L$ **NF Water**.
 
-4. Tape $4 \mu L$ of that sample and transfer it to the next tube in line. Repeat step 3 to tubes 1-5.
+3.  Label them 1-5. Using a P20 pipette, take $4 \mu L$ **E. coli DH10B Control Library** and add it to tube 1. Mix by flicking and spinning down.
 
-5. Determine the number wells you will need. Each sample is run in triplicate, you need a triplicate of water, and it helps to have 5 of each control. So,
-$$
-(n_{sample} \times 3) + (n_{H_2O} \times 3) + (n_{control} \times 5) + extra
-$$
+4.  Tape $4 \mu L$ of that sample and transfer it to the next tube in line. Repeat step 3 to tubes 1-5.
+
+5.  Determine the number wells you will need. Each sample is run in triplicate, you need a triplicate of water, and it helps to have 5 of each control. So, $$
+    (n_{sample} \times 3) + (n_{H_2O} \times 3) + (n_{control} \times 5) + extra
+    $$
 
 $$
 (n_{sample} \times 3) + (1 \times 3) + (5\times 5) + 5
@@ -288,16 +298,17 @@ $$
 (n_{sample} \times 3) + 33
 $$
 
-6. Make the mastermix. For $n$ wells, do $vol_{reagent}\times n$ for the following:
+6.  Make the mastermix. For $n$ wells, do $vol_{reagent}\times n$ for the following:
+
 ```{r}
 tibble(reagent = c("2X TaqMan Master Mix", "20X Ion TaqMan Assay"),
        Volume = c("5.0 uL", "0.5 uL")) |> 
   gt(rowname_col = "reagent")
 ```
 
-7. Pipette by mixing. Be careful not to make bubbles.
+7.  Pipette by mixing. Be careful not to make bubbles.
 
-8. Figure out where you want to put your controls, water, and samples. It helps to have the controls in order of decreasing concentration. A sample layout is shown below.
+8.  Figure out where you want to put your controls, water, and samples. It helps to have the controls in order of decreasing concentration. A sample layout is shown below.
 
 ```{r}
 #| fig.width: 3.5
@@ -325,14 +336,16 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
         plot.background = element_blank())
 ```
 
-9. Load $5.5 \mu L$ of the master-mix to each well you intend to use.
+9.  Load $5.5 \mu L$ of the master-mix to each well you intend to use.
 10. Carefully load $4.5 \mu L$ of your samples, water, and controls.
-11. Cover with adhesive film well. 
+11. Cover with adhesive film well.
 12. Spin down for $10\ seconds$, vortex at $2000\ rpm$ for $5\ seconds$, spin down again
-13. Run the following program on the RT-qPCR machine: 
+13. Run the following program on the RT-qPCR machine:
+
 ```{r}
 tibble(Temp = c("50C", "95C", "95C", "60C"),
        Time = c("2 min", "20 sec", "1 sec", "20 sec")) |> 
   gt()
 ```
+
 The last 2 temperatures should be cycled 40 times. This is a pre-made program on our RT-qPCR machine.
