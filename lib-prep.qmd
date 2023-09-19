@@ -284,7 +284,7 @@ It is helpful to have each dilution in a different color tube to avoid confusion
 
 3.  Label them 1-5. Using a P20 pipette, take $4 \mu L$ **E. coli DH10B Control Library** and add it to tube 1. Mix by flicking and spinning down.
 
-4.  Tape $4 \mu L$ of that sample and transfer it to the next tube in line. Repeat step 3 to tubes 1-5.
+4.  Take $4 \mu L$ of that sample and transfer it to the next tube in line. Repeat step 3 to tubes 1-5.
 
 5.  Determine the number wells you will need. Each sample is run in triplicate, you need a triplicate of water, and it helps to have 5 of each control. So, $$
     (n_{sample} \times 3) + (n_{H_2O} \times 3) + (n_{control} \times 5) + extra
