@@ -19,7 +19,7 @@ This uses the Ion AmpliSeq Transcriptome Human Gene Expressioin Kit. The protoco
 
 This is a 2 day protocol. Start the first day around 2PM.
 
-::: callout-note
+:::{.callout-note}
 You'll need:
 
 -   Ion AmpliSeq Library Kit\
@@ -30,7 +30,7 @@ You'll need:
 
 ## Day 1
 
-::: callout-note
+:::{.callout-note}
 -   Get a 0.1 mL 96 well plate\
 -   Get ice\
 -   Set heatblock to $80^\circ C$\
@@ -41,7 +41,7 @@ You'll need:
 -   Samples you intend to prep
 :::
 
-::: callout-warning
+:::{.callout-warning}
 Flick and spin down reagents and samples, rather than vortexing them. Vortexing can degrade samples and reagents.
 :::
 
@@ -90,7 +90,7 @@ Flick or mix by pipetting, and spin down.
 
 3.  Add $1.5 \mu L$ of the mastermix to the bottom of the wells you intend to use.
 
-::: callout-tip
+:::{.callout-tip}
 If you are left-handed, try to keep your samples in odd columns. If you are right-handed, try to keep your samples in even columns. This helps with the cleaning steps in Day 2. It will also help to keep your samples in the same column rather than spreading them out.
 :::
 
@@ -122,7 +122,7 @@ tibble(reagent = c("5X Ion AmpliSeq HiFi Mix", "Ion Ampliseq Transcriptome Human
 
 Flick or mix by pipetting, and spin down.
 
-::: callout-tip
+:::{.callout-tip}
 The Gene Expression Core Panel is the limiting reagent in these reactions. Add this one last, in case you make a mistake adding the other 2 components.
 :::
 
@@ -146,7 +146,7 @@ For this protocol, it should cycle 16 times.
 
 ## Day 2
 
-::: callout-note
+:::{.callout-note}
 For Day 2, get ice and a magnetic rack. Then, thaw on ice:
 
 -   FuPa Reagent (brown cap)
@@ -191,7 +191,7 @@ tibble(Order = c("1", "2", "3"),
   tab_footnote("Each sample usually gets a unique barcode", cells_body(columns = Component, rows = 2))
 ```
 
-::: callout-tip
+:::{.callout-tip}
 To keep track of what you've added, you can add the reagents as a dot to one side of the well. You can add the other reagents to different spots on the side of the well. At the end, you should see 3 dots on the wells.
 :::
 
@@ -207,7 +207,7 @@ tibble(Temp = c("22C", "72C", "10C"),
   gt()
 ```
 
-::: callout-tip
+:::{.callout-tip}
 At this point, take out the low TE and AMPure XP Reagent (beads). Also, label your 0.6mL tubes with the sample name, barcode added, and date.
 :::
 
@@ -218,7 +218,7 @@ At this point, take out the low TE and AMPure XP Reagent (beads). Also, label yo
 3.  To each well, add $45 \mu L$ of the beads.
 4.  Mix by pipetting up and down $10\ times$.
 
-::: callout-tip
+:::{.callout-tip}
 Vortex the beads very well at the beginning, and then after every 8 samples.
 :::
 
@@ -226,7 +226,7 @@ Vortex the beads very well at the beginning, and then after every 8 samples.
 6.  Place plate on the magnetic rack. Let sit for $2 minutes$.
 7.  While still on the rack, carefully remove the supernatant without disturbing the pellet.
 
-::: callout-tip
+:::{.callout-tip}
 Steps 5-9 can be done using an 8 channel pipette.
 :::
 
@@ -238,7 +238,7 @@ Steps 5-9 can be done using an 8 channel pipette.
 
 ### Elute the Library
 
-::: callout-tip
+:::{.callout-tip}
 Use a multichannel pipette for this step.
 :::
 
@@ -276,7 +276,7 @@ tibble(reagent = c("NF water", "1:100 Dilution"), Volume = c("45 uL", "5 uL")) |
 
 For samples with low region molarity (As determined by TapeStation), you might want to use 1:100 dilutions. For all others, use 1:1000.
 
-::: callout-tip
+:::{.callout-tip}
 It is helpful to have each dilution in a different color tube to avoid confusion. So, all 1:10 dilutions will be in an orange tube, etc.
 :::
 
@@ -342,7 +342,9 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
 
 10. Carefully load $4.5 \mu L$ of your samples, water, and controls.
 
-    ::: callout-tip When adding the master-mix and samples it can be helpful to add it to the side of the well :::
+:::{.callout-tip} 
+When adding the master-mix and samples it can be helpful to add it to the side of the well 
+:::
 
 11. Cover with adhesive film well.
 
