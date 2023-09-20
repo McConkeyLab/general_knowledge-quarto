@@ -87,3 +87,8 @@ There's simply no way that you'd be able to pipette $<1\mu L$ - so we need to cr
 Unless there isn't a lot of drug to go around, I usually just make $V_2 = 1mL$. So to make a $1:100$ dilution, I would add $10\mu L$ $10mM$ drug to $990\mu L$ medium (if medium is the correct diluent). Then, vortex the sample - you can now start your calculation with a $100\mu M$ stock instead of a $10mM$ stock
 
 ## Diluting Solids
+
+:::{.Helpful-note}
+-> One mole is the molar weight in grams of a given molecule
+-> The solubility can be looked up on Selleck
+:::
