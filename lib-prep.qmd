@@ -345,7 +345,7 @@ expand_grid(col = as.factor(1:12), row = LETTERS[1:8]) |>
 When adding the master-mix and samples it can be helpful to add it to the side of the well 
 :::
 
-11. Cover with adhesive film well.
+11. Cover with **MicroAmp Optical Adhesive Film** well.
 
 12. Spin down for $1\ minute$
 
