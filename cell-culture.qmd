@@ -7,6 +7,12 @@ library(gt)
 library(flextable)
 ```
 
+::: callout-note
+This information can now be found at http://wiki.mcconkeylab.com/en/protocols/cell-culture
+
+Future updates will occur there.
+:::
+
 ## General Notes {#gen-notes}
 
 -   Unless otherwise stated, any time a liquid is transferred or a cap is coming off, the operation should be performed within the hood.
