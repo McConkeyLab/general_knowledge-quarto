@@ -15,6 +15,12 @@ library(tibble)
 
 ## siRNA Transfection
 
+::: callout-note
+This section can now be found at http://wiki.mcconkeylab.com/en/protocols/cell-modification/siRNA-transfection
+
+Future updates will occur there.
+:::
+
 [This protocol is adapted from the ambion Ambion Life Technologies protocol (Protocol Pub. No. MAN0007836 Rev. 1.0)]{.aside}
 
 :::{.callout-note}
