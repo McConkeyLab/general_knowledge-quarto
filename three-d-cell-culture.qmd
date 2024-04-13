@@ -2,6 +2,13 @@
 fig-cap-location: margin
 reference-location: margin
 ---
+
+::: callout-note
+This information can now be found at http://wiki.mcconkeylab.com/en/protocols/3d-culture
+
+Future updates will occur there.
+:::
+
 # 3D Culture
 
 Many protocols here are adapted from [Padmanaban et al. 2020](https://doi.org/10.1038/s41596-020-0335-3), and that can also serve as a reference for additional protocols not (yet) listed here.
