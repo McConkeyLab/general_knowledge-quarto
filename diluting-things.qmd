@@ -4,6 +4,12 @@ execute:
   echo: FALSE
 ---
 
+::: callout-note
+This information can now be found at http://wiki.mcconkeylab.com/en/protocols/diluting-things
+
+Future updates will occur there.
+:::
+
 Very little math knowledge is needed to get by in the lab. However, the math that is needed is used frequently: the calculation to dilute a substance from a higher concentration to a lower concentration. This work is really driven only by a single equation:
 
 $$
