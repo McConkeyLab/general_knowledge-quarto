@@ -1,4 +1,6 @@
 - source: project
   quarto-pub:
     - id: e0a738df-7ab3-4d6a-b42a-221e823d8bff
-      url: 'https://kai.quarto.pub/bok'
+      url: https://kai.quarto.pub/bok
+    - id: fcf14874-4784-4707-864c-d0bffb9dc040
+      url: https://seneca.quarto.pub/the-book-of-knowledge-2

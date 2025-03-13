@@ -45,6 +45,9 @@ Each well of a 6-well plate takes $3 \mu L$ of siRNA. Therefore, aliquoting $12 
 1. Split your cells and dilute them with medium to $200,000\ cells/mL$. You will need $2mL/well$.
 2. In 1.5mL eppendorf, prepare the following **per well**:
 
+### Test Chapter
+## Test Unit
+
 ```{r}
 #| echo: false
 tibble(reagent = c("Opti-MEM Medium", "Lipofectamine RNAiMAX Reagent"), Volume = c("150uL", "9uL"), `Ref #` = c("31985062", "13778150")) |> 

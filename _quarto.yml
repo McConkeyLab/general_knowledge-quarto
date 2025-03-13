@@ -4,8 +4,8 @@ project:
 book:
   favicon: logo.png
   title: "The Book of Knowledge"
-  author: "Kai Aragaki, Bridget McGuire, Dr. Elina Vlachou, and Gabriela Colocho"
-  date: "2022-01-06"
+  author: "Dr. Kai Aragaki, Bridget McGuire, Dr. Elina Vlachou, Gabriela Colocho, Seneca Simpson"
+  date: "2025-03-13"
   chapters:
     - index.qmd
     - intro.qmd
@@ -23,6 +23,7 @@ book:
         - mtt.qmd
         - transwells.qmd
         - qc.qmd
+        - Urine_Protocols.qmd
     - part: analysis.qmd
       chapters:
         - analysis_setup.qmd
