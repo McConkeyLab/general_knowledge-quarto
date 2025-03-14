@@ -16,22 +16,21 @@ $$
 C_1\times V_1  = C_2 \times V_2
 $$
 
-
 ## Diluting Liquids
 
 Suppose you have a drug that you know has a concentration of $1\mu M$, and you want to perform an experiment with it. The questions you have to ask yourself first are:
 
-1. What concentration do I **want** the drug to be?
-2. How much volume of diluted drug to I need?
+1.  What concentration do I **want** the drug to be?
+2.  How much volume of diluted drug to I need?
 
 Suppose you ask yourself this and decide you need $10mL$ of $10nM$ drug.
 
 Now we apply our equation - but first, let's describe what the variables mean.
 
-- $C_1$: The concentration you start with. For us, this is $1\mu M$
-- $V_1$: The volume of the stock you will dilute with medium to get the final volume. We don't know this.
-- $C_2$: The concentration you want. This is $10nM$.
-- $V_2$: The volume you want. This is $10mL$
+-   $C_1$: The concentration you start with. For us, this is $1\mu M$
+-   $V_1$: The volume of the stock you will dilute with medium to get the final volume. We don't know this.
+-   $C_2$: The concentration you want. This is $10nM$.
+-   $V_2$: The volume you want. This is $10mL$
 
 If you rearrange the equation, you can get:
 
@@ -76,7 +75,6 @@ So when SHOULD you care?
 
 Generally, I typically care when the volume is $\ge 1\%$ of my final volume.
 
-
 ### Serial Dilutions
 
 Suppose instead of in our previous example where we started with a $10 \mu L$ stock, we instead started with a $10mM$ stock. Then, when we do our calculation, we get:
@@ -87,9 +85,15 @@ $$
 
 There's simply no way that you'd be able to pipette $<1\mu L$ - so we need to create an intermediate dilution. By looking at our final volume, we realize that this intermediate dilution must be at least $100\times$ more dilute than the current stock. (because $100\times 0.01\mu L = 1\mu L$, and $1\mu L$ is the lowest we can pipette). To make this intermediate dilution, we again need to ask ourselves the two questions above:
 
-1. What concentration do I **want** the drug to be? (100x more dilute than stock - so $100\mu M$, for example)
-2. How much volume of diluted drug to I need? (Enough to be able to make accurately and enough to use for our next (final) dilution - so $\ge 100\mu L$ so that $V_1 \ge 1\mu L$)
+1.  What concentration do I **want** the drug to be? (100x more dilute than stock - so $100\mu M$, for example)
+2.  How much volume of diluted drug to I need? (Enough to be able to make accurately and enough to use for our next (final) dilution - so $\ge 100\mu L$ so that $V_1 \ge 1\mu L$)
 
 Unless there isn't a lot of drug to go around, I usually just make $V_2 = 1mL$. So to make a $1:100$ dilution, I would add $10\mu L$ $10mM$ drug to $990\mu L$ medium (if medium is the correct diluent). Then, vortex the sample - you can now start your calculation with a $100\mu M$ stock instead of a $10mM$ stock
 
 ## Diluting Solids
+
+::: Helpful-note
+\> One mole is the molar weight in grams of a given molecule
+
+\> The solubility can be looked up on Selleck
+:::
