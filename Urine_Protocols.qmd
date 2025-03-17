@@ -6,18 +6,16 @@ reference-location: margin
 # CRCs
 ## How to make Condtionally Reprogrammed Medium
 :::{.callout-note}
-You should have:
-(All alliquioted)
-- 500 mL Advanced F-12 DMEM
-- 50 mL FBS
-- 5 mL pen/strep
-- 5 mL L-Glutamine
-- 0.5 mL Gentamicin
-- 0.5 mL EGF mixture
-- 0.5 mL Insulin
-- 0.5 mL Amphoricin B
-- 4.3 uL Cholora Toxin
-
+You should have:\
+ - 500 mL Advanced F-12 DMEM\
+ - 50 mL FBS\
+ - 5 mL pen/strep\
+ - 5 mL L-Glutamine\
+ - 0.5 mL Gentamicin\
+ - 0.5 mL EGF mixture\
+ - 0.5 mL Insulin\
+ - 0.5 mL Amphoricin B\
+ - 4.3 uL Cholora Toxin
 :::
 1. 
 ## Replace CRC Medium
