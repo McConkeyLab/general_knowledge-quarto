@@ -4,7 +4,7 @@ project:
 book:
   favicon: logo.png
   title: "The Book of Knowledge"
-  author: "Dr. Kai Aragaki, Bridget McGuire, Dr. Elina Vlachou, Gabriela Colocho, Seneca Simpson"
+  author: "Dr. Kai Aragaki, Bridget McGuire, Dr. Elina Vlachou, Gabriela Colocho"
   date: "2025-03-13"
   chapters:
     - index.qmd
